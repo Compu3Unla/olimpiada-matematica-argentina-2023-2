@@ -1,7 +1,119 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*fuentes*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
 
-/*crear los estilos*/
+/*oma*/
+h1{
+font-family: Space Grotesk;
+font-size: 260px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+color: #5151FC;
+}
+h1:hover {
+color: #101011;
+}
+
+p{
+color: #101011;
+font-family: Barlow;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+bold{
+font-weight: 700;
+}
+versalitas{
+font-variant: all-small-caps;
+}
+
+/*ingenio*/
+h4{
+font-family: Space Grotesk;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 11.04px;
+color: #F5F5F5;
+}
+
+/*campeones*/
+h3{
+font-family: Space Grotesk;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+color: #F5F5F5;
+}
+
+/*titulos*/
+h2{
+font-family: Space Grotesk;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+color: #F5F5F5;
+}
+
+/*mes octubre*/
+h5{
+color: #F5F5F5;
+font-variant-numeric: lining-nums proportional-nums;
+font-family: Barlow;
+font-size: 122px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: 33.55px;
+text-transform: uppercase;
+}
+regular{
+font-weight: 400;
+}
+
+/*tabla*/
+h6{
+font-family: Space Grotesk;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+p preguntas{
+color: #101011;
+font-family: Barlow;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+menu{
+font-family: Barlow;
+font-size: 96px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+color: #FFF;
+text-align: center;
+}
+menu bold{
+	font-weight: 700;
+}
+
+
+
+
