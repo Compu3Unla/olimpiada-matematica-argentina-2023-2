@@ -1,10 +1,48 @@
 <!doctype html>
 <html>
+	
 <head>
-<meta charset="utf-8">
-<title>Documento sin título</title>
+	<meta charset="utf-8">
+	<title>Menú hamburguesa</title> <!--¿acá se puede poner cualquier nombre?-->
+	<link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body class="menu"> <!--puse una class al body para que sea negro el fondo pero en css no se aplicó :(-->
+	<header>
+		<!--no sé si la flecha iría acá-->
+		<img src="img/flecha_simple_blanca.svg" width="90px" height="90px" alt="iconoflecha">
+	</header>
+	<main> <!--tuve que poner así las class porque tenemos arriba en light y después abajo de todo, si los ponía juntos arriba quedaba mal el orden de las palabras-->
+		<!--<section class="menuenlight">
+			<h2>SOBRE NOSOTROS</h2>
+		</section>
+		<section class="menuenbold">
+			<h2>COMPETENCIAS</h2>
+			<h2>INSCRIPCIÓN</h2>
+		</section>
+		<section class="menuenlight">
+			<h2>CONTACTO</h2>
+		</section>	-->
+		
+		<section class="menuhamburguesa">
+			<h2 class="h2menulight">SOBRE NOSOTROS</h2>
+			<h2 class="h2menubold">COMPETENCIAS</h2>
+			<h2 class="h2menulight">INSCRIPCIÓN</h2>
+			<h2 class="h2menubold">CONTACTO</h2>
+		</section> <!--¿Será que también se puede hacer de esta forma indicando la clase a la etiqueta? -->
+		
+		<section class="iconosredesmenu">
+			<a href="mailto:info@oma.org.ar" target="_blank">
+				<img src="img/email_blanco.svg" width="70px" height="70px" alt="iconoemail"/>
+			</a>
+			<a href="https://instagram.com/oma.org.ar?igshid=MWZjMTM2ODFkZg==" target="_blank">
+				<img src="img/instagram_blanco.svg" width="70px" height="70px" alt="iconoinstagram"/>
+			</a>
+			<a href="https://www.facebook.com/omalanus/?locale=es_LA" target="_blank">
+				<img src="img/facebook_blanco.svg" width="70px" height="70px" alt="iconofacebook"/>
+			</a>
+		</section>
+	</main>
+	<!--sospecho que no tiene footer-->
 </body>
 </html>
