@@ -15,11 +15,13 @@
 	border-bottom: 1px solid #ccc;
 	width: 1920px;
 	height: 65px;
+	/*position: fixed; si lo hago visible, se me va la ul que sigue. no se como solucionarlo*/
 }
 .botonera ul {
 	list-style: none;
 	display: flex;
-	gap:20px;
+	gap:20px; 
+	/* si acá le agrego el position se pega con lo de arriba asi que no se*/
 }
 /* ZONA DE BIENVENIDA OMA*/
 h1{
@@ -232,6 +234,10 @@ footer p { /*este CSS se escribe así sin punto ni hashtag para indicar si es cl
 	color: #FFF;
 	text-align: center;
 }
+.h2menulight:hover {
+	color: #101011; 
+	background-color: #5151FC;/*JU: no se bien acá cómo hacer para que el fondo del  hover digamos, quede al mismo tamaño que el texto así como está en el figma*/ 
+}
 
 .h2menubold {
 	font-family:'Space Grotesk', sans-serif;
@@ -241,9 +247,18 @@ footer p { /*este CSS se escribe así sin punto ni hashtag para indicar si es cl
 	color: #FFF;
 	text-align: center;
 }
+.h2menubold:hover {
+	color: #101011; 
+	background-color: #5151FC; /*JU: no se bien acá cómo hacer para que el fondo del  hover digamos, quede al mismo tamaño que el texto así como está en el figma*/
+}
 
-.iconosredesmenu {
- /*aplicar flex y centrar, no pude*/
+.iconosredesmenu{
+ /*aplicar flex y centrar, no pude. JU: creo que ahi va*/
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 10px; /*habria que ver acá que onda la separacao porque la f queda raro*/
 }
 
 /*SOBRE NOSOTROS*/
@@ -262,6 +277,8 @@ footer p { /*este CSS se escribe así sin punto ni hashtag para indicar si es cl
 /*MENSAJE*/
 .bodymensaje {
 	background-color: #5151FC;
+	text-align: center;
+	/*JU: habría que ver acá que onda los tamaños de los textos porque en el figma estaba mas grande el texto superior asi que ahi lo cambie, no se si la alineacion quedo bien. yy tambien agregué el header y el footer, de última también después lo corrijo*/
 }
 
 
