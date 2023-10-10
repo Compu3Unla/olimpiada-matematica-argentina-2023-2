@@ -13,8 +13,8 @@
 	padding: 0px 60px 0px 40px;
 	background-color: #f5f5f5;
 	border-bottom: 1px solid #ccc;
-    width: 1920px;
-    height: 65px;
+	width: 1920px;
+	height: 65px;
 }
 .botonera ul {
 	list-style: none;
@@ -130,7 +130,7 @@ menu bold{
 	font-weight: 700;
 }
 /*FOOTER*/
-footer{
+footer{ /*este CSS se escribe así sin punto ni hashtag para indicar si es class o id?*/
 	background-color: #101011;
 	display: flex;
 	width: 1920px;
@@ -140,8 +140,8 @@ footer{
 	justify-content: center;
 	align-items: center;
 }
-footer p {
-    font-size: 16px;
+footer p { /*este CSS se escribe así sin punto ni hashtag para indicar si es class o id?*/
+	font-size: 16px;
 	color:#F5F5F5;
 }
 .itemslegales{
@@ -220,7 +220,7 @@ footer p {
 }
 
 /*INDEX MENÚ HAMBURGUESA*/
-.menu{
+.bodymenu{
 	background-color: #000000;
 }
 
@@ -243,7 +243,32 @@ footer p {
 }
 
 .iconosredesmenu {
- /*aplicar flex y centrar, no me dejó*/
+ /*aplicar flex y centrar, no pude*/
+}
+
+/*SOBRE NOSOTROS*/
+.h3_titulo_nosotros {
+	font-family:'Space Grotesk', sans-serif;
+	font-size: 45px;
+	font-weight: 700;
+	line-height: normal;
+	color: #101011;
+}
+
+/*INSCRIPCIÓN*/
+
+
+
+/*MENSAJE*/
+.bodymensaje {
+	background-color: #5151FC;
 }
 
 
+/*COMPETENCIAS*/
+
+
+/*OLIMPÍADAS ÑANDÚ*/
+
+
+/*CONTACTO*/
