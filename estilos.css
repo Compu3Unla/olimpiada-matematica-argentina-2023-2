@@ -15,7 +15,7 @@
 	border-bottom: 1px solid #ccc;
 	width: 1920px;
 	height: 65px;
-	/*position: fixed; si lo hago visible, se me va la ul que sigue. no se como solucionarlo*/
+	position: fixed;
 }
 .botonera ul {
 	list-style: none;
@@ -90,7 +90,6 @@ h5{
 	font-variant-numeric: lining-nums proportional-nums;
 	font-family: 'Barlow', sans-serif;
 	font-size: 122px;
-	/*font-style: normal;*/
 	font-weight: 900;
 	line-height: normal;
 	letter-spacing: 33.55px;
@@ -104,7 +103,6 @@ regular{
 h6{
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: 32px;
-	/*font-style: normal;*/
 	font-weight: 700;
 	line-height: normal;
 	text-transform: uppercase;
@@ -114,7 +112,6 @@ p preguntas{
 	color: #101011;
 	font-family: 'Barlow', sans-serif;
 	font-size: 30px;
-	/*font-style: normal;*/
 	font-weight: 700;
 	line-height: normal;
 }
@@ -122,7 +119,6 @@ p preguntas{
 menu{
 	font-family: 'Barlow', sans-serif; 
 	font-size: 96px;
-	/*font-style: normal; siento que esta etiqueta no es necesaria, todas son normal, la variable se aplica con el valor de la fuente. atte: Lu*/
 	font-weight: 300;
 	line-height: normal;
 	color: #FFF;
