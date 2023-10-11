@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
+
 <head>
 	<meta charset="utf-8">
-	<title>Formulario de inscripción</title>
+	<title>OMA/ Olimpiada Matemática Argentina</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="img/logofavicon.svg">
 </head>
+
 <body>
 	<header>
 		<nav class="botonera">
@@ -13,7 +15,8 @@
 			</div>
 			<ul>
 				<li>
-					<a href="inscripcion.html"><img src="img/lapiz_registracion.svg" width="40px" height="50px" alt="registro"></a>
+					<a href="inscripcion.html"><img src="img/lapiz_registracion.svg" width="40px" height="50px"
+							alt="registro"></a>
 				</li>
 				<li>
 					<a href="menu.html"><img src="img/menu_hamburguesa.svg" width="40px" height="50px" alt="logo"></a>
@@ -23,27 +26,28 @@
 	</header>
 	<main>
 		<!-- <form method="post" action="mailto:?subject=Email enviado desde el formulario" target="_blank" enctype="text/plain"> entre el : y el ? debería un mail (según lo que entendí viendo el video, puedo estar equivocándome) por eso lo dejo en gris! -->
+		<label for="DNI">DNI:</label>
+		<input type="text" name="DNI" id="DNI" placeholder="Escribe tu número de documento" required>
 
-			<label for="DNI">DNI:</label>
-			<input type="text" name="DNI" id="DNI" placeholder="Escribe tu número de documento" required>
+		<label for="ApellidoyNombre">Apellido y nombre:</label>
+		<input type="text" name="ApellidoyNombre" id="ApellidoyNombre" maxlenght="50"
+			placeholder="Escriba su apellido(s) y nombre(s)" required>
 
-			<label for="ApellidoyNombre">Apellido y nombre:</label>
-			<input type="text" name="ApellidoyNombre" id="ApellidoyNombre" maxlenght="50" placeholder="Escriba su apellido(s) y nombre(s)" required>
+		<label for="Nivel">Nivel:</label>
+		<input type="text" name="Nivel" id="Nivel" maxlength="50"
+			placeholder="Escribe el nivel escolar al que perteneces" required>
 
-			<label for="Nivel">Nivel:</label>
-			<input type="text" name="Nivel" id="Nivel" maxlength="50" placeholder="Escribe el nivel escolar al que perteneces" required>
+		<label for="Teléfono">Teléfono(opcional):</label>
+		<input type="tel" name="Teléfono(opcional)" id="Teléfono(opcional)" placeholder="(011) ____ ____">
 
-			<label for="Teléfono">Teléfono(opcional):</label>
-			<input type="tel" name="Teléfono(opcional)" id="Teléfono(opcional)" placeholder="(011) ____ ____">
-			
-			<label for="OlimpiadaElegida">Olimpiada elegida:</label>
-			<input type="radio" name="Olimpiada elegida" id="Olimpiada elegida" required>
-		
-			<!-- hice lo que pude oki :( pero va queriendo quiero creer. también me faltó agregar el footer pero obvio lo agregaré mañana -->
-			
+		<label for="OlimpiadaElegida">Olimpiada elegida:</label>
+		<input type="radio" name="Olimpiada elegida" id="Olimpiada elegida" required>
+
+		<!-- hice lo que pude oki :( pero va queriendo quiero creer. también me faltó agregar el footer pero obvio lo agregaré mañana -->
+
 	</main>
 	<!--<footer>
-		<p>cacacac</p>
 	</footer> JU: probé agregar el footer pero no se porqué se me pega a lo que hizo more acá arriba-->
 </body>
+
 </html>
