@@ -5,6 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
 
+<<<<<<< HEAD
+=======
+/* ESTÁN USANDO MUCHAS MEDIDAS FIJAS!!!! No copien los datos duros de figma, por ejemplo, en todos los casos donde hayan establecido ancho de 1920px en realidad establecemos que es el ancho máximo de la pantalla, y no todas las pantallas son del mismo tamaño, o sea que van a necesitar medidas relativas, en porcentajes. También recuerden que si se tomaron el esfuerzo de hacer que el auto-layout funcione, es para no tener que ponerle una altura fija, sino que la altura esté dada por el contenido (objetos internos, margins, paddings y gap). Les recomiendo entrar al inspector e ir destildando algunos de los estilos que establecieron para ver si realmente cambia algo o está de más*
+También revisen el material optativo que les puede servir con el menú hamburguesa y el mensaje de inscripción.
+Un último dato sobre valores relativos, como no es posible establecer un alto de 100% porque tecnicamente el scroll es infinito, hay otro valor que es vh, o sea viewport heigth, y se usa como porcentaje. Por ejemplo, tengo una pantalla que por sí sola no alcanza los 1080px de alto pero también sé que no todas las pantallas tienen ese alto, puedo darle específicamente a esa página un heigth: 100vh; y funciona igual que con porcentajes.*/
+
+*{
+	margin: 0px;
+	padding:0px;
+}
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 /*HEADER*/
 .botonera {
 	display: flex;
@@ -15,12 +26,17 @@
 	border-bottom: 1px solid #ccc;
 	width: 1920px;
 	height: 65px;
+<<<<<<< HEAD
 	/*position: fixed; si lo hago visible, se me va la ul que sigue. no se como solucionarlo*/
+=======
+	position: fixed;
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 }
 .botonera ul {
 	list-style: none;
 	display: flex;
 	gap:20px; 
+<<<<<<< HEAD
 	/* si acá le agrego el position se pega con lo de arriba asi que no se*/
 }
 /* ZONA DE BIENVENIDA OMA*/
@@ -28,6 +44,13 @@ h1{
 	font-family: 'Space Grotesk', sans-serif; /*corregí el nombre de la fuente porque estaba mal escrita la etiqueta. atte: Lu*/
 	font-size: 260px;
 	/*font-style: normal;*/
+=======
+}
+/* ZONA DE BIENVENIDA OMA*/
+h1{
+	font-family: 'Space Grotesk', sans-serif; 
+	font-size: 260px;
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 	font-weight: 700;
 	line-height: normal;
 	color: #5151FC;
@@ -38,9 +61,14 @@ h1:hover {
 
 p{
 	color: #101011;
+<<<<<<< HEAD
 	font-family: 'Barlow', sans-serif; /*corregí el nombre de la fuente porque estaba mal escrita la etiqueta. atte: Lu*/
 	font-size: 32px;
 	/*font-style: normal;*/
+=======
+	font-family: 'Barlow', sans-serif; 
+	font-size: 32px;
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 	font-weight: 400;
 	line-height: normal;
 }
@@ -55,7 +83,10 @@ versalitas{
 h4{ /*para mí (Luana): este sería una etiqueta <li>*/
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: 24px;
+<<<<<<< HEAD
 	/*font-style: normal;*/
+=======
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 	font-weight: 500;
 	line-height: normal;
 	letter-spacing: 11.04px;
@@ -66,7 +97,10 @@ h4{ /*para mí (Luana): este sería una etiqueta <li>*/
 h3{
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: 32px;
+<<<<<<< HEAD
 	/*font-style: normal;*/
+=======
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 	font-weight: 700;
 	line-height: normal;
 	text-transform: uppercase;
@@ -77,7 +111,10 @@ h3{
 h2{
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: 45px;
+<<<<<<< HEAD
 	/*font-style: normal;*/
+=======
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 	font-weight: 700;
 	line-height: normal;
 	text-transform: uppercase;
@@ -90,7 +127,10 @@ h5{
 	font-variant-numeric: lining-nums proportional-nums;
 	font-family: 'Barlow', sans-serif;
 	font-size: 122px;
+<<<<<<< HEAD
 	/*font-style: normal;*/
+=======
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 	font-weight: 900;
 	line-height: normal;
 	letter-spacing: 33.55px;
@@ -104,7 +144,10 @@ regular{
 h6{
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: 32px;
+<<<<<<< HEAD
 	/*font-style: normal;*/
+=======
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 	font-weight: 700;
 	line-height: normal;
 	text-transform: uppercase;
@@ -114,7 +157,10 @@ p preguntas{
 	color: #101011;
 	font-family: 'Barlow', sans-serif;
 	font-size: 30px;
+<<<<<<< HEAD
 	/*font-style: normal;*/
+=======
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 	font-weight: 700;
 	line-height: normal;
 }
@@ -122,7 +168,10 @@ p preguntas{
 menu{
 	font-family: 'Barlow', sans-serif; 
 	font-size: 96px;
+<<<<<<< HEAD
 	/*font-style: normal; siento que esta etiqueta no es necesaria, todas son normal, la variable se aplica con el valor de la fuente. atte: Lu*/
+=======
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 	font-weight: 300;
 	line-height: normal;
 	color: #FFF;
@@ -162,9 +211,12 @@ footer p { /*este CSS se escribe así sin punto ni hashtag para indicar si es cl
 	width:25%;
 	align-content: center;
 }
+<<<<<<< HEAD
 .centrado a img{
 	fill:#F5F5F5;/*no logré cambiar el color de los iconos*/
 }
+=======
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 
 /*seccion 1*/
 .seccion1 {
@@ -222,6 +274,12 @@ footer p { /*este CSS se escribe así sin punto ni hashtag para indicar si es cl
 }
 
 /*INDEX MENÚ HAMBURGUESA*/
+<<<<<<< HEAD
+=======
+a{
+	text-decoration: none;
+}
+>>>>>>> 4e181c308cbdbfa0633bc864ec3afe02e1f3a6fd
 .bodymenu{
 	background-color: #000000;
 }

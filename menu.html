@@ -1,10 +1,61 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Documento sin título</title>
+	<meta charset="utf-8">
+	<title>OMA/ Olimpiada Matemática Argentina</title>
+	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="img/logofavicon.svg">
 </head>
 
-<body>
+<body class="bodymenu">
+	<header>
+		<!--no sé si la flecha iría acá-->
+		<a href="index.html"><img src="img/flecha_simple_blanca.svg" width="90px" height="90px" alt="iconoflecha">
+		</a>
+	</header>
+	<main>
+		<!--tuve que poner así las class porque tenemos arriba en light y después abajo de todo, si los ponía juntos arriba quedaba mal el orden de las palabras-->
+		<!--<section class="menuenlight">
+			<h2>SOBRE NOSOTROS</h2>
+		</section>
+		<section class="menuenbold">
+			<h2>COMPETENCIAS</h2>
+			<h2>INSCRIPCIÓN</h2>
+		</section>
+		<section class="menuenlight">
+			<h2>CONTACTO</h2>
+		</section>	-->
+
+		<section class="menuhamburguesa">
+			<a href="sobrenosotros.html">
+				<h2 class="h2menulight">SOBRE NOSOTROS</h2>
+			</a>
+			<a href="competencias.html">
+				<h2 class="h2menubold">COMPETENCIAS</h2>
+			</a>
+			<a href="inscripcion.html">
+				<h2 class="h2menubold">INSCRIPCIÓN</h2>
+			</a>
+			<a href="contacto.html">
+				<h2 class="h2menulight">CONTACTO</h2>
+			</a>
+		</section>
+		<!--¿Será que también se puede hacer de esta forma indicando la clase a la etiqueta en vez de la opción que escribí arriba? -->
+
+		<section class="iconosredesmenu">
+			<a href="mailto:info@oma.org.ar" target="_blank">
+				<img src="img/email_blanco.svg" width="70px" height="70px" alt="iconoemail" />
+			</a>
+			<a href="https://www.facebook.com/omalanus/?locale=es_LA" target="_blank">
+				<img src="img/facebook_blanco.svg" width="70px" height="70px" alt="iconofacebook" />
+			</a>
+			<a href="https://instagram.com/oma.org.ar?igshid=MWZjMTM2ODFkZg==" target="_blank">
+				<img src="img/instagram_blanco.svg" width="70px" height="70px" alt="iconoinstagram" />
+			</a>
+		</section>
+	</main>
+	<!--sospecho que no tiene footer-->
 </body>
+
 </html>
