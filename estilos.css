@@ -260,13 +260,83 @@ a{
 }
 
 /*SOBRE NOSOTROS*/
+.imgalumna {
+	padding: 0px;
+	margin: 0px; /*LU: ¿cómo hago para que el pequeño borde blanco que se ve abajo de la imagen desaparezca?, no encuentro de donde proviene*/
+}
+
+.sectionsobrenosotros {
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	/*quiero aplicar column gap pero solo del lado derecho porque el fondo violeta tiene que permanecer "pegado" a la imagen*/
+	
+}
+
 .h3_titulo_nosotros {
 	font-family:'Space Grotesk', sans-serif;
-	font-size: 45px;
+	font-size: 40px;
 	font-weight: 700;
 	line-height: normal;
 	color: #101011;
+	border-top-color: #101011;
+	padding-bottom: 15px;
+	background-color: #FFFFFF;
+	background-clip: content-box;
+	text-align: center;
+	margin:0px 50px 0px 50px;
+	/*LU: no sé si es correcto ajustar con margin el fondo de color de "QUE ES OMA".*/
+	
 }
+
+
+.caja_centro_nosotros {
+	background-color: #ABABFF;
+	border-radius: 0px 20px 20px 0px;
+	padding: 80px 30px 80px 50px;
+	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
+}
+
+.caja_derecha_nosotros {
+	padding: 80px 30px 80px 50px;
+	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
+	
+}
+.parrafos_nosotros {
+	font-family:'Barlow', sans-serif;
+	font-size: 25px;
+	font-weight: 400; /*le puse 400 porque me parecía que se lee mejor que poner 300 de peso*/
+	line-height: normal;
+	color: #101011;
+	text-align:left;
+	/*border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #101011;*/ /*LU:después vemos de resolver la línea abajo de los títulos*/
+	padding-top: 20px;
+	
+	
+}
+
+.boton_competencias {
+	font-family:'Barlow', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: normal;
+	background-color: #5151FC;
+	color: #FFFFFF;
+	padding: 10px 25px;
+	border-radius: 15px;
+	cursor: pointer;
+	margin-top: 60px;
+	border: none;
+	/*LU → para Aimé: es la primera vez que hago un botón así en css, espero estén bien las propiedades*/
+}
+
+.boton_competencias:hover {
+	background-color: #000000;
+}
+
 
 /*INSCRIPCIÓN*/
 

@@ -10,7 +10,6 @@
 
 <body>
 	<header>
-		<!--yo puedo-->
 		<nav class="botonera">
 			<div class="logo"><a href="index.html"><img src="img/omalogo.svg" width="96px" height="37px" alt="logo"></a>
 			</div>
@@ -24,25 +23,28 @@
 	</header>
 	<main>
 		<section class="sectionsobrenosotros">
-			<div> <img src="img/alumna_escribiendo.jpg" width="576px" height="691px" alt="alumnaescribiendo"> </div>
-			<div class="col_centro_nosotros">
+			<img src="img/alumna_escribiendo.jpg" width="576px" height="695px" alt="alumnaescribiendo">
+			<div class="caja_centro_nosotros">
 				<h3 class="h3_titulo_nosotros">¿QUÉ ES OMA?</h3>
-				<p>Las Olimpíadas Matemáticas son las competiciones matemáticas más conocidas que se iniciaron en el año
+				<p class="parrafos_nosotros">Las Olimpíadas Matemáticas son las competiciones matemáticas más conocidas que se iniciaron en el año
 					1894 en Hungría.
 					Estas competiciones están dirigidas a estudiantes de enseñanza media y tienen como objetivo
 					desarrollar su capacidad para resolver problemas intra y extramatemáticos.</p>
-				<!--vamos a tener que aplicar class a esta etiqueta <p>-->
+				<!--LU: no se como aplicar el fondo violeta tanto alto como ancho-->
 			</div>
-			<div class="col_derecha_nosotros">
+			<div class="caja_derecha_nosotros">
 				<h3 class="h3_titulo_nosotros">OBJETIVO</h3>
-				<p>Nos enfocamos en que los alumnos de enseñanza media -secundaria- y desde la primaria, descubran sus
+				<p class="parrafos_nosotros">Nos enfocamos en que los alumnos de enseñanza media -secundaria- y desde la primaria, descubran sus
 					aptitudes teniendo un contacto real con el que hacer matemático.</p>
-				<!--vamos a tener que aplicar class a esta etiqueta <p>-->
+				<a href="competencias.html">
+					<button class="boton_competencias">COMPETENCIAS</button>
+				</a>
+				<!--LU: no sé si es correcto aplicar la etiqueta <a> de esta forma en el botón, quise hacerlo dentro pero no funcionó-->
+				<!--EJEMPLO CON JAVA, ¿es válido usar?: <button class="boton_competencias" onclick="window.location.href='competencias.html'">COMPETENCIAS</button>-->
 			</div>
 		</section>
-		<!--Botón competencias: no sé como se pondría-->
 	</main>
-	<footer>
+	<footer class="footer">
 		<div class="itemslegales">
 			<p>Todos los derechos reservados © 2023 OMA</p>
 			<p>Términos y condiciones</p>
@@ -52,11 +54,11 @@
 			<a href="mailto:info@oma.org.ar" target="_blank">
 				<img src="img/email_blanco.svg" width="30px" height="30px" alt="iconoemail" />
 			</a>
-			<a href="https://instagram.com/oma.org.ar?igshid=MWZjMTM2ODFkZg==" target="_blank">
-				<img src="img/instagram_blanco.svg" width="30px" height="30px" alt="iconoinstagram" />
-			</a>
 			<a href="https://www.facebook.com/omalanus/?locale=es_LA" target="_blank">
 				<img src="img/facebook_blanco.svg" width="30px" height="30px" alt="iconofacebook" />
+			</a>
+			<a href="https://instagram.com/oma.org.ar?igshid=MWZjMTM2ODFkZg==" target="_blank">
+				<img src="img/instagram_blanco.svg" width="30px" height="30px" alt="iconoinstagram" />
 			</a>
 		</div>
 		<div class="omafooter">
