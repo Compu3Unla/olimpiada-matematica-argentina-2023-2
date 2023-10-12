@@ -275,9 +275,31 @@ a{
 /*MENSAJE*/
 .bodymensaje {
 	background-color: #5151FC;
-	text-align: center;
+	/*text-align: center;*/
 	/*JU: habría que ver acá que onda los tamaños de los textos porque en el figma estaba mas grande el texto superior asi que ahi lo cambie, no se si la alineacion quedo bien. yy tambien agregué el header y el footer, de última también después lo corrijo. También no supe como acomodar lo que sería el padding y eso primero porque me lo confundo con el border y también porque cuando ponía se movía TODO con footer y todo asi que nose*/
 }
+
+.mensajeinscripcion{
+	display: flex;
+	width: 1920px;
+	height: 800px;
+	padding: 100px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}/*JULI: no se si es acá el tema pero hay que ver que el fondo queda como gigante*/
+.mensajeinscripcion h2{
+	padding-bottom: 20px;
+}
+.mensajeinscripcion h3{
+	font-family: 'Barlow', sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #F5F5F5;
+}/*JULI: en figma bocetamos este texto (el h3) en barlow, pero el h2 acá es la spaceG... o se lo cambiamos acá o hay que reveer los estilos. Ahora lo dejo así, pero después lo vemos bien*/
 
 
 /*COMPETENCIAS*/
