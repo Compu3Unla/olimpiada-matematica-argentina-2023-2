@@ -269,8 +269,73 @@ a{
 }
 
 /*INSCRIPCIÓN*/
+main {
+	background-color: #F5F5F5;
+	padding: 150px;
+	width: 100%
+}
 
+main h2 {
+	padding-top: 40px;
+	padding-right: 2px;
+	padding-bottom: 40px;
+	padding-left: 50px;
+	background-color: #5151FC;
+}
 
+form {
+	padding: 100px;
+	width: 100%;
+	height: auto;
+	font-family: 'Barlow', sans-serif; 
+	font-size: 32px;
+	font-weight: 400;
+	line-height: normal;
+	border: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+form .columnaizquierda {
+	width: 50%;
+	height: auto;
+	padding: 20px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+form .columnaderecha {
+	width: 50%;
+	height: auto;
+	padding: 20px;
+	background: white;
+	border-radius: 10px;
+}
+
+label {
+	border-radius: 5px;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	font-family: 'Barlow', sans-serif; 
+	font-size: 32px;
+	font-weight: 400;
+	line-height: normal;
+	border-radius: 5px;
+	border: none;
+}
+
+input [type=radio] {
+	width: auto;
+	height: auto;
+}
+
+.enviar {
+	background-color: #5151FC;
+	/*MO: estoy segura que así no debería ir (ni siquiera sé si la section que le armé específicamente para el botón tiene algo de sentido o directamente está mal) ya tengo la cabeza medio quemada :( */
+} 
 
 /*MENSAJE*/
 .bodymensaje {
