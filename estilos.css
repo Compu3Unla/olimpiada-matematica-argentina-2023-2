@@ -40,8 +40,7 @@ h1{
 }
 h1:hover {
 	color: #101011;
-}
-
+	}
 p{
 	color: #101011;
 	font-family: 'Barlow', sans-serif; 
@@ -49,11 +48,12 @@ p{
 	font-weight: 400;
 	line-height: normal;
 }
-p .bold{
+.bold{
 	font-weight: 900;
 }
-.versalitas {
+.mayuscula {
   text-transform: uppercase;
+  padding: 20px;
 }
 
 /*LISTADO DE CUALIDADES OMA*/
