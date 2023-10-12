@@ -341,13 +341,13 @@ a{
 
 /*INSCRIPCIÓN*/
 
-main {
+.formulario {
 	background-color: #F5F5F5;
 	padding: 150px;
 	width: 100%
 }
 
-main h2 {
+.formulario h2 {
 	padding-top: 40px;
 	padding-right: 2px;
 	padding-bottom: 40px;
