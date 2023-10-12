@@ -274,8 +274,79 @@ a{
 }
 
 /*INSCRIPCIÓN*/
+main {
+	background-color: #F5F5F5;
+	padding: 150px;
+	width: 100%
+}
 
+main h2 {
+	padding-top: 40px;
+	padding-right: 2px;
+	padding-bottom: 40px;
+	padding-left: 50px;
+	background-color: #5151FC;
+}
 
+form {
+	padding: 40px;
+	width: 100%;
+	height: auto;
+	font-family: 'Barlow', sans-serif; 
+	font-size: 32px;
+	font-weight: 400;
+	line-height: normal;
+	/*border: 1px solid black;*/ 
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+form .columnaizquierda {
+	width: 50%;
+	padding: 20px;
+	background-color: white;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+form .columnaderecha {
+	width: 50%;
+	padding: 20px;
+	background: white;
+	border-radius: 10px;
+}
+
+label {
+	border-radius: 5px;
+	display: block;
+	height: 40px;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	font-family: 'Barlow', sans-serif; 
+	font-size: 32px;
+	font-weight: 400;
+	line-height: normal;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 5px;
+	background-color: #CFCFCF;
+}
+
+.enviar {
+	margin-top: 30px;
+	width: 20%;
+	background-color: #5151FC;
+	border-radius: 5px;
+	color: white;
+}
+.label, .input {
+	display: inline-block;
+	float: left;
+}
 
 /*MENSAJE*/
 .bodymensaje {

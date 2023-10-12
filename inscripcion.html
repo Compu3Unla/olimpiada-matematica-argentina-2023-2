@@ -27,28 +27,54 @@
 	<main>
 		<div>
 			<h2>Inscripción</h2>
-			<form method="post" action="mailto:?subject=Email enviado desde el formulario" target="_blank"
-				enctype="text/plain">
+			<form method="post" action="mailto:morenafontaina@gmail.com?subject=Email enviado desde el formulario" target="_blank" enctype="text/plain">
+			
+			<section class="columnaizquierda">
 				<label for="DNI">DNI:</label>
-				<input type="text" name="DNI" id="DNI" placeholder="Escribe tu número de documento" required>
+				<input type="text" name="dni" id="dni" placeholder="Escribí tu número de documento" required>
 
-				<label for="ApellidoyNombre">Apellido y nombre:</label>
-				<input type="text" name="ApellidoyNombre" id="ApellidoyNombre" maxlenght="50"
-					placeholder="Escriba su apellido(s) y nombre(s)" required>
+				<label for="apellidoynombre">Apellido y nombre:</label>
+				<input type="text" name="apellidoynombre" id="apellidoynombre" maxlenght="50" placeholder="Escribí tu apellido(s) y nombre(s)" required>
 
-				<label for="Nivel">Nivel:</label>
-				<input type="text" name="Nivel" id="Nivel" maxlength="50"
-					placeholder="Escribe el nivel escolar al que perteneces" required>
+				<label for="nivel">Nivel:</label>
+				<input type="text" name="nivel" id="nivel" maxlength="50" placeholder="Escribí el nivel escolar al que perteneces" required>
 
-				<label for="Teléfono">Teléfono(opcional):</label>
-				<input type="tel" name="Teléfono(opcional)" id="Teléfono(opcional)" placeholder="(011) ____ ____">
+				<label for="telefono">Teléfono (opcional):</label>
+				<input type="tel" name="teléfono(opcional)" id="teléfono(opcional)" placeholder="(011) ____ ____">
 
-				<label for="OlimpiadaElegida">Olimpiada elegida:</label>
-				<input type="radio" name="Olimpiada elegida" id="Olimpiada elegida" required>
+				<label for="olimpiadaelegida">Olimpiada elegida:</label>
+				<select id="olimpiadaelegida" name="olimpiadaelegida">
+				<option value="niandu">Ñandú </option>
+				<option value="oma">OMA </option>
+				<option value="internacional">Internacional </option>
+				<option value="torneos">Torneos </option>
+				</select>
+				<input type="submit" value="enviar" formenctype="text/plain" class="enviar">
+			</section>
+				
+			<section class="columnaderecha">
+				<label for="escuela">Escuela:</label>
+				<input type="text" name="escuela" id="escuela" placeholder="Escribí el nombre de tu escuela" required>
+
+				<label for="provinciadelaescuela">Provincia de la escuela:</label>
+				<input type="text" name="provinciadelaescuela" id="provinciadelaescuela" placeholder="Escribí la provincia de tu escuela" required>
+
+				<label for="mail">Mail:</label>
+				<input type="text" name="mail" id="mail" maxlength="50" placeholder="Escribí tu correo electrónico" required>
+
+				<label for="fechadenacimiento">Fecha de nacimiento:</label>
+				<input type="date" name="fechadenacimiento" id="fechadenacimiento" required>
+
+				<label for="localidadelegida">Localidad elegida:</label>
+				<select id="localidadelegida" name="localidadelegida">
+				<option value="adrogue">Adrogué </option>
+				<option value="burzaco">Burzaco </option>
+				<option value="banfield">Banfield </option>
+				<option value="lomasdezamora">Lomas de Zamora </option>
+				</select>
+			</section>
+			</form>
 		</div>
-
-		<!-- hice lo que pude oki :( pero va queriendo quiero creer. también me faltó agregar el footer pero obvio lo agregaré mañana -->
-
 	</main>
 	<footer>
 		<div class="itemslegales">
@@ -60,11 +86,11 @@
 			<a href="mailto:info@oma.org.ar" target="_blank">
 				<img src="img/email_blanco.svg" width="30px" height="30px" alt="iconoemail" />
 			</a>
-			<a href="https://instagram.com/oma.org.ar?igshid=MWZjMTM2ODFkZg==" target="_blank">
-				<img src="img/instagram_blanco.svg" width="30px" height="30px" alt="iconoinstagram" />
-			</a>
 			<a href="https://www.facebook.com/omalanus/?locale=es_LA" target="_blank">
 				<img src="img/facebook_blanco.svg" width="30px" height="30px" alt="iconofacebook" />
+			</a>
+			<a href="https://instagram.com/oma.org.ar?igshid=MWZjMTM2ODFkZg==" target="_blank">
+				<img src="img/instagram_blanco.svg" width="30px" height="30px" alt="iconoinstagram" />
 			</a>
 		</div>
 		<div class="omafooter">
