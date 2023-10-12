@@ -284,16 +284,16 @@ main h2 {
 }
 
 form {
-	padding: 100px;
+	padding: 40px;
 	width: 100%;
 	height: auto;
 	font-family: 'Barlow', sans-serif; 
 	font-size: 32px;
 	font-weight: 400;
 	line-height: normal;
-	border: 1px solid black;
+	/*border: 1px solid black;*/ 
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 form .columnaizquierda {
@@ -314,10 +314,14 @@ form .columnaderecha {
 
 label {
 	border-radius: 5px;
+	display: block;
+	height: 40px;
+	background-color: coral;
 }
 
 input {
 	width: 100%;
+	height: 40px;
 	padding: 10px;
 	font-family: 'Barlow', sans-serif; 
 	font-size: 32px;
@@ -325,6 +329,7 @@ input {
 	line-height: normal;
 	border-radius: 5px;
 	border: none;
+	margin-bottom: 5px;
 }
 
 input [type=radio] {
@@ -332,10 +337,14 @@ input [type=radio] {
 	height: auto;
 }
 
-.enviar {
+.button-form {
+	width: 10%;
+	height: 60px;
 	background-color: #5151FC;
-	/*MO: estoy segura que así no debería ir (ni siquiera sé si la section que le armé específicamente para el botón tiene algo de sentido o directamente está mal) ya tengo la cabeza medio quemada :( */
-} 
+	border-radius: 5px;
+	color: white;
+}
+
 
 /*MENSAJE*/
 .bodymensaje {
