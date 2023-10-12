@@ -298,15 +298,15 @@ form {
 
 form .columnaizquierda {
 	width: 50%;
-	height: auto;
 	padding: 20px;
 	background-color: white;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
 }
 
 form .columnaderecha {
 	width: 50%;
-	height: auto;
 	padding: 20px;
 	background: white;
 	border-radius: 10px;
@@ -316,12 +316,10 @@ label {
 	border-radius: 5px;
 	display: block;
 	height: 40px;
-	background-color: coral;
 }
 
 input {
 	width: 100%;
-	height: 40px;
 	padding: 10px;
 	font-family: 'Barlow', sans-serif; 
 	font-size: 32px;
@@ -330,21 +328,20 @@ input {
 	border-radius: 5px;
 	border: none;
 	margin-bottom: 5px;
+	background-color: #CFCFCF;
 }
 
-input [type=radio] {
-	width: auto;
-	height: auto;
-}
-
-.button-form {
-	width: 10%;
-	height: 60px;
+.enviar {
+	margin-top: 30px;
+	width: 20%;
 	background-color: #5151FC;
 	border-radius: 5px;
 	color: white;
 }
-
+.label, .input {
+	display: inline-block;
+	float: left;
+}
 
 /*MENSAJE*/
 .bodymensaje {
