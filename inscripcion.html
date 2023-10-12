@@ -31,45 +31,48 @@
 			
 			<section class="columnaizquierda">
 				<label for="DNI">DNI:</label>
-				<input type="text" name="DNI" id="DNI" placeholder="Escribe tu número de documento" required>
+				<input type="text" name="dni" id="dni" placeholder="Escribí tu número de documento" required>
 
-				<label for="ApellidoyNombre">Apellido y nombre:</label>
-				<input type="text" name="ApellidoyNombre" id="ApellidoyNombre" maxlenght="50" placeholder="Escriba su apellido(s) y nombre(s)" required>
+				<label for="apellidoynombre">Apellido y nombre:</label>
+				<input type="text" name="apellidoynombre" id="apellidoynombre" maxlenght="50" placeholder="Escribí tu apellido(s) y nombre(s)" required>
 
-				<label for="Nivel">Nivel:</label>
-				<input type="text" name="Nivel" id="Nivel" maxlength="50" placeholder="Escribe el nivel escolar al que perteneces" required>
+				<label for="nivel">Nivel:</label>
+				<input type="text" name="nivel" id="nivel" maxlength="50" placeholder="Escribí el nivel escolar al que perteneces" required>
 
-				<label for="Teléfono">Teléfono(opcional):</label>
-				<input type="tel" name="Teléfono(opcional)" id="Teléfono(opcional)" placeholder="(011) ____ ____">
+				<label for="telefono">Teléfono (opcional):</label>
+				<input type="tel" name="teléfono(opcional)" id="teléfono(opcional)" placeholder="(011) ____ ____">
 
-				<p>Olimpiada elegida:</p>
-				<label for="Olimpiadaelegida">Ñandú <input type="radio" name="Olimpiadaelegida" value="Ñandú" id="Ñandú"></label>
-				<label for="Olimpiadaelegida">OMA <input type="radio" name="Olimpiadaelegida" value="OMA" id="OMA"></label>
-				<label for="Olimpiadaelegida">Internacional <input type="radio" name="Olimpiadaelegida" value="Internacional" id="Internacional"></label>
-				<label for="Olimpiadaelegida">Torneos <input type="radio" name="Olimpiadaelegida" value="Torneos" id="Torneos"></label>
+				<label for="olimpiadaelegida">Olimpiada elegida:</label>
+				<select id="olimpiadaelegida" name="olimpiadaelegida">
+				<option value="niandu">Ñandú </option>
+				<option value="oma">OMA </option>
+				<option value="internacional">Internacional </option>
+				<option value="torneos">Torneos </option>
+				</select>
+				<input type="submit" value="enviar" formenctype="text/plain" class="enviar">
 			</section>
 				
 			<section class="columnaderecha">
-				<label for="Escuela">Escuela:</label>
-				<input type="text" name="Escuela" id="Escuela" placeholder="Escribe el nombre de tu escuela" required>
+				<label for="escuela">Escuela:</label>
+				<input type="text" name="escuela" id="escuela" placeholder="Escribí el nombre de tu escuela" required>
 
-				<label for="Provinciadelaescuela">Provincia de la escuela:</label>
-				<input type="text" name="Provinciadelaescuela" id="Provinciadelaescuela" required>
+				<label for="provinciadelaescuela">Provincia de la escuela:</label>
+				<input type="text" name="provinciadelaescuela" id="provinciadelaescuela" placeholder="Escribí la provincia de tu escuela" required>
 
-				<label for="Mail">Mail:</label>
-				<input type="text" name="Mail" id="Mail" maxlength="50" placeholder="Escribe tu correo electrónico" required>
+				<label for="mail">Mail:</label>
+				<input type="text" name="mail" id="mail" maxlength="50" placeholder="Escribí tu correo electrónico" required>
 
-				<label for="Fechadenacimiento">Fecha de nacimiento:</label>
-				<input type="date" name="Fechadenacimiento" id="Fechadenacimiento" required>
+				<label for="fechadenacimiento">Fecha de nacimiento:</label>
+				<input type="date" name="fechadenacimiento" id="fechadenacimiento" required>
 
-				<p>Localidad de la escuela:</p>
-				<label for="Localidaddelaescuela">Adrogué <input type="radio" name="Localidaddelaescuela" value="Adrogué" id="Adrogué"></label>
-				<label for="Localidaddelaescuela">Burzaco <input type="radio" name="Localidaddelaescuela" value="Burzaco" id="Burzaco"></label>
-				<label for="Localidaddelaescuela">Banfield <input type="radio" name="Localidaddelaescuela" value="Banfield" id="Banfield"></label>
-				<label for="Localidaddelaescuela">Lomas de Zamora <input type="radio" name="Localidaddelaescuela" value="LomasdeZamora" id="LomasdeZamora"></label>
+				<label for="localidadelegida">Localidad elegida:</label>
+				<select id="localidadelegida" name="localidadelegida">
+				<option value="adrogue">Adrogué </option>
+				<option value="burzaco">Burzaco </option>
+				<option value="banfield">Banfield </option>
+				<option value="lomasdezamora">Lomas de Zamora </option>
+				</select>
 			</section>
-			
-			<input type="submit" value="Enviar" formenctype="text/plain" class="button-form">
 			</form>
 		</div>
 	</main>
