@@ -5,6 +5,9 @@
 	<meta charset="utf-8">
 	<title>OMA/ Olimpiada Matemática Argentina</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
+	<!--galeria-->
+	<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+	<link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="img/logofavicon.svg"><!--sorpesa! tenemos favicon-->
 </head>
 
@@ -47,12 +50,22 @@
 			</div>
 		</section>
 		<section class="seccion3">
-			<div>
+			<div class="introdescripcion">
 				<p class="mayuscula">Resolver problemas matemáticos simples pero difíciles, que requieren sentido común
 					y
 					conocimientos
 					básicos de matemáticas escolares.</p>
-				<h3>botón</h3>
+				<a href="inscripcion.html"><button class="boton_competencias">ANOTATE</button></a>
+			</div>
+			<div class="galeria">
+				<h3>Campeones de otros torneos</h3>
+				<a href="image-a.jpg" data-fancybox="gallery" data-caption="Foto #1">
+					<img src="img/oma_1.jpg" />
+				</a>
+
+				<a href="image-b.jpg" data-fancybox="gallery" data-caption="Foto #2">
+					<img src="img/oma_2.jpg" />
+				</a>
 			</div>
 		</section>
 		<section class="seccion4">
@@ -79,6 +92,8 @@
 			<p>OMA - Argentina</p>
 		</div>
 	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
