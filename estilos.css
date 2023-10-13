@@ -67,6 +67,9 @@ li{
 	list-style-type: none;
 	font-variant: all-small-caps;
 }
+li normal{
+	letter-spacing: 0;
+}
 
 /*CAMPEONES*/
 h3{
@@ -88,6 +91,9 @@ h2{
 	line-height: normal;
 	text-transform: uppercase;
 	color: #F5F5F5;
+	background-color: #5151FC;
+	padding: 20px 20px 20px 60px;
+	max-width: 30%;
 }
 
 /*TÍTULO: MES OCTUBRE*/
@@ -100,18 +106,10 @@ h5{
 	line-height: normal;
 	letter-spacing: 33.55px;
 	text-transform: uppercase;
+	padding: 100px 0px;
 }
 .regular{
 	font-weight: 400;
-}
-
-/*TABLA DE ACTIVIDADES*/
-h6{
-	font-family: 'Space Grotesk', sans-serif;
-	font-size: 32px;
-	font-weight: 700;
-	line-height: normal;
-	text-transform: uppercase;
 }
 
 p preguntas{
@@ -233,6 +231,20 @@ footer p {
 	width:50%;
 	background:#F5F5F5 ;
 	padding: 100px;
+}
+.seccion4{
+	height:1589px;
+	padding-left: 150px;
+	background-color: #101011;
+	padding-top: 60px;
+}
+.seccion5{
+	background-color: #5151FC;
+	height: 1245px;
+}
+.seccion6{
+	background-color: #F5F5F5;
+	height:1627px;
 }
 /*INDEX MENÚ HAMBURGUESA*/
 a{
