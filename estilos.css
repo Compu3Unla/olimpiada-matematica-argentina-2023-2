@@ -273,7 +273,6 @@ a{
 .sectionsobrenosotros {
 	display:flex;
 	flex-direction: row;
-	align-items: center;
 	justify-content: center;
 	/*quiero aplicar column gap pero solo del lado derecho porque el fondo violeta tiene que permanecer "pegado" a la imagen*/
 }
@@ -284,12 +283,12 @@ a{
 	font-weight: 700;
 	line-height: normal;
 	color: #101011;
-	border-top-color: #101011;
-	padding-bottom: 15px;
+	margin-bottom: 10px;
 	background-color: #FFFFFF;
-	background-clip: content-box;
-	text-align: center;
-	margin:0px 50px 0px 50px;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 3px 30px 3px 30px;
 	/*LU: no sé si es correcto ajustar con margin el fondo de color de "QUE ES OMA".*/
 }
 
@@ -298,11 +297,21 @@ a{
 	background-color: #ABABFF;
 	border-radius: 0px 20px 20px 0px;
 	padding: 80px 30px 80px 50px;
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%; /*no sé si esto es correcto*/
 	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
 }
 
 .caja_derecha_nosotros {
 	padding: 80px 30px 80px 50px;
+	display:flex;
+	align-items: left;
+	flex-direction: column;
+	justify-content:center;
+	width: 100%; /*no sé si esto es correcto*/
 	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
 	
 }
@@ -312,11 +321,15 @@ a{
 	font-weight: 400; /*le puse 400 porque me parecía que se lee mejor que poner 300 de peso*/
 	line-height: normal;
 	color: #101011;
-	text-align:left;
 	/*border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #101011;*/ /*LU:después vemos de resolver la línea abajo de los títulos*/
-	padding-top: 20px;
+	margin-top: 20px;
+	display:flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	text-align:left;
 }
 
 .boton_competencias {
