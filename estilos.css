@@ -467,6 +467,12 @@ input {
 
 
 /*CONTACTO*/
+.section_principal_contacto {
+	background-color: #5151FC;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
 
 
 /*ANIMACIONES*/
