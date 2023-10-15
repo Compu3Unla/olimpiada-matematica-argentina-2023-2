@@ -32,7 +32,8 @@
 				</div>
 				<div class="datos_contacto"> <!--LU: supuse que estos cuatro divs pueden tener la misma clase-->
 					<img src="img/ubicacion_mapa.svg" width="45px" height="45px" alt="icono_ubicacion">
-					<address>Santa Fe 3312 - 9° piso - CABA</address> <!--LU RECORDATORIO: aplicar la etiqueta especial para esto-->
+					<a href="https://maps.app.goo.gl/Zqk5JtHiyzheGZmo7" class="a_contacto" target="_blank">Santa Fe 3312 - 9° piso - CABA</a>
+					<!--Consulta para Aimé: a la dirección le puse esta etiqueta <a> pero tal vez también podría ser <adress>?-->
 				</div>
 				<div class="datos_contacto"> <!--LU: supuse que estos cuatro divs pueden tener la misma clase-->
 					<img src="img/instagram.svg" width="45px" height="45px" alt="icono_instagram">
@@ -45,12 +46,14 @@
 			</section>
 			<section class="section_emailnovedades">
 				<img src="img/email.svg" width="45px" height="45px" alt="icono_email">
-					<p class="texto_novedades">Enterate de las novedades</p>
-					<a href="mailto:info@oma.org.ar" target="_blank">info@oma.org.ar</a>
+					<div class="dosrenglones_novedades">
+						<p class="texto_novedades">Enterate de las novedades</p>
+						<a href="mailto:info@oma.org.ar" class="a_contacto" target="_blank">info@oma.org.ar</a>
+					</div>
 			</section>
-			<section>
-			<!--Colocar imagen del mapa de ubicación-->
-			</section>
+		</section>
+		<section class="imagen_der_contacto">
+				<img src="img/alumna_escribiendo.jpg" alt="img_ninia"><!--Colocar imagen del mapa de ubicación, ancho y alto-->
 		</section>
 		
 	</main>

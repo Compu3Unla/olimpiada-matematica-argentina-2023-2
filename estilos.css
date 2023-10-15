@@ -474,6 +474,7 @@ input {
 	justify-content: center;*/
 }
 
+
 .titulo_contacto {
 	font-family:'Space Grotesk', sans-serif;
 	font-size: 45px;
@@ -499,6 +500,12 @@ input {
 	border: 1px solid #000;
 }
 
+.dosrenglones_novedades {
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+}
+
 
 .datos_contacto, .section_emailnovedades{ 
 	display: flex;
@@ -509,7 +516,7 @@ input {
 	padding: 15px 0px 15px 50px;
 }
 
-.a_contacto, .texto_novedades {
+.a_contacto {
 	text-decoration: none;
 	color: #101011;
 	font-family: 'Barlow', sans-serif;
@@ -518,7 +525,10 @@ input {
 }
 
 .texto_novedades {
+	font-family: 'Barlow', sans-serif;
+	color: #101011;
 	font-weight: 700;
+	font-size: 25px;
 }
 
 
