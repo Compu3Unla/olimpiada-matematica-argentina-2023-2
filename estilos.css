@@ -23,7 +23,7 @@ Un último dato sobre valores relativos, como no es posible establecer un alto d
 	border-bottom: 1px solid #ccc;
 	width: 1920px;
 	height: 65px;
-	position: fixed;
+	/*position: fixed;*/
 }
 .botonera ul {
 	list-style: none;
@@ -474,6 +474,21 @@ input {
 	justify-content: center;*/
 }
 
+.titulo_contacto {
+	font-family:'Space Grotesk', sans-serif;
+	font-size: 45px;
+	font-weight: 700;
+	background-color: #000000;
+	width: 35%; /*LU: el rectángulo negro le puse el ancho de esta forma en vez de agregarle padding porque superaba los 100px, espero sea viable hacerlo así*/
+	padding: 45px 70px 45px 0px;
+	display:flex;
+	justify-content:flex-end;
+	text-align:right;
+	
+
+	/*padding: 30px 0px 30px 200px;
+	margin: 0px 1000px 0px 0px;*/ /*LU: esto es lo como había intentado hacer el rectángulo pero se que está mal ya que supera los 100px*/
+}
 
 /*ANIMACIONES*/
 @keyframes movimiento {
