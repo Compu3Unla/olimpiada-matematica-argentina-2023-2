@@ -23,7 +23,7 @@ Un último dato sobre valores relativos, como no es posible establecer un alto d
 	border-bottom: 1px solid #ccc;
 	width: 1920px;
 	height: 65px;
-	/*position: fixed;*/
+	position: fixed;
 }
 .botonera ul {
 	list-style: none;
