@@ -479,7 +479,7 @@ input {
 	font-size: 45px;
 	font-weight: 700;
 	background-color: #000000;
-	width: 35%; /*LU: el rectángulo negro le puse el ancho de esta forma en vez de agregarle padding porque superaba los 100px, espero sea viable hacerlo así*/
+	width: 30%; /*LU: el rectángulo negro le puse el ancho de esta forma en vez de agregarle padding porque superaba los 100px, espero sea viable hacerlo así*/
 	padding: 35px 70px 35px 0px; /*LU: este padding del rectángulo negro tendría que ser igual en todos los títulos de los otros html principalmente el alto*/
 	display:flex;
 	justify-content:flex-end;
@@ -490,14 +490,35 @@ input {
 	margin: 0px 1000px 0px 0px;*/ /*LU: esto es lo como había intentado hacer el rectángulo pero se que está mal ya que supera los 100px*/
 }
 
-.section_infosuperior {
+.section_infosuperior, .section_emailnovedades {
 	background-color: #F5F5F5;
-	width: 45%;
-	margin: 50px 0px 0px 50px;
-	border-radius: 40px;
+	width: 40%;
+	margin: 50px 0px 0px 175px; /*acá tengo que ver como hacer para alinear los iconos con el título sin poner 175px de margin*/
+	border-radius: 35px;
 	border-color: #000000;
 	border: 1px solid #000;
+}
 
+
+.datos_contacto, .section_emailnovedades{ 
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-start;
+	align-items: center;
+	gap: 6%; /*LU: emm acá quise separar el icono de la oración.*/
+	padding: 15px 0px 15px 50px;
+}
+
+.a_contacto, .texto_novedades {
+	text-decoration: none;
+	color: #101011;
+	font-family: 'Barlow', sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+}
+
+.texto_novedades {
+	font-weight: 700;
 }
 
 
