@@ -178,29 +178,30 @@ footer p {
 	display: flex;
 	width: 100%;
 	height: 750px;
-	gap: 10px;
 	padding-top:80px;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
 }
 .presentacion {
 	display: flex;
 	width: 50%;
 	height: 701px;
-	padding: 0px 55px;
-	gap: 10px;
 	box-sizing: border-box;
 	justify-content: center;
 	align-items: center;
+	box-sizing: border-box;
 }
 .presentacion img{
 	display: flex;
-	padding: 113px 0px 117px 464px;
 	align-items: flex-start;
-	gap: 5px;
 }
 .presentacion2 {
 	display:flex;
 	flex-direction: column;
 	padding-top:80px;
+	max-width: 50%;
+	box-sizing: border-box;
 }
 .flecha{
 	display: flex;
@@ -241,12 +242,23 @@ footer p {
 	background: #ABABFF;
 	box-sizing: border-box;
 	}
-.galeria{
+.carrousel ul{
+	list-style:none;
+}
+.carrousel-menu{
+	display: none;
+}
+.carrousel-fotos{
+	display: flex;
+	gap:10px;
+	overflow:auto;
+}
+/*.galeria{
 	width:50%;
 	background:#F5F5F5 ;
 	padding: 100px;
 	box-sizing: border-box;
-}
+}*/
 .seccion4{
 	height:1589px;
 	padding-left: 150px;
