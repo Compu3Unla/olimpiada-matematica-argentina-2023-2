@@ -21,9 +21,10 @@ Un último dato sobre valores relativos, como no es posible establecer un alto d
 	padding: 0px 60px 0px 40px;
 	background-color: #f5f5f5;
 	border-bottom: 1px solid #ccc;
-	width: 1920px;
+	width: 100%;
 	height: 65px;
 	position: fixed;
+	box-sizing: border-box;
 }
 .botonera ul {
 	list-style: none;
@@ -48,12 +49,18 @@ p{
 	font-weight: 400;
 	line-height: normal;
 }
-.bold{
+.p .bold{
 	font-weight: 900;
+}
+p.subtitulo{
+	color:#F5F5F5;
+	background-color: #000000;
+	padding:10px;
+	text-align: center;
 }
 .mayuscula {
   text-transform: uppercase;
-  padding: 20px;
+  max-width: 650px;
 }
 
 /*LISTADO DE CUALIDADES OMA*/
@@ -67,6 +74,9 @@ li{
 	list-style-type: none;
 	font-variant: all-small-caps;
 }
+li normal{
+	letter-spacing: 0;
+}
 
 /*CAMPEONES*/
 h3{
@@ -76,6 +86,8 @@ h3{
 	line-height: normal;
 	text-transform: uppercase;
 	color: #F5F5F5;
+	background-color: #101011;
+	padding-left: 20px;
 }
 
 /*TÍTULOS*/
@@ -86,6 +98,9 @@ h2{
 	line-height: normal;
 	text-transform: uppercase;
 	color: #F5F5F5;
+	background-color: #5151FC;
+	padding: 20px 20px 20px 60px;
+	max-width: 30%;
 }
 
 /*TÍTULO: MES OCTUBRE*/
@@ -96,20 +111,12 @@ h5{
 	font-size: 122px;
 	font-weight: 900;
 	line-height: normal;
-	letter-spacing: 33.55px;
+	letter-spacing: 32px;
 	text-transform: uppercase;
+	padding: 100px 0px;
 }
 .regular{
 	font-weight: 400;
-}
-
-/*TABLA DE ACTIVIDADES*/
-h6{
-	font-family: 'Space Grotesk', sans-serif;
-	font-size: 32px;
-	font-weight: 700;
-	line-height: normal;
-	text-transform: uppercase;
 }
 
 p preguntas{
@@ -135,12 +142,13 @@ menu bold{
 footer{ 
 	background-color: #101011;
 	display: flex;
-	width: 1920px;
+	width: 100%;
 	height: 126px;
 	flex-shrink: 0;
 	padding: 0px 60px 0px 40px;
 	justify-content: center;
 	align-items: center;
+	box-sizing: border-box;
 }
 footer p { 
 	font-size: 16px;
@@ -150,12 +158,14 @@ footer p {
 	width: 50%;
 	display:flex;
 	flex-wrap: wrap;
-	gap:60px;
+	gap:40px;
 }
 .redesenfooter{
 	display:flex;
 	width:25%;
 	align-content: center;
+	gap:10px;
+	padding-left: 100px;
 }
 .omafooter{
 	display:flex;
@@ -163,31 +173,35 @@ footer p {
 	align-content: center;
 }
 
-/*seccion 1*/
+/*INDEX*/
 .seccion1 {
 	display: flex;
 	width: 100%;
 	height: 750px;
-	gap: 10px;
 	padding-top:80px;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
 }
 .presentacion {
 	display: flex;
-	width: 883px;
+	width: 50%;
 	height: 701px;
-	padding: 0px 55px;
-	gap: 10px;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
 }
 .presentacion img{
 	display: flex;
-	padding: 113px 0px 117px 464px;
 	align-items: flex-start;
-	gap: 5px;
 }
 .presentacion2 {
 	display:flex;
 	flex-direction: column;
 	padding-top:80px;
+	max-width: 50%;
+	box-sizing: border-box;
 }
 .flecha{
 	display: flex;
@@ -199,7 +213,6 @@ footer p {
 	padding-bottom: 60px;
 	animation: movimiento 1s ease-in-out infinite;
 }
-/*SECCIÓN2*/
 .seccion2 {
 	display: flex;
 	height: 700px;
@@ -217,9 +230,48 @@ footer p {
 	gap: 80px;
 }
 .seccion3{
-	height: 942px;
+	display: flex;
+}
+.introdescripcion{
+	display:flex;
+	align-content: center;
+	flex-direction: column;
+	gap: 100px;
+	padding: 300px 200px;
 	width:50%;
-	background: #ABABFF;	
+	background: #ABABFF;
+	box-sizing: border-box;
+	}
+.carrousel ul{
+	list-style:none;
+}
+.carrousel-menu{
+	display: none;
+}
+.carrousel-fotos{
+	display: flex;
+	gap:10px;
+	overflow:auto;
+}
+/*.galeria{
+	width:50%;
+	background:#F5F5F5 ;
+	padding: 100px;
+	box-sizing: border-box;
+}*/
+.seccion4{
+	height:1589px;
+	padding-left: 150px;
+	background-color: #101011;
+	padding-top: 60px;
+}
+.seccion5{
+	background-color: #5151FC;
+	height: 1245px;
+}
+.seccion6{
+	background-color: #F5F5F5;
+	height:1627px;
 }
 /*INDEX MENÚ HAMBURGUESA*/
 a{
@@ -352,6 +404,54 @@ a{
 }
 
 
+
+/*COMPETENCIAS*/
+
+.competencias{
+	background-color: #ABABFF;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	padding: 80px 40px;
+	/*justify-content: space-between; JULI: hay que ver bien acá el tema de los espacios*/
+	align-items: center;
+}
+
+.tarjetas{
+	/*display: flex; JULI: no se si esto es necesario, hay que probar*/
+	padding: 30px;
+	flex-direction: column;
+	/*align-items: center;*/
+	/*gap: 35px; JULI: hay que ver bien acá el tema de los espacios entre las tarjetas*/
+	border-radius: 40px;
+	border: 1px solid #000;
+	background-color: #FFFFFF;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tarjetas img{
+	border-radius: 20px;
+}
+
+.pcompetencias{
+	font-family: 'Darker Grotesque', sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+	font-style: normal;
+	padding-top: 20px;
+}
+
+.ptarjetas {
+	color: #101011;
+	font-family: 'Barlow', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	border-top: 3px solid #101011;
+	padding-top: 30px;
+}
+
 /*INSCRIPCIÓN*/
 
 .formulario {
@@ -425,7 +525,6 @@ input {
 }
 .label, .input {
 	display: inline-block;
-	float: left;
 }
 
 
@@ -464,6 +563,36 @@ input {
 
 
 /*OLIMPÍADAS ÑANDÚ*/
+
+.niandu {
+	width: 100%;
+	height: 1000px;
+	background-color: #ABABFF;
+}
+
+.niandu h2 {
+	width: 20%;
+	background-color: #101011;
+	padding: 120px 10px 50px 30px;
+}
+
+.informacion {
+	background-color: white;
+	border-radius: 50px;
+	border:solid #101011;
+	margin: 50px 50px 0px 50px;
+}
+
+.fotogrupal {
+	padding: 40px 0px 0px 40px;
+	display: flex;
+}
+
+.participacion h3 {
+	color: #101011;
+	display: flex;
+	flex-direction: row-reverse;
+}
 
 
 /*CONTACTO*/
@@ -545,3 +674,5 @@ input {
     transform: translateY(0px);
   }
 }
+
+
