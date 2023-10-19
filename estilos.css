@@ -325,7 +325,6 @@ a{
 .sectionsobrenosotros {
 	display:flex;
 	flex-direction: row;
-	align-items: center;
 	justify-content: center;
 	/*quiero aplicar column gap pero solo del lado derecho porque el fondo violeta tiene que permanecer "pegado" a la imagen*/
 }
@@ -336,12 +335,12 @@ a{
 	font-weight: 700;
 	line-height: normal;
 	color: #101011;
-	border-top-color: #101011;
-	padding-bottom: 15px;
+	margin-bottom: 10px;
 	background-color: #FFFFFF;
-	background-clip: content-box;
-	text-align: center;
-	margin:0px 50px 0px 50px;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 3px 30px 3px 30px;
 	/*LU: no sé si es correcto ajustar con margin el fondo de color de "QUE ES OMA".*/
 }
 
@@ -350,11 +349,21 @@ a{
 	background-color: #ABABFF;
 	border-radius: 0px 20px 20px 0px;
 	padding: 80px 30px 80px 50px;
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%; /*no sé si esto es correcto*/
 	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
 }
 
 .caja_derecha_nosotros {
 	padding: 80px 30px 80px 50px;
+	display:flex;
+	align-items: left;
+	flex-direction: column;
+	justify-content:center;
+	width: 100%; /*no sé si esto es correcto*/
 	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
 	
 }
@@ -364,11 +373,15 @@ a{
 	font-weight: 400; /*le puse 400 porque me parecía que se lee mejor que poner 300 de peso*/
 	line-height: normal;
 	color: #101011;
-	text-align:left;
 	/*border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #101011;*/ /*LU:después vemos de resolver la línea abajo de los títulos*/
-	padding-top: 20px;
+	margin-top: 20px;
+	display:flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	text-align:left;
 }
 
 .boton_competencias {
@@ -389,6 +402,8 @@ a{
 .boton_competencias:hover {
 	background-color: #000000;
 }
+
+
 
 /*COMPETENCIAS*/
 
@@ -579,7 +594,73 @@ input {
 	flex-direction: row-reverse;
 }
 
+
 /*CONTACTO*/
+.section_contenedora_contacto {
+	background-color: #5151FC;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+
+
+.titulo_contacto {
+	font-family:'Space Grotesk', sans-serif;
+	font-size: 45px;
+	font-weight: 700;
+	background-color: #000000;
+	padding: 35px 70px 35px 0px; /*LU: este padding del rectángulo negro tendría que ser igual en todos los títulos de los otros html principalmente el alto*/
+	display:flex;
+	justify-content:flex-end;
+	text-align:right;
+	
+
+	/*padding: 30px 0px 30px 200px;
+	margin: 0px 1000px 0px 0px;*/ /*LU: esto es lo como había intentado hacer el rectángulo pero se que está mal ya que supera los 100px*/
+}
+
+
+.section_infosuperior, .section_emailnovedades {
+	background-color: #F5F5F5;
+	width: 100%;
+	margin: 50px 0px 0px 175px; /*acá tengo que ver como hacer para alinear los iconos con el título sin poner 175px de margin*/
+	border-radius: 35px;
+	border-color: #000000;
+	border: 1px solid #000;
+}
+
+.dosrenglones_novedades {
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+}
+
+
+.datos_contacto, .section_emailnovedades{ 
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-start;
+	align-items: center;
+	gap: 6%; /*LU: emm acá quise separar el icono de la oración.*/
+	padding: 20px 0px 15px 50px;
+}
+
+.a_contacto {
+	text-decoration: none;
+	color: #101011;
+	font-family: 'Barlow', sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+}
+
+.texto_novedades {
+	font-family: 'Barlow', sans-serif;
+	color: #101011;
+	font-weight: 700;
+	font-size: 25px;
+}
+/*16/10: volviendo hacer commit porque me mandé una caga** mezclando la carpeta con mi CV :D*/
+
 
 
 /*ANIMACIONES*/
@@ -594,3 +675,5 @@ input {
     transform: translateY(0px);
   }
 }
+
+
