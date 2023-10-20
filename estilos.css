@@ -575,29 +575,109 @@ input {
 .niandu h2 {
 	width: 20%;
 	background-color: #101011;
-	padding: 120px 10px 50px 30px;
+	padding: 120px 10px 50px 120px;
 }
 
 .informacion {
 	background-color: white;
 	border-radius: 50px;
-	border:solid #101011;
+	border:solid thin;
 	margin: 50px 50px 0px 50px;
 	display: flex;
-	gap:20px;
+	gap: 40px;
 }
 
 .fotogrupal {
-	padding: 40px 0px 0px 40px;
+	padding: 40px 0px 40px 40px;
 	display: flex;
 	box-sizing: border-box;
 	width: 50%;
 }
-.participacion h3 {
-	color: #101011;
-	display: flex;
+
+.fotogrupal img {
+	border-radius: 20px;
 }
 
+.titulo_participacion, .titulo_calendario {
+	width: 80%;
+	color: #101011;
+	font-family: 'Space Grotesk', sans-serif;
+	text-transform: uppercase;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.titulo_participacion {
+	padding: 40px 0px 5px 0px;
+	border-bottom: solid thick;
+}
+
+.titulo_calendario {
+	padding: 30px 0px 5px 0px;
+}
+
+.bloque_oma {
+	padding: 10px 30px;
+	width: 65%;
+	color: white;
+	background-color: #5151FC;
+	font-family: 'Space Grotesk', sans-serif;
+	font-weight: bold;
+}
+
+.bloque_oma:hover {
+	background-color: #ABABFF;
+	color: #101011;
+} /* MO: si se soluciona lo del color blanco del .svg esta etiqueta podría agruparse con la de .boton_descarga */
+
+ol li {
+	color: #101011;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 30px;
+	font-size: bold;
+	letter-spacing: none;
+}
+
+/* MO: definitivamente voy a necesitar ayuda con esta parte. se siguen aplicando las características de la etiqueta li de mucho más arriba y lo poquito que hice de flex no me salió */
+
+ul li {
+	color: #101011;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 30px;
+	font-size: bold;
+	letter-spacing: none;
+}
+
+.calendario_izq, .calendario_der {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.enunciados_descarga {
+	display: flex;
+	align-items: center;
+	width: 75%;
+	height: 120px;
+	padding: 20px 60px;
+	gap: 40px;
+	border-radius: 50px;
+	border: solid thin;
+}
+
+.boton_descarga {
+	display: flex;
+	width: 10%;
+	height: 50px;
+	padding: 15px;
+	color: white; /* MO: no pude cambiarle el color al .svg, habría que cambiarle el color directamente al archivo desde illus no? */
+	background-color: #5151FC;
+	border-radius: 20px;
+}
+
+.boton_descarga:hover {
+	background-color: #ABABFF;
+}
 
 /*CONTACTO*/
 .section_contenedora_contacto {
