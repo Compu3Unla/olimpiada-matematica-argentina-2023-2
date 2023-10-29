@@ -27,13 +27,20 @@
 	<main>
 		<section class="seccion1">
 			<div class="presentacion">
-				<img src="img/mujer.png" width="360px" height="588px" alt="ilustracion"> <!--falta la animación-->
+				<div class="cube">
+					<div class="face front"></div>
+					<div class="face back"></div>
+					<div class="face left"></div>
+					<div class="face right"></div>
+					<div class="face top"></div>
+					<div class="face bottom"></div>
+				</div>
+				<img src="img/mujer.png" width="360px" height="588px" alt="ilustracion">
 			</div>
 			<div class="presentacion2">
 				<h1>OMA</h1>
 				<p class="subtitulo">Olimpiada Matemática Argentina</p>
 				<img src="img/formula.png" width="434px" height="203px" alt="formula">
-				<!--habría que después re-verlo porque se deformó toda la imagen, seguro tengamos que ajustar primero el tamaño desde PS ya que tiene otras medidas-->
 			</div>
 		</section>
 		<section class="flecha">
@@ -59,19 +66,32 @@
 			</div>
 			<div class="galeria">
 				<h3>Campeones de otros torneos</h3>
-				<div class="carrousel">
-					<ul class="carrousel-fotos">
+				<div class="container">
+					<!--<ul class="carrousel-fotos">
 						<li id="foto1"><img src="img/oma_1.jpg" alt=""></li>
 						<li id="foto2"><img src="img/oma_2.jpg" alt=""></li>
 						<li id="foto3"><img src="img/oma_3.jpg" alt=""></li>
 						<li id="foto4"><img src="img/oma_4.jpg" alt=""></li>
-					</ul>
-					<ul class="carrousel-menu">
-						<li><a href="#foto1"><img src="img/oma_1.jpg" alt=""></a></li>
-						<li><a href="#foto2"><img src="img/oma_2.jpg" alt=""></a></li>
-						<li><a href="#foto3"><img src="img/oma_3.jpg" alt=""></a></li>
-						<li><a href="#foto4"><img src="img/oma_4.jpg" alt=""></a></li>
-					</ul>
+					</ul>-->
+
+					<div id="slide"><!--no la pude acomodar-->
+						<div class="item" style="background-image: url(img/oma_1.jpg);">
+						</div>
+						<div class="item" style="background-image: url(img/oma_2.jpg);">
+						</div>
+						<div class="item" style="background-image: url(img/oma_3.jpg);">
+						</div>
+						<div class="item" style="background-image: url(img/oma_4.jpg);">
+						</div>
+					</div>
+					<div class="buttons">
+						<button id="prev">
+							<span class="arrow-left">&#8592;</span>
+						</button>
+						<button id="next">
+							<span class="arrow-right">&#8594;</span>
+						</button>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -81,45 +101,110 @@
 			</h5>
 			<div class="parent">
 				<div class="div1">
-					<li>prueba</li>
+					<li>Mateclubes</li>
 				</div>
 				<div class="div2">
-					<li>prueba</li>
+					<li>02 lunes</li>
 				</div>
 				<div class="div3">
-					<li>prueba</li>
+					<li>Provincial</li>
 				</div>
 				<div class="div4">
-					<li>prueba</li>
+					<li>Final literatura y matemática</li>
 				</div>
 				<div class="div5">
-					<li>prueba</li>
+					<li>10 martes</li>
 				</div>
 				<div class="div6">
-					<li>prueba</li>
+					<li>Nacional</li>
 				</div>
 				<div class="div7">
-					<li>prueba</li>
+					<li>Iraní geometría</li>
 				</div>
 				<div class="div8">
-					<li>prueba</li>
+					<li>12 jueves</li>
 				</div>
 				<div class="div9">
-					<li>prueba</li>
+					<li>Local</li>
 				</div>
 				<div class="div10">
-					<li>prueba</li>
+					<li>Torneo de ciudades</li>
 				</div>
 				<div class="div11">
-					<li>prueba</li>
+					<li>24 martes</li>
 				</div>
 				<div class="div12">
-					<li>prueba</li>
+					<li>Final</li>
 				</div>
 			</div>
 		</section>
 		<section class="seccion5"></section>
-		<section class="seccion6"></section>
+		<section class="seccion6">
+			<h2>PREGUNTAS FRECUENTES</h2>
+			<div class="container">
+				<div class="accordion">
+					<div class="accordion-item">
+						<button id="accordion-button-1" aria-expanded="false">
+							<span class="accordion-title">¿Qué son las Olimpíadas de Matemática?</span>
+							<span class="icon" aria-hidden="true"></span>
+						</button>
+						<div class="accordion-content">
+							<p>Las Olimpiadas de Matemática en Argentina son competencias académicas a nivel nacional
+								que desafían a estudiantes de todas las edades a resolver problemas matemáticos
+								creativos y estimulantes.</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<button id="accordion-button-2" aria-expanded="false">
+							<span class="accordion-title">¿Quiénes pueden participar en las Olimpíadas de
+								Matemática?</span>
+							<span class="icon" aria-hidden="true"></span>
+						</button>
+						<div class="accordion-content">
+							<p>Las Olimpiadas de Matemática en Argentina son competencias académicas a nivel nacional
+								que desafían a estudiantes de todas las edades a resolver problemas matemáticos
+								creativos y estimulantes.</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<button id="accordion-button-3" aria-expanded="false">
+							<span class="accordion-title">¿Cuál es el formato de las pruebas en las Olimpíadas de
+								Matemática?</span>
+							<span class="icon" aria-hidden="true"></span>
+						</button>
+						<div class="accordion-content">
+							<p>Las Olimpiadas de Matemática en Argentina son competencias académicas a nivel nacional
+								que desafían a estudiantes de todas las edades a resolver problemas matemáticos
+								creativos y estimulantes.</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<button id="accordion-button-4" aria-expanded="false">
+							<span class="accordion-title">¿Cómo puedo inscribirme en las Olimpiadas de
+								Matemática?</span>
+							<span class="icon" aria-hidden="true"></span>
+						</button>
+						<div class="accordion-content">
+							<p>Las Olimpiadas de Matemática en Argentina son competencias académicas a nivel nacional
+								que desafían a estudiantes de todas las edades a resolver problemas matemáticos
+								creativos y estimulantes.</p>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<button id="accordion-button-5" aria-expanded="false">
+							<span class="accordion-title">¿Qué beneficios ofrece participar en las Olimpíadas de
+								Matemática?</span>
+							<span class="icon" aria-hidden="true"></span>
+						</button>
+						<div class="accordion-content">
+							<p>Las Olimpiadas de Matemática en Argentina son competencias académicas a nivel nacional
+								que desafían a estudiantes de todas las edades a resolver problemas matemáticos
+								creativos y estimulantes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer>
 		<div class="itemslegales">
@@ -142,6 +227,14 @@
 			<p>OMA - Argentina</p>
 		</div>
 	</footer>
+	<div class="icon-container">
+		<a href="https://www.facebook.com/"><img class="icon" src="img/facebook.svg" alt="Facebook"></a>
+		<a href="https://www.instagram.com/"><img class="icon" src="img/instagram.svg" alt="Instagram"></a>
+		<a href="contacto.html"><img class="icon" src="img/email.svg" alt="Contacto"></a>
+	</div>
 </body>
+<script src="js/script.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/galeria.js"></script>
 
 </html>
