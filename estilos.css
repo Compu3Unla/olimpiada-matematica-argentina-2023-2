@@ -479,6 +479,12 @@ a{
 	.pcompetencias{
 		font-size: 30px;
 	}
+	.ptarjetas{
+		font-size: 20px;
+	}
+	.boton_competencias{
+		font-size: 16px;
+	}
 }
 
 /*INSCRIPCIÓN*/
