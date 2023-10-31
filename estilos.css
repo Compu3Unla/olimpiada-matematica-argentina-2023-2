@@ -393,12 +393,12 @@ a{
 
 .boton_competencias {
 	font-family:'Barlow', sans-serif;
-	font-size: 20px;
+	font-size: 14px;
 	font-weight: 700;
 	line-height: normal;
 	background-color: #5151FC;
 	color: #FFFFFF;
-	padding: 10px 25px;
+	padding: 8px 18px;
 	border-radius: 15px;
 	cursor: pointer;
 	margin-top: 50px;
@@ -419,7 +419,7 @@ a{
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
-	padding: 80px 40px;
+	padding: 60px 80px;
 	align-items: center;
 }
 
@@ -431,17 +431,19 @@ a{
 	border: 1px solid #000;
 	background-color: #FFFFFF;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-	height: 500px;
+	height: 380px;
 }
 
 .tarjetas img{
 	border-radius: 20px;
+	height: 192px;
+	width: 220px;
 }
 
 .pcompetencias{
 	font-family: 'Darker Grotesque', sans-serif;
 	font-weight: 700;
-	font-size: 35px;
+	font-size: 25px;
 	font-style: normal;
 	padding-top: 20px;
 }
@@ -449,12 +451,12 @@ a{
 .ptarjetas {
 	color: #101011;
 	font-family: 'Barlow', sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	border-top: 3px solid #101011;
-	padding-top: 30px;
+	border-top: 2px solid #101011;
+	padding-top: 25px;
 }
 
 /*INSCRIPCIÓN*/
