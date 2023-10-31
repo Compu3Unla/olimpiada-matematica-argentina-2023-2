@@ -152,8 +152,7 @@ footer{
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
-	position: fixed;
-	
+	/*position: fixed;*/
 }
 footer p { 
 	font-size: 16px;
@@ -324,15 +323,25 @@ a{
 }
 
 /*SOBRE NOSOTROS*/ 
-.imgalumna {
+#footer-sobre-nosotros {
+	margin-top: auto;
+	bottom: 0%;
+	
+}
+
+.sectionsobrenosotros img {
 	padding: 0px;
-	margin: 0px; /*LU: ¿cómo hago para que el pequeño borde blanco que se ve abajo de la imagen desaparezca?, no encuentro de donde proviene*/
+	margin-top: 60px; /*LU: ¿cómo hago para que el pequeño borde blanco que se ve abajo de la imagen desaparezca?, no encuentro de donde proviene*/
+	height: 150%;
+	width: 100%;
+	min-height: 85vh;
 }
 
 .sectionsobrenosotros {
 	display:flex;
 	flex-direction: row;
 	justify-content: center;
+	min-height: 90vh;
 	/*quiero aplicar column gap pero solo del lado derecho porque el fondo violeta tiene que permanecer "pegado" a la imagen*/
 }
 
@@ -345,35 +354,38 @@ a{
 	margin-bottom: 10px;
 	background-color: #FFFFFF;
 	display:flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 3px 30px 3px 30px;
+	justify-content: flex-start;
+	padding: 10px 30px 10px 30px;
+	/*acá en otro h3 hay un padding left que por eso no puedo arreglar
 	/*LU: no sé si es correcto ajustar con margin el fondo de color de "QUE ES OMA".*/
 }
 
 
 .caja_centro_nosotros {
 	background-color: #ABABFF;
-	border-radius: 0px 20px 20px 0px;
-	padding: 80px 30px 80px 50px;
+	border-radius: 0px 40px 50px 0px;
+	padding: 80px 30px 80px 65px;
 	display:flex;
-	align-items: center;
+	align-items: flex-start;
 	flex-direction: column;
 	justify-content: center;
 	width: 100%; /*no sé si esto es correcto*/
+	margin-top: 7%;
 	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
 }
 
 .caja_derecha_nosotros {
-	padding: 80px 30px 80px 50px;
+	padding: 80px 30px 80px 65px;
 	display:flex;
-	align-items: left;
 	flex-direction: column;
 	justify-content:center;
 	width: 100%; /*no sé si esto es correcto*/
+	margin-top: 7%;
 	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
 	
 }
+
+
 .parrafos_nosotros {
 	font-family:'Barlow', sans-serif;
 	font-size: 25px;
@@ -383,12 +395,20 @@ a{
 	/*border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #101011;*/ /*LU:después vemos de resolver la línea abajo de los títulos*/
-	margin-top: 20px;
+	margin-top: 85px;
 	display:flex;
 	align-items: center;
 	flex-direction: row;
 	justify-content: center;
 	text-align:left;
+	width: 85%;
+}
+
+.linea-sobrenosotros {
+	width: 80%;
+	height: 4px;
+	background-color: #101011;
+	margin-bottom: 10px;
 }
 
 .boton_competencias {
