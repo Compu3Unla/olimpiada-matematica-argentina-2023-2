@@ -102,7 +102,7 @@ h2{
 	text-transform: uppercase;
 	color: #F5F5F5;
 	background-color: #5151FC;
-	padding: 20px 20px 20px 60px;
+	padding: 80px 20px 20px 60px;
 	max-width: 30%;
 }
 
@@ -457,6 +457,28 @@ a{
 	line-height: normal;
 	border-top: 2px solid #101011;
 	padding-top: 25px;
+}
+
+@media screen and (max-width: 600px) {
+	h2{
+		font-size: 35px;
+		max-width: 50%;
+	}
+	.competencias{
+		flex-direction: column;
+	}
+	.tarjetas{
+		width: 325px;
+		height: 480px;
+		padding: 40px;
+	}
+	.tarjetas img{
+		width: 325px;
+		height: 285px;
+	}
+	.pcompetencias{
+		font-size: 30px;
+	}
 }
 
 /*INSCRIPCIÓN*/
