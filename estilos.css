@@ -21,7 +21,7 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0px 60px 0px 40px;
+	padding: 0px 40px 0px 40px;
 	background-color: #f5f5f5;
 	border-bottom: 1px solid #ccc;
 	width: 100%;
@@ -865,7 +865,8 @@ a{
 .formulario {
 	background-color: #F5F5F5;
 	padding: 150px;
-	width: 100%
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .formulario h2 {
@@ -875,16 +876,15 @@ a{
 	padding-left: 50px;
 	background-color: #5151FC;
 }
-
 form {
 	padding: 40px;
 	width: 100%;
+	box-sizing: border-box;
 	height: auto;
 	font-family: 'Barlow', sans-serif; 
 	font-size: 32px;
 	font-weight: 400;
 	line-height: normal;
-	/*border: 1px solid black;*/ 
 	display: flex;
 	flex-wrap: nowrap;
 }
@@ -895,6 +895,7 @@ form .columnaizquierda {
 	background-color: white;
 	border-radius: 10px;
 	display: flex;
+	box-sizing: border-box;
 	flex-direction: column;
 }
 
@@ -903,6 +904,7 @@ form .columnaderecha {
 	padding: 20px;
 	background: white;
 	border-radius: 10px;
+	box-sizing: border-box;
 }
 
 label {
@@ -915,7 +917,7 @@ input {
 	width: 100%;
 	padding: 10px;
 	font-family: 'Barlow', sans-serif; 
-	font-size: 32px;
+	font-size: 20px;
 	font-weight: 400;
 	line-height: normal;
 	border-radius: 5px;
@@ -934,8 +936,30 @@ input {
 .label, .input {
 	display: inline-block;
 }
-
-
+input[type="date"] {
+  width: 200px; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 20px; 
+  background-color: #e5e5e5; 
+  color: #101011; 
+  box-sizing: border-box;
+}
+select {
+  width: 200px; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #fff; 
+  color: #101011; 
+  font-size: 20px; 
+}
+select:focus {
+  outline: none; 
+  border-color: #5151FC; 
+  box-shadow: #5151FC;
+}
 /*MENSAJE*/
 .bodymensaje {
 	background-color: #5151FC;
