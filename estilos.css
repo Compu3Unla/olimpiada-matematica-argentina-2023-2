@@ -401,7 +401,7 @@ a{
 	padding: 10px 25px;
 	border-radius: 15px;
 	cursor: pointer;
-	margin-top: 60px;
+	margin-top: 50px;
 	border: none;
 	/*LU → para Aimé: es la primera vez que hago un botón así en css, espero estén bien las propiedades*/
 }
@@ -420,20 +420,18 @@ a{
 	flex-direction: row;
 	gap: 20px;
 	padding: 80px 40px;
-	/*justify-content: space-between; JULI: hay que ver bien acá el tema de los espacios*/
 	align-items: center;
 }
 
 .tarjetas{
-	/*display: flex; JULI: no se si esto es necesario, hay que probar*/
+	display: flex;
 	padding: 30px;
 	flex-direction: column;
-	/*align-items: center;*/
-	/*gap: 35px; JULI: hay que ver bien acá el tema de los espacios entre las tarjetas*/
 	border-radius: 40px;
 	border: 1px solid #000;
 	background-color: #FFFFFF;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	height: 500px;
 }
 
 .tarjetas img{
