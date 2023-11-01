@@ -28,22 +28,62 @@
 		<div class="formulario">
 			<h2>Inscripción</h2>
 			<form method="post" action="mensaje.html" enctype="text/plain">
-
-				<section class="columnaizquierda">
-					<label for="DNI">DNI</label>
-					<input type="text" name="dni" id="dni" placeholder="Escribí tu número de documento" required>
-
+				<div class="columnaizquierda">
 					<label for="apellidoynombre">Apellido y nombre</label>
 					<input type="text" name="apellidoynombre" id="apellidoynombre" maxlenght="50"
 						placeholder="Escribí tu apellido(s) y nombre(s)" required>
-
-					<label for="nivel">Nivel:</label>
-					<input type="text" name="nivel" id="nivel" maxlength="50"
-						placeholder="Escribí el nivel escolar al que perteneces" required>
-
+					<label for="DNI" class="label-uppercase">DNI</label>
+					<input type="text" name="dni" id="dni" placeholder="Escribí tu número de documento" required>
+					<label for="fechadenacimiento">Fecha de nacimiento</label>
+					<input type="date" name="fechadenacimiento" id="fechadenacimiento" required>
 					<label for="telefono">Teléfono (opcional)</label>
 					<input type="tel" name="teléfono(opcional)" id="teléfono(opcional)" placeholder="(011) ____ ____">
-
+					<label for="mail">Mail</label>
+					<input type="text" name="mail" id="mail" maxlength="50" placeholder="Escribí tu correo electrónico"
+						required>
+					<input type="submit" value="ENVIAR" formenctype="text/plain" class="enviar" href="mensaje.html">
+				</div>
+				<div class="columnaizquierda">
+					<label for="escuela">Escuela</label>
+					<input type="text" name="escuela" id="escuela" placeholder="Escribí el nombre de tu escuela"
+						required>
+					<label for="nivel">Nivel</label>
+					<input type="text" name="nivel" id="nivel" maxlength="50"
+						placeholder="Escribí el nivel escolar al que perteneces" required>
+					<label for="provinciadelaescuela">Provincia de la escuela</label>
+					<select id="provinciadelaescuela" name="provinciadelaescuela">
+						<option value="adrogue">Buenos Aires </option>
+						<option value="burzaco">CABA</option>
+						<option value="banfield">Catamarca</option>
+						<option value="lomasdezamora">Chaco </option>
+						<option value="adrogue">Chubut </option>
+						<option value="burzaco">Córdoba</option>
+						<option value="banfield">Corrientes</option>
+						<option value="lomasdezamora">Entre Ríos </option>
+						<option value="adrogue">Formosa </option>
+						<option value="burzaco">Jujuy</option>
+						<option value="banfield">La Pampa</option>
+						<option value="lomasdezamora">La Rioja</option>
+						<option value="adrogue">Mendoza </option>
+						<option value="burzaco">Misiones</option>
+						<option value="banfield">Neuquén </option>
+						<option value="lomasdezamora">Río Negro </option>
+						<option value="adrogue">Salta</option>
+						<option value="burzaco">San Juan</option>
+						<option value="banfield">San Luis </option>
+						<option value="lomasdezamora">Santa Cruz </option>
+						<option value="adrogue">Santa Fé</option>
+						<option value="burzaco">Santiago del Estero</option>
+						<option value="banfield">Tierra del fuego </option>
+						<option value="lomasdezamora">Tucumán </option>
+					</select>
+					<label for="localidadelegida">Localidad</label>
+					<select id="localidadelegida" name="localidadelegida">
+						<option value="adrogue">Adrogué </option>
+						<option value="burzaco">Burzaco </option>
+						<option value="banfield">Banfield </option>
+						<option value="lomasdezamora">Lomas de Zamora </option>
+					</select>
 					<label for="olimpiadaelegida">Olimpíada elegida</label>
 					<select id="olimpiadaelegida" name="olimpiadaelegida">
 						<option value="niandu">Ñandú </option>
@@ -51,35 +91,7 @@
 						<option value="internacional">Internacional</option>
 						<option value="torneos">Torneos</option>
 					</select>
-					<input type="submit" value="enviar" formenctype="text/plain" class="enviar" href="mensaje.html">
-				</section>
-
-				<section class="columnaderecha">
-					<label for="escuela">Escuela</label>
-					<input type="text" name="escuela" id="escuela" placeholder="Escribí el nombre de tu escuela"
-						required>
-
-					<label for="provinciadelaescuela">Provincia de la escuela:</label>
-					<input type="text" name="provinciadelaescuela" id="provinciadelaescuela"
-						placeholder="Escribí la provincia de tu escuela" required>
-
-					<label for="mail">Mail</label>
-					<input type="text" name="mail" id="mail" maxlength="50" placeholder="Escribí tu correo electrónico"
-						required>
-
-					<label for="fechadenacimiento">Fecha de nacimiento</label>
-					<input type="date" name="fechadenacimiento" id="fechadenacimiento" required>
-
-					<label for="localidadelegida">Localidad elegida</label>
-					<select id="localidadelegida" name="localidadelegida">
-						<option value="adrogue">Adrogué </option>
-						<option value="burzaco">Burzaco </option>
-						<option value="banfield">Banfield </option>
-						<option value="lomasdezamora">Lomas de Zamora </option>
-					</select>
-
-				</section>
-
+				</div>
 			</form>
 		</div>
 	</main>
@@ -89,7 +101,7 @@
 			<p>Términos y condiciones</p>
 			<p>Políticas de privacidad</p>
 		</div>
-		<div class="redesenfooter"> <!--después en css hay que ajustar la distancia entre los iconos-->
+		<div class="redesenfooter">
 			<a href="mailto:info@oma.org.ar" target="_blank">
 				<img src="img/email_blanco.svg" width="30px" height="30px" alt="iconoemail" />
 			</a>
@@ -105,9 +117,10 @@
 		</div>
 	</footer>
 	<div class="icon-container">
-		<a href="https://www.facebook.com/"><img class="icon" src="img/facebook.svg" alt="Facebook"></a>
-		<a href="https://www.instagram.com/"><img class="icon" src="img/instagram.svg" alt="Instagram"></a>
-		<a href="contacto.html"><img class="icon" src="img/email.svg" alt="Contacto"></a>
+		<a href="https://www.facebook.com/"><img class="icon" src="img/facebook.svg" alt="Facebook" target="_blank"></a>
+		<a href="https://www.instagram.com/"><img class="icon" src="img/instagram.svg" alt="Instagram"
+				target="_blank"></a>
+		<a href="contacto.html"><img class="icon" src="img/email.svg" alt="Contacto" target="_blank"></a>
 	</div>
 	<script src="js/script.js"></script>
 	<script src="js/nav.js"></script>

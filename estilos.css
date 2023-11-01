@@ -116,7 +116,7 @@ h3{
 /*TÍTULOS*/
 h2{
 	font-family: 'Space Grotesk', sans-serif;
-	font-size: 45px;
+	font-size: 28px;
 	font-weight: 700;
 	line-height: normal;
 	text-transform: uppercase;
@@ -514,7 +514,7 @@ h4{
 }
 .p-seccion5{
 	font-family: 'Barlow', sans-serif;
-	font-size: 20px;
+	font-size: 24px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -523,7 +523,7 @@ h4{
 }
 h6{
 	font-family: 'Barlow', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
@@ -574,7 +574,7 @@ h6{
 }
 .accordion button .accordion-title {
   padding: 1em 1.5em 1em 0;
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: 500;
 	color: #101011;
     font-family: 'Barlow', sans-serif;
@@ -628,16 +628,18 @@ h6{
   will-change: opacity, max-height;
 }
 .accordion .accordion-content p {
-	font-size: 27px;
+	font-size: 20px;
     font-weight: 400;
     margin: 20px 20px 30px 55px;
+	max-width: 80%;
+	box-sizing: border-box;
 }
 /*grilla*/
 .parent {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(5, 1fr);
-	grid-column-gap: 100px;
+	grid-column-gap: 60px;
 	grid-row-gap: 20px;
 	align-items:end;
 	padding: 20px;
@@ -785,13 +787,10 @@ a{
 
 .parrafos_nosotros {
 	font-family:'Barlow', sans-serif;
-	font-size: 25px;
+	font-size: 24px;
 	font-weight: 400; /*le puse 400 porque me parecía que se lee mejor que poner 300 de peso*/
 	line-height: normal;
 	color: #101011;
-	border-top-width: 3px;
-	border-top-style: solid;
-	border-top-color: #101011;
 	margin-top: 85px;
 	display:flex;
 	align-items: center;
@@ -877,7 +876,6 @@ a{
 
 
 /*INSCRIPCIÓN*/
-
 .formulario {
 	background-color: #F5F5F5;
 	padding: 150px;
@@ -898,39 +896,31 @@ form {
 	box-sizing: border-box;
 	height: auto;
 	font-family: 'Barlow', sans-serif; 
-	font-size: 32px;
+	font-size: 24px;
 	font-weight: 400;
 	line-height: normal;
 	display: flex;
 	flex-wrap: nowrap;
+	border-radius: 10px;
 }
-
 form .columnaizquierda {
 	width: 50%;
 	padding: 20px;
 	background-color: white;
-	border-radius: 10px;
 	display: flex;
 	box-sizing: border-box;
 	flex-direction: column;
 }
-
-form .columnaderecha {
-	width: 50%;
-	padding: 20px;
-	background: white;
-	border-radius: 10px;
-	box-sizing: border-box;
-}
-
 label {
 	border-radius: 5px;
 	display: block;
 	height: 40px;
 }
-
+.label-uppercase {
+    text-transform: uppercase;
+}
 input {
-	width: 100%;
+	width: 85%;
 	padding: 10px;
 	font-family: 'Barlow', sans-serif; 
 	font-size: 20px;
@@ -948,6 +938,9 @@ input {
 	background-color: #5151FC;
 	border-radius: 5px;
 	color: white;
+}
+.enviar:hover{
+	background-color: #101011;
 }
 .label, .input {
 	display: inline-block;
@@ -1348,7 +1341,7 @@ ol li {
 	}
 	/*COMPETENCIAS*/
 	h2{
-		font-size: 35px;
+		font-size: 28px;
 		max-width: 50%;
 	}
 	.competencias{
