@@ -126,7 +126,7 @@ h2{
 	text-transform: uppercase;
 	color: #F5F5F5;
 	background-color: #5151FC;
-	padding: 20px 20px 20px 60px;
+	padding: 80px 20px 20px 60px;
 	max-width: 30%;
 }
 
@@ -812,15 +812,15 @@ a{
 
 .boton_competencias {
 	font-family:'Barlow', sans-serif;
-	font-size: 20px;
+	font-size: 14px;
 	font-weight: 700;
 	line-height: normal;
 	background-color: #5151FC;
 	color: #FFFFFF;
-	padding: 10px 25px;
+	padding: 8px 18px;
 	border-radius: 15px;
 	cursor: pointer;
-	margin-top: 60px;
+	margin-top: 50px;
 	border: none;
 }
 
@@ -836,31 +836,31 @@ a{
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
-	padding: 80px 40px;
-	/*justify-content: space-between; JULI: hay que ver bien acá el tema de los espacios*/
+	padding: 60px 80px;
 	align-items: center;
 }
 
 .tarjetas{
-	/*display: flex; JULI: no se si esto es necesario, hay que probar*/
+	display: flex;
 	padding: 30px;
 	flex-direction: column;
-	/*align-items: center;*/
-	/*gap: 35px; JULI: hay que ver bien acá el tema de los espacios entre las tarjetas*/
 	border-radius: 40px;
 	border: 1px solid #000;
 	background-color: #FFFFFF;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	height: 380px;
 }
 
 .tarjetas img{
 	border-radius: 20px;
+	height: 192px;
+	width: 220px;
 }
 
 .pcompetencias{
 	font-family: 'Darker Grotesque', sans-serif;
 	font-weight: 700;
-	font-size: 35px;
+	font-size: 25px;
 	font-style: normal;
 	padding-top: 20px;
 }
@@ -868,12 +868,40 @@ a{
 .ptarjetas {
 	color: #101011;
 	font-family: 'Barlow', sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	border-top: 3px solid #101011;
-	padding-top: 30px;
+	border-top: 2px solid #101011;
+	padding-top: 25px;
+}
+
+@media screen and (max-width: 600px) {
+	h2{
+		font-size: 35px;
+		max-width: 50%;
+	}
+	.competencias{
+		flex-direction: column;
+	}
+	.tarjetas{
+		width: 325px;
+		height: 480px;
+		padding: 40px;
+	}
+	.tarjetas img{
+		width: 325px;
+		height: 285px;
+	}
+	.pcompetencias{
+		font-size: 30px;
+	}
+	.ptarjetas{
+		font-size: 20px;
+	}
+	.boton_competencias{
+		font-size: 16px;
+	}
 }
 
 /*INSCRIPCIÓN*/
