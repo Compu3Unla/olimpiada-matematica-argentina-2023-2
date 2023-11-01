@@ -683,7 +683,7 @@ input {
 	font-weight: 700;
 	font-size: 25px;
 }
-/*16/10: volviendo hacer commit porque me mandé una caga** mezclando la carpeta con mi CV :D*/
+
 
 
 
@@ -701,3 +701,44 @@ input {
 }
 
 
+@media screen and (max-width: 600px) {
+	/*CAMBIOS GENERALES*/
+	
+	
+	
+	/*HEADER*/
+	
+
+	
+	/*FOOTER*/
+	
+	
+	
+	/*INDEX*/
+	
+	
+	/*INDEX MENÚ HAMBURGUESA*/
+	
+	
+	/*SOBRE NOSOTROS*/
+	
+	
+	
+	/*COMPETENCIAS*/
+	
+	
+	
+	/*INSCRIPCIÓN*/
+	
+	
+	/*MENSAJE*/
+	
+	
+	
+	/*OLIMPÍADAS ÑANDÚ*/
+	
+	
+	
+	
+	/*CONTACTO*/
+}
