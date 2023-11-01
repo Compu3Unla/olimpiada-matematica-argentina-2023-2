@@ -1044,29 +1044,185 @@ select:focus {
 .niandu h2 {
 	width: 20%;
 	background-color: #101011;
-	padding: 120px 10px 50px 30px;
+	padding: 120px 10px 50px 120px;
 }
 
 .informacion {
 	background-color: white;
 	border-radius: 50px;
-	border:solid #101011;
+	border:solid thin;
 	margin: 50px 50px 0px 50px;
 	display: flex;
-	gap:20px;
+	gap: 20px;
 }
 
 .fotogrupal {
-	padding: 40px 0px 0px 40px;
+	padding: 40px 0px 40px 40px;
 	display: flex;
 	box-sizing: border-box;
 	width: 50%;
 }
-.participacion h3 {
-	color: #101011;
-	display: flex;
+
+.fotogrupal img {
+	border-radius: 20px;
 }
 
+.titulo_participacion, .titulo_calendario {
+	width: 80%;
+	color: #101011;
+	font-family: 'Space Grotesk', sans-serif;
+	text-transform: uppercase;
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.titulo_participacion, .titulo_calendario {
+	width: 83%;
+	padding: 40px 0px 5px 0px;
+	border-bottom: solid medium;
+}
+
+.titulo_calendario {
+	padding: 30px 0px 5px 0px;
+}
+
+.niandu_descrip {
+	margin-top: 5px;
+	font-family: 'Barlow', sans-serif;
+	font-size: 19px;
+	font-weight: 400;
+}
+
+.participacion_col {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline
+}
+
+.bloque_oma {
+	margin: 10px 0px;
+	padding: 10px 30px;
+	width: 65%;
+	color: white;
+	background-color: #5151FC;
+	font-family: 'Space Grotesk', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.bloque_oma:hover {
+	background-color: #ABABFF;
+	color: #101011;
+}
+
+.info_niandu {
+	margin-top: 10px;
+}
+
+ol li {
+	color: #101011;
+	font-family: 'Space Grotesk', sans-serif;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: bold;
+	letter-spacing: 0px;
+}
+
+ul li {
+	color: #101011;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	font-variant: normal;
+	letter-spacing: 0px;
+}
+
+.calendario_col {
+	display: flex;
+	flex-direction: row;
+}
+
+.columna_izq, .columna_der {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.columna_der {
+	margin-left: 20px;
+}
+
+.enunciados_descarga {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 75%;
+	height: 80px;
+	margin: 10px 0px;
+	padding: 15px 30px;
+	border-radius: 35px;
+	border: solid thin;
+}
+
+.enunciados_descarga p {
+	font-family: 'Barlow', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.boton_descarga {
+	display: flex;
+	width: 15%;
+	height: 50px;
+	padding: 15px;
+	color: white;
+	background-color: #5151FC;
+	border-radius: 20px;
+}
+
+.boton_descarga:hover {
+	background-color: #ABABFF;
+}
+
+@media screen and (max-width:600px) {
+	
+	.niandu {
+		height: 100%;
+	}
+	
+	.titulo {
+		width: 200%;
+	}
+	
+	.informacion {
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.fotogrupal {
+		width: 100%;
+		padding: 26px 0px 0px 25px;
+	}
+	
+	.fotogrupal img {
+		width: 95%;
+	}
+	
+	.titulo_participacion, .titulo_calendario {
+		padding-top: 15px;
+	}
+	
+	.participacion, .calendario {
+		padding-left: 30px;
+	}
+	
+	.enunciados_descarga {
+		margin: 20px 0px 10px 30px;
+		gap: 20px;
+	}
+}
 
 /*CONTACTO*/
 .section_contenedora_contacto {
