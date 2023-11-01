@@ -707,7 +707,16 @@ input {
 	
 	
 	/*HEADER*/
+	.botonera {
+		height: 80px;
+		padding: 0px 46px 13px 40px;
+	}
 	
+	.logo, .botonera ul {
+		margin-top: 20px;
+		
+		
+	}
 
 	
 	/*FOOTER*/
@@ -721,9 +730,47 @@ input {
 	
 	
 	/*SOBRE NOSOTROS*/
+	.sectionsobrenosotros{
+		flex-direction: column;
+	}
 	
+	.sectionsobrenosotros img {
+		min-height: 0vh;
+		width: 100%;
+		margin-top: 0px;
+	}
 	
+	.caja_centro_nosotros {
+		margin-top: 0px;
+		width: inherit;
+		border-radius: 0px 0px 50px 0px;
+		padding: 50px 50px 55px 65px;
+	}
 	
+	.caja_derecha_nosotros {
+		margin-top: 0px;
+		padding: 32px 50px 50px 65px;
+		width: inherit;
+		
+	}
+	
+	.parrafos_nosotros {
+		margin-top: 34px;
+		font-size: 19px;
+		width: 80%;
+	}
+	
+	.h3_titulo_nosotros {
+		font-size: 26px;
+	}
+	
+	.linea-sobrenosotros {
+		height: 3px;
+	}
+	
+	.boton_competencias{
+		margin-top: 50px;
+	}
 	/*COMPETENCIAS*/
 	
 	
