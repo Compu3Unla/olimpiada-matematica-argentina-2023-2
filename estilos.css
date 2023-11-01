@@ -126,7 +126,7 @@ h2{
 	text-transform: uppercase;
 	color: #F5F5F5;
 	background-color: #5151FC;
-	padding: 80px 20px 20px 60px;
+	padding: 20px 20px 20px 60px;
 	max-width: 30%;
 }
 
@@ -824,6 +824,7 @@ a{
 	border: none;
 }
 
+
 .boton_competencias:hover {
 	background-color: #000000;
 }
@@ -876,33 +877,6 @@ a{
 	padding-top: 25px;
 }
 
-@media screen and (max-width: 600px) {
-	h2{
-		font-size: 35px;
-		max-width: 50%;
-	}
-	.competencias{
-		flex-direction: column;
-	}
-	.tarjetas{
-		width: 325px;
-		height: 480px;
-		padding: 40px;
-	}
-	.tarjetas img{
-		width: 325px;
-		height: 285px;
-	}
-	.pcompetencias{
-		font-size: 30px;
-	}
-	.ptarjetas{
-		font-size: 20px;
-	}
-	.boton_competencias{
-		font-size: 16px;
-	}
-}
 
 /*INSCRIPCIÓN*/
 
@@ -1186,43 +1160,6 @@ ul li {
 	background-color: #ABABFF;
 }
 
-@media screen and (max-width:600px) {
-	
-	.niandu {
-		height: 100%;
-	}
-	
-	.titulo {
-		width: 200%;
-	}
-	
-	.informacion {
-		flex-direction: column;
-		justify-content: center;
-	}
-	
-	.fotogrupal {
-		width: 100%;
-		padding: 26px 0px 0px 25px;
-	}
-	
-	.fotogrupal img {
-		width: 95%;
-	}
-	
-	.titulo_participacion, .titulo_calendario {
-		padding-top: 15px;
-	}
-	
-	.participacion, .calendario {
-		padding-left: 30px;
-	}
-	
-	.enunciados_descarga {
-		margin: 20px 0px 10px 30px;
-		gap: 20px;
-	}
-}
 
 /*CONTACTO*/
 .section_contenedora_contacto {
@@ -1412,7 +1349,32 @@ ul li {
 		margin-top: 50px;
 	}
 	/*COMPETENCIAS*/
-	
+	h2{
+		font-size: 35px;
+		max-width: 50%;
+	}
+	.competencias{
+		flex-direction: column;
+	}
+	.tarjetas{
+		width: 325px;
+		height: 480px;
+		padding: 40px;
+	}
+	.tarjetas img{
+		width: 325px;
+		height: 285px;
+	}
+	.pcompetencias{
+		font-size: 30px;
+	}
+	.ptarjetas{
+		font-size: 20px;
+	}
+	.boton_competencias{
+		font-size: 16px;
+	}
+
 	
 	
 	/*INSCRIPCIÓN*/
@@ -1424,9 +1386,43 @@ ul li {
 	
 	/*OLIMPÍADAS ÑANDÚ*/
 	
+	.niandu {
+		height: 100%;
+	}
 	
+	.titulo {
+		width: 200%;
+	}
+	
+	.informacion {
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	.fotogrupal {
+		width: 100%;
+		padding: 26px 0px 0px 25px;
+	}
+	
+	.fotogrupal img {
+		width: 95%;
+	}
+	
+	.titulo_participacion, .titulo_calendario {
+		padding-top: 15px;
+	}
+	
+	.participacion, .calendario {
+		padding-left: 30px;
+	}
+	
+	.enunciados_descarga {
+		margin: 20px 0px 10px 30px;
+		gap: 20px;
+	}
 	
 	
 	/*CONTACTO*/
 }
+
 
