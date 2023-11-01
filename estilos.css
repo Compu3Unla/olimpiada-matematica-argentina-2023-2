@@ -21,18 +21,32 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0px 60px 0px 40px;
+	padding: 0px 40px 0px 40px;
 	background-color: #f5f5f5;
 	border-bottom: 1px solid #ccc;
 	width: 100%;
 	height: 65px;
 	box-sizing: border-box;
 	position: fixed;
+	transition: opacity 0.5s; 
+  	opacity: 1; 
+}
+.botonera.scrolled {
+	opacity: 0.2; 
+	background-color: #ffffff;
+}
+.botonera.scrolled:hover{
+	opacity: 1; 
+	background-color: #ffffff;
 }
 .botonera ul {
 	list-style: none;
 	display: flex;
 	gap:20px; 
+}
+.botonera ul li a:hover {
+	background-color: #5151FC;
+	opacity: 0.5;
 }
 /* ZONA DE BIENVENIDA OMA*/
 h1{
@@ -41,10 +55,20 @@ h1{
 	font-weight: 700;
 	line-height: normal;
 	color: #5151FC;
+	animation: aparecerDesdeIzquierda 3s ease forwards;
+	animation-iteration-count:1;
+	animation-direction: alternate;
 }
-h1:hover {
-	color: #101011;
-	}
+@keyframes aparecerDesdeIzquierda {
+    from {
+        transform: translateX(-100%); 
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
 p{
 	color: #101011;
 	font-family: 'Barlow', sans-serif; 
@@ -116,7 +140,7 @@ h5{
 	line-height: normal;
 	letter-spacing: 32px;
 	text-transform: uppercase;
-	padding: 100px 0px;
+	padding: 100px 0px 40px 0px;
 }
 .regular{
 	font-weight: 400;
@@ -146,14 +170,12 @@ footer{
 	background-color: #101011;
 	display: flex;
 	width: 100%;
-	height: 126px;
+	height: 10vh;
 	flex-shrink: 0;
-	padding: 0px 60px 0px 40px;
+	padding: 0px 60px 0px 100px;
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
-	position: fixed;
-	
 }
 footer p { 
 	font-size: 16px;
@@ -184,13 +206,74 @@ footer p {
 	width: 100%;
 	height: 750px;
 	padding-top:80px;
+	gap:50px;
 	align-content: center;
 	align-items: center;
 	justify-content: center;
 }
+.cube {
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: spin 10s linear infinite;
+    transform: rotateX(30deg) rotateY(45deg);
+	right:31%;
+}
+@keyframes changeColor {
+  0% {
+    color: #f5f5f5; 
+
+  }
+  50% {
+    color: #000000; 
+	background-color: #e5e5e5;
+	opacity: 0.5;
+  }
+  100% {
+    color: #000000; 
+	background-color: #5151FC;
+  }
+}
+.face {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 4px solid #101011; /* Líneas más gruesas */
+    background: transparent;
+	animation: changeColor 5s infinite;
+}
+.front {
+    transform: translateZ(150px);
+	background-color: #101011;
+	animation: none;
+}
+.back {
+    transform: rotateY(180deg) translateZ(150px);
+}
+.left {
+    transform: rotateY(-90deg) translateZ(150px);
+}
+.right {
+    transform: rotateY(90deg) translateZ(150px);
+}
+.top {
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(150px);
+}
+@keyframes spin {
+    0% {
+        transform: rotateX(30deg) rotateY(45deg);
+    }
+    100% {
+        transform: rotateX(30deg) rotateY(405deg);
+    }
+}
 .presentacion {
 	display: flex;
-	width: 50%;
+	width: 30%;
 	height: 701px;
 	box-sizing: border-box;
 	justify-content: center;
@@ -204,7 +287,7 @@ footer p {
 	display:flex;
 	flex-direction: column;
 	padding-top:80px;
-	max-width: 50%;
+	max-width: 60%;
 	box-sizing: border-box;
 }
 .flecha{
@@ -235,6 +318,8 @@ footer p {
 }
 .seccion3{
 	display: flex;
+	box-sizing: border-box;
+	height: 100vh;
 }
 .introdescripcion{
 	display:flex;
@@ -246,36 +331,352 @@ footer p {
 	background: #ABABFF;
 	box-sizing: border-box;
 	}
-.carrousel ul{
-	list-style:none;
-}
-.carrousel-menu{
-	display: none;
-}
-.carrousel-fotos{
-	display: flex;
-	gap:10px;
-	overflow:auto;
+.introdescripcion .boton_competencias{
+	font-size:36px;
 }
 .galeria{
 	width:50%;
-	background:#F5F5F5 ;
-	padding: 100px;
+	background:#101011 ;
 	box-sizing: border-box;
 }
 .seccion4{
-	height:1589px;
+	height:120vh;
 	padding-left: 150px;
 	background-color: #101011;
 	padding-top: 60px;
 }
+/*PRUEBA GALERIA*/
+.galeriacontainer{
+	display: flex;
+    width:100%;
+	height: 80vh;
+    background-color: #f5f5f5;
+	box-sizing: border-box;
+	position: relative;
+}
+.item{
+    width:10%;
+    height:20%;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition: 0.5s;
+    background-size: cover;
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    border-radius: 5px;
+    box-shadow:  0 30px 50px #505050;
+}
+.item:nth-child(1),
+.item:nth-child(2){
+    left:0;
+    top:0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width:100%;
+    height:100%;
+    box-shadow: none;
+}
+.item:nth-child(3){
+    left:50%;
+}
+.item:nth-child(4){
+    left:calc(50% + 150px);
+}
+.item:nth-child(5){
+    left:calc(50% + 300px);
+}
+.item:nth-child(n+6){
+    left:calc(50% + 350px);
+    opacity: 0;
+}
+.content{
+	background-color: #000000;
+	padding: 40px;
+}
+.item .content{
+	opacity:1;
+    position: absolute;
+    top:50%;
+    left:100px;
+    width:300px;
+    text-align: left;
+    color:#eee;
+    transform: translate(0,-50%);
+    display: none;
+    font-family: 'Barlow';
+}
+.item:nth-child(2) .content{
+    display: block;
+    z-index: 11111;
+}
+.item .name{
+	opacity: 1;
+    font-size: 40px;
+    font-weight: bold;
+    animation:showcontent 1s ease-in-out 1 forwards
+}
+.item .des{
+    margin:20px 0;
+    opacity: 1;
+    animation:showcontent 1s ease-in-out 0.3s 1 forwards
+}
+.item button{
+    padding:10px 20px;
+    border:none;
+    opacity: 0;
+    animation:showcontent 1s ease-in-out 0.6s 1 forwards
+}
+button:hover{
+	background-color: #5151FC;
+	opacity: 0.8;
+}
+.arrow-left, .arrow-right {
+    font-size: 16px;
+    color: #000; 
+}
+@keyframes showcontent{
+    from{
+        opacity: 0;
+        transform: translate(0,100px);
+        filter:blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0,0);
+        filter:blur(0);
+    }
+}
+.buttons{
+    position: absolute;
+    bottom:20px;
+    z-index: 222222;
+    text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.buttons button{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border:1px solid #f5f5f5;
+    transition: 0.5s;
+	margin: 0 10px;
+
+}.buttons button:hover{
+    background-color: #5151FC;
+}
 .seccion5{
 	background-color: #5151FC;
-	height: 1245px;
+	height: 100%;
+	display: flex;
+	padding: 80px 90px;
+	gap: 30px;
+	align-items: center;
+	align-self: center;
+	justify-content: center;
+}
+.tarjetas-index{
+	padding: 40px;
+	flex-direction: column;
+	border-radius: 40px;
+	border: 2px solid #000;
+	background-color: #FFFFFF;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	width: 400px; /*hay que ajustar los tamaños de las tarjetas, para mi son grandes pero bue hay que ver según cada compu*/
+	height: 400px;
+}
+.nombrefoto{
+	display: flex;
+	padding-bottom: 20px;
+	gap: 40px;
+	align-items: center;
+	display: flex;
+}
+.nombrefoto img{
+	height: 60px;
+	width: 60px;
+	border-radius: 100px;
+	display: flex;
+  	justify-content: flex-end;
+}
+h4{
+	font-family: 'Barlow', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	font-variant: small-caps;
+}
+.comentario{
+	border-top: 2px solid #101011;
+	padding-top: 10px;
+}
+.p-seccion5{
+	font-family: 'Barlow', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	color: #101011;
+	text-wrap: balance;
+}
+h6{
+	font-family: 'Barlow', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	font-variant: small-caps;
+	color: #101011;
+	padding-top: 40px;
 }
 .seccion6{
 	background-color: #F5F5F5;
-	height:1627px;
+	height:80vh;
+	padding-left: 150px;
+}
+/*preguntas frecuentes*/
+.container {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 80%;
+}
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #5151FC;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 20px 20px 20px 0px;
+  color: #101011;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #5151FC;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #5151FC;
+  border: 1px solid #5151FC;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+	font-size: 30px;
+	font-weight: 500;
+	color: #101011;
+    font-family: 'Barlow', sans-serif;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 29px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+  color: #5151FC;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+	font-size: 27px;
+    font-weight: 400;
+    margin: 20px 20px 30px 55px;
+}
+/*grilla*/
+.parent {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 100px;
+	grid-row-gap: 20px;
+	align-items:end;
+	padding: 20px;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; 
+	border-bottom: 2px solid #F5F5F5;
+}
+.div2 { grid-area: 1 / 2 / 2 / 3; 
+border-bottom: 2px solid #F5F5F5;
+}
+.div3 { grid-area: 1 / 3 / 2 / 4; 
+border-bottom: 2px solid #F5F5F5;
+}
+.div4 { grid-area: 2 / 1 / 3 / 2; 
+border-bottom: 2px solid #F5F5F5;
+}
+.div5 { grid-area: 2 / 2 / 3 / 3; 
+border-bottom: 2px solid #F5F5F5;
+}
+.div6 { grid-area: 2 / 3 / 3 / 4; 
+border-bottom: 2px solid #F5F5F5;
+}
+.div7 { grid-area: 3 / 1 / 4 / 2; 
+border-bottom: 2px solid #F5F5F5;
+}
+.div8 { grid-area: 3 / 2 / 4 / 3; 
+border-bottom: 2px solid #F5F5F5;
+}
+.div9 { grid-area: 3 / 3 / 4 / 4; 
+border-bottom: 2px solid #F5F5F5;
+}
+.div10 { grid-area: 4 / 1 / 5 / 2; 
+border-bottom: 2px solid #F5F5F5;
+}
+.div11 { grid-area: 4 / 2 / 5 / 3; 
+border-bottom: 2px solid #F5F5F5;
+}
+.div12 { grid-area: 4 / 3 / 5 / 4; 
+border-bottom: 2px solid #F5F5F5;
 }
 /*INDEX MENÚ HAMBURGUESA*/
 a{
@@ -324,16 +725,26 @@ a{
 }
 
 /*SOBRE NOSOTROS*/ 
-.imgalumna {
+/*SOBRE NOSOTROS*/ 
+#footer-sobre-nosotros {
+	margin-top: auto;
+	bottom: 0%;
+	
+}
+
+.sectionsobrenosotros img {
 	padding: 0px;
-	margin: 0px; /*LU: ¿cómo hago para que el pequeño borde blanco que se ve abajo de la imagen desaparezca?, no encuentro de donde proviene*/
+	margin-top: 60px; 
+	height: 150%;
+	width: 100%;
+	min-height: 85vh;
 }
 
 .sectionsobrenosotros {
 	display:flex;
 	flex-direction: row;
 	justify-content: center;
-	/*quiero aplicar column gap pero solo del lado derecho porque el fondo violeta tiene que permanecer "pegado" a la imagen*/
+	min-height: 90vh;
 }
 
 .h3_titulo_nosotros {
@@ -345,50 +756,58 @@ a{
 	margin-bottom: 10px;
 	background-color: #FFFFFF;
 	display:flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 3px 30px 3px 30px;
+	justify-content: flex-start;
+	padding: 10px 30px 10px 30px;
+	/*acá en otro h3 hay un padding left que por eso no puedo arreglar
 	/*LU: no sé si es correcto ajustar con margin el fondo de color de "QUE ES OMA".*/
 }
 
 
 .caja_centro_nosotros {
 	background-color: #ABABFF;
-	border-radius: 0px 20px 20px 0px;
-	padding: 80px 30px 80px 50px;
+	border-radius: 0px 40px 50px 0px;
+	padding: 80px 30px 80px 65px;
 	display:flex;
-	align-items: center;
+	align-items: flex-start;
 	flex-direction: column;
 	justify-content: center;
 	width: 100%; /*no sé si esto es correcto*/
-	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
+	margin-top: 7%;
 }
 
 .caja_derecha_nosotros {
-	padding: 80px 30px 80px 50px;
+	padding: 80px 30px 80px 65px;
 	display:flex;
-	align-items: left;
 	flex-direction: column;
 	justify-content:center;
 	width: 100%; /*no sé si esto es correcto*/
-	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
-	
+	margin-top: 7%;
 }
+
+
 .parrafos_nosotros {
 	font-family:'Barlow', sans-serif;
 	font-size: 25px;
 	font-weight: 400; /*le puse 400 porque me parecía que se lee mejor que poner 300 de peso*/
 	line-height: normal;
 	color: #101011;
-	/*border-top-width: 3px;
+	border-top-width: 3px;
 	border-top-style: solid;
-	border-top-color: #101011;*/ /*LU:después vemos de resolver la línea abajo de los títulos*/
-	margin-top: 20px;
+	border-top-color: #101011;
+	margin-top: 85px;
 	display:flex;
 	align-items: center;
 	flex-direction: row;
 	justify-content: center;
 	text-align:left;
+	width: 85%;
+}
+
+.linea-sobrenosotros {
+	width: 80%;
+	height: 4px;
+	background-color: #101011;
+	margin-bottom: 10px;
 }
 
 .boton_competencias {
@@ -403,13 +822,11 @@ a{
 	cursor: pointer;
 	margin-top: 60px;
 	border: none;
-	/*LU → para Aimé: es la primera vez que hago un botón así en css, espero estén bien las propiedades*/
 }
 
 .boton_competencias:hover {
 	background-color: #000000;
 }
-
 
 
 /*COMPETENCIAS*/
@@ -464,7 +881,8 @@ a{
 .formulario {
 	background-color: #F5F5F5;
 	padding: 150px;
-	width: 100%
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .formulario h2 {
@@ -474,16 +892,15 @@ a{
 	padding-left: 50px;
 	background-color: #5151FC;
 }
-
 form {
 	padding: 40px;
 	width: 100%;
+	box-sizing: border-box;
 	height: auto;
 	font-family: 'Barlow', sans-serif; 
 	font-size: 32px;
 	font-weight: 400;
 	line-height: normal;
-	/*border: 1px solid black;*/ 
 	display: flex;
 	flex-wrap: nowrap;
 }
@@ -494,6 +911,7 @@ form .columnaizquierda {
 	background-color: white;
 	border-radius: 10px;
 	display: flex;
+	box-sizing: border-box;
 	flex-direction: column;
 }
 
@@ -502,6 +920,7 @@ form .columnaderecha {
 	padding: 20px;
 	background: white;
 	border-radius: 10px;
+	box-sizing: border-box;
 }
 
 label {
@@ -514,7 +933,7 @@ input {
 	width: 100%;
 	padding: 10px;
 	font-family: 'Barlow', sans-serif; 
-	font-size: 32px;
+	font-size: 20px;
 	font-weight: 400;
 	line-height: normal;
 	border-radius: 5px;
@@ -533,8 +952,30 @@ input {
 .label, .input {
 	display: inline-block;
 }
-
-
+input[type="date"] {
+  width: 200px; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 20px; 
+  background-color: #e5e5e5; 
+  color: #101011; 
+  box-sizing: border-box;
+}
+select {
+  width: 200px; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #fff; 
+  color: #101011; 
+  font-size: 20px; 
+}
+select:focus {
+  outline: none; 
+  border-color: #5151FC; 
+  box-shadow: #5151FC;
+}
 /*MENSAJE*/
 .bodymensaje {
 	background-color: #5151FC;
@@ -665,7 +1106,24 @@ input {
 }
 /*16/10: volviendo hacer commit porque me mandé una caga** mezclando la carpeta con mi CV :D*/
 
-
+/*ICONOS*/
+.icon-container {
+  position: fixed;
+  top: 400px; 
+  left: 0px; 
+  background-color: #f5f5f5;
+  padding: 20px;
+  opacity: 1;
+}
+.icon {
+  width: 40px; 
+  height: 40px; 
+  display: flex;
+}
+.icon:hover{
+	border-bottom: 5px solid #000000;
+	opacity: 0.5;
+}
 
 /*ANIMACIONES*/
 @keyframes movimiento {
@@ -679,5 +1137,112 @@ input {
     transform: translateY(0px);
   }
 }
+@media screen and (max-width: 600px) {
+	/*CAMBIOS GENERALES*/
+	
+	
+	
+	/*HEADER*/
+	.botonera {
+		height: 80px;
+		padding: 0px 46px 13px 40px;
+	}
+	
+	.logo, .botonera ul {
+		margin-top: 20px;
+		
+		
+	}
 
+	
+	/*FOOTER*/
+	
+	
+	.footer {
+		column-gap: 60px;
+		padding: 0px 42px 0px 62px;
+		height: 110px;
+	}
+	
+	.redesenfooter {
+		padding-left: 0px;
+		bottom: 0%;
+	}
+	
+	.footer p{
+		font-size: 11px;
+	}
+	
+	.itemslegales {
+		flex-direction: column;
+		gap: 12px;
+		width: 30%;
+	}
+	
+	/*INDEX*/
+	
+	
+	/*INDEX MENÚ HAMBURGUESA*/
+	
+	
+	/*SOBRE NOSOTROS*/
+	.sectionsobrenosotros{
+		flex-direction: column;
+	}
+	
+	.sectionsobrenosotros img {
+		min-height: 0vh;
+		width: 100%;
+		margin-top: 0px;
+	}
+	
+	.caja_centro_nosotros {
+		margin-top: 0px;
+		width: inherit;
+		border-radius: 0px 0px 50px 0px;
+		padding: 50px 50px 55px 65px;
+	}
+	
+	.caja_derecha_nosotros {
+		margin-top: 0px;
+		padding: 32px 50px 50px 65px;
+		width: inherit;
+		
+	}
+	
+	.parrafos_nosotros {
+		margin-top: 32px;
+		font-size: 19px;
+		width: 80%;
+	}
+	
+	.h3_titulo_nosotros {
+		font-size: 26px;
+	}
+	
+	.linea-sobrenosotros {
+		height: 3px;
+	}
+	
+	.boton_competencias{
+		margin-top: 50px;
+	}
+	/*COMPETENCIAS*/
+	
+	
+	
+	/*INSCRIPCIÓN*/
+	
+	
+	/*MENSAJE*/
+	
+	
+	
+	/*OLIMPÍADAS ÑANDÚ*/
+	
+	
+	
+	
+	/*CONTACTO*/
+}
 
