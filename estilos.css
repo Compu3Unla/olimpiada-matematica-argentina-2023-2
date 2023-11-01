@@ -5,10 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
 
-/* ESTÁN USANDO MUCHAS MEDIDAS FIJAS!!!! No copien los datos duros de figma, por ejemplo, en todos los casos donde hayan establecido ancho de 1920px en realidad establecemos que es el ancho máximo de la pantalla, y no todas las pantallas son del mismo tamaño, o sea que van a necesitar medidas relativas, en porcentajes. También recuerden que si se tomaron el esfuerzo de hacer que el auto-layout funcione, es para no tener que ponerle una altura fija, sino que la altura esté dada por el contenido (objetos internos, margins, paddings y gap). Les recomiendo entrar al inspector e ir destildando algunos de los estilos que establecieron para ver si realmente cambia algo o está de más*
-También revisen el material optativo que les puede servir con el menú hamburguesa y el mensaje de inscripción.
-Un último dato sobre valores relativos, como no es posible establecer un alto de 100% porque tecnicamente el scroll es infinito, hay otro valor que es vh, o sea viewport heigth, y se usa como porcentaje. Por ejemplo, tengo una pantalla que por sí sola no alcanza los 1080px de alto pero también sé que no todas las pantallas tienen ese alto, puedo darle específicamente a esa página un heigth: 100vh; y funciona igual que con porcentajes.*/
-
 *{
 	margin: 0px;
 	padding:0px;
@@ -72,7 +68,7 @@ h1{
 p{
 	color: #101011;
 	font-family: 'Barlow', sans-serif; 
-	font-size: 32px;
+	font-size: 28px;
 	font-weight: 400;
 	line-height: normal;
 }
@@ -114,7 +110,7 @@ h3{
 	text-transform: uppercase;
 	color: #F5F5F5;
 	background-color: #101011;
-	padding-left: 20px;
+	padding: 10px 20px;
 }
 
 /*TÍTULOS*/
@@ -135,7 +131,7 @@ h5{
 	color: #F5F5F5;
 	font-variant-numeric: lining-nums proportional-nums;
 	font-family: 'Barlow', sans-serif;
-	font-size: 122px;
+	font-size: 56px;
 	font-weight: 900;
 	line-height: normal;
 	letter-spacing: 32px;
@@ -201,15 +197,22 @@ footer p {
 }
 
 /*INDEX*/
+.seccion1 main{
+	width: 100%;
+	background-color: #e5e5e5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .seccion1 {
 	display: flex;
-	width: 100%;
+	max-width: 1200px;
 	height: 750px;
 	padding-top:80px;
 	gap:50px;
-	align-content: center;
-	align-items: center;
+	box-sizing: border-box;
 	justify-content: center;
+	align-items: center;
 }
 .cube {
     width: 300px;
@@ -217,7 +220,6 @@ footer p {
     transform-style: preserve-3d;
     animation: spin 10s linear infinite;
     transform: rotateX(30deg) rotateY(45deg);
-	right:31%;
 }
 @keyframes changeColor {
   0% {
@@ -273,7 +275,7 @@ footer p {
 }
 .presentacion {
 	display: flex;
-	width: 30%;
+	width: 50%;
 	height: 701px;
 	box-sizing: border-box;
 	justify-content: center;
@@ -287,7 +289,7 @@ footer p {
 	display:flex;
 	flex-direction: column;
 	padding-top:80px;
-	max-width: 60%;
+	width: 50%;
 	box-sizing: border-box;
 }
 .flecha{
@@ -319,24 +321,22 @@ footer p {
 .seccion3{
 	display: flex;
 	box-sizing: border-box;
-	height: 100vh;
 }
 .introdescripcion{
 	display:flex;
 	align-content: center;
 	flex-direction: column;
-	gap: 100px;
-	padding: 300px 200px;
 	width:50%;
 	background: #ABABFF;
 	box-sizing: border-box;
+	justify-content: center;
+	padding-left: 140px;
 	}
 .introdescripcion .boton_competencias{
 	font-size:36px;
 }
 .galeria{
 	width:50%;
-	background:#101011 ;
 	box-sizing: border-box;
 }
 .seccion4{
@@ -345,11 +345,11 @@ footer p {
 	background-color: #101011;
 	padding-top: 60px;
 }
-/*PRUEBA GALERIA*/
+/*GALERIA*/
 .galeriacontainer{
 	display: flex;
     width:100%;
-	height: 80vh;
+	height: 90vh;
     background-color: #f5f5f5;
 	box-sizing: border-box;
 	position: relative;
@@ -425,7 +425,8 @@ footer p {
     padding:10px 20px;
     border:none;
     opacity: 0;
-    animation:showcontent 1s ease-in-out 0.6s 1 forwards
+    animation:showcontent 1s ease-in-out 0.6s 1 forwards;
+
 }
 button:hover{
 	background-color: #5151FC;
@@ -757,9 +758,7 @@ a{
 	background-color: #FFFFFF;
 	display:flex;
 	justify-content: flex-start;
-	padding: 10px 30px 10px 30px;
-	/*acá en otro h3 hay un padding left que por eso no puedo arreglar
-	/*LU: no sé si es correcto ajustar con margin el fondo de color de "QUE ES OMA".*/
+	padding: 10px 30px;
 }
 
 
