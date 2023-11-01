@@ -1103,7 +1103,7 @@ ol li {
 	letter-spacing: 0px;
 }
 
-ul li .instancias {
+.instancias ul li {
 	color: #101011;
 	font-family: 'Barlow', sans-serif;
 	font-weight: 400;
