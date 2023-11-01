@@ -725,16 +725,26 @@ a{
 }
 
 /*SOBRE NOSOTROS*/ 
-.imgalumna {
+/*SOBRE NOSOTROS*/ 
+#footer-sobre-nosotros {
+	margin-top: auto;
+	bottom: 0%;
+	
+}
+
+.sectionsobrenosotros img {
 	padding: 0px;
-	margin: 0px; /*LU: ¿cómo hago para que el pequeño borde blanco que se ve abajo de la imagen desaparezca?, no encuentro de donde proviene*/
+	margin-top: 60px; 
+	height: 150%;
+	width: 100%;
+	min-height: 85vh;
 }
 
 .sectionsobrenosotros {
 	display:flex;
 	flex-direction: row;
 	justify-content: center;
-	/*quiero aplicar column gap pero solo del lado derecho porque el fondo violeta tiene que permanecer "pegado" a la imagen*/
+	min-height: 90vh;
 }
 
 .h3_titulo_nosotros {
@@ -746,50 +756,58 @@ a{
 	margin-bottom: 10px;
 	background-color: #FFFFFF;
 	display:flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 3px 30px 3px 30px;
+	justify-content: flex-start;
+	padding: 10px 30px 10px 30px;
+	/*acá en otro h3 hay un padding left que por eso no puedo arreglar
 	/*LU: no sé si es correcto ajustar con margin el fondo de color de "QUE ES OMA".*/
 }
 
 
 .caja_centro_nosotros {
 	background-color: #ABABFF;
-	border-radius: 0px 20px 20px 0px;
-	padding: 80px 30px 80px 50px;
+	border-radius: 0px 40px 50px 0px;
+	padding: 80px 30px 80px 65px;
 	display:flex;
-	align-items: center;
+	align-items: flex-start;
 	flex-direction: column;
 	justify-content: center;
 	width: 100%; /*no sé si esto es correcto*/
-	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
+	margin-top: 7%;
 }
 
 .caja_derecha_nosotros {
-	padding: 80px 30px 80px 50px;
+	padding: 80px 30px 80px 65px;
 	display:flex;
-	align-items: left;
 	flex-direction: column;
 	justify-content:center;
 	width: 100%; /*no sé si esto es correcto*/
-	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
-	
+	margin-top: 7%;
 }
+
+
 .parrafos_nosotros {
 	font-family:'Barlow', sans-serif;
 	font-size: 25px;
 	font-weight: 400; /*le puse 400 porque me parecía que se lee mejor que poner 300 de peso*/
 	line-height: normal;
 	color: #101011;
-	/*border-top-width: 3px;
+	border-top-width: 3px;
 	border-top-style: solid;
-	border-top-color: #101011;*/ /*LU:después vemos de resolver la línea abajo de los títulos*/
-	margin-top: 20px;
+	border-top-color: #101011;
+	margin-top: 85px;
 	display:flex;
 	align-items: center;
 	flex-direction: row;
 	justify-content: center;
 	text-align:left;
+	width: 85%;
+}
+
+.linea-sobrenosotros {
+	width: 80%;
+	height: 4px;
+	background-color: #101011;
+	margin-bottom: 10px;
 }
 
 .boton_competencias {
@@ -804,13 +822,11 @@ a{
 	cursor: pointer;
 	margin-top: 60px;
 	border: none;
-	/*LU → para Aimé: es la primera vez que hago un botón así en css, espero estén bien las propiedades*/
 }
 
 .boton_competencias:hover {
 	background-color: #000000;
 }
-
 
 
 /*COMPETENCIAS*/
@@ -1121,5 +1137,112 @@ select:focus {
     transform: translateY(0px);
   }
 }
+@media screen and (max-width: 600px) {
+	/*CAMBIOS GENERALES*/
+	
+	
+	
+	/*HEADER*/
+	.botonera {
+		height: 80px;
+		padding: 0px 46px 13px 40px;
+	}
+	
+	.logo, .botonera ul {
+		margin-top: 20px;
+		
+		
+	}
 
+	
+	/*FOOTER*/
+	
+	
+	.footer {
+		column-gap: 60px;
+		padding: 0px 42px 0px 62px;
+		height: 110px;
+	}
+	
+	.redesenfooter {
+		padding-left: 0px;
+		bottom: 0%;
+	}
+	
+	.footer p{
+		font-size: 11px;
+	}
+	
+	.itemslegales {
+		flex-direction: column;
+		gap: 12px;
+		width: 30%;
+	}
+	
+	/*INDEX*/
+	
+	
+	/*INDEX MENÚ HAMBURGUESA*/
+	
+	
+	/*SOBRE NOSOTROS*/
+	.sectionsobrenosotros{
+		flex-direction: column;
+	}
+	
+	.sectionsobrenosotros img {
+		min-height: 0vh;
+		width: 100%;
+		margin-top: 0px;
+	}
+	
+	.caja_centro_nosotros {
+		margin-top: 0px;
+		width: inherit;
+		border-radius: 0px 0px 50px 0px;
+		padding: 50px 50px 55px 65px;
+	}
+	
+	.caja_derecha_nosotros {
+		margin-top: 0px;
+		padding: 32px 50px 50px 65px;
+		width: inherit;
+		
+	}
+	
+	.parrafos_nosotros {
+		margin-top: 32px;
+		font-size: 19px;
+		width: 80%;
+	}
+	
+	.h3_titulo_nosotros {
+		font-size: 26px;
+	}
+	
+	.linea-sobrenosotros {
+		height: 3px;
+	}
+	
+	.boton_competencias{
+		margin-top: 50px;
+	}
+	/*COMPETENCIAS*/
+	
+	
+	
+	/*INSCRIPCIÓN*/
+	
+	
+	/*MENSAJE*/
+	
+	
+	
+	/*OLIMPÍADAS ÑANDÚ*/
+	
+	
+	
+	
+	/*CONTACTO*/
+}
 
