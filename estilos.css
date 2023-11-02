@@ -705,10 +705,7 @@ a{
 	flex-wrap: wrap;
 }
 .menulight {
-	font-family:'Barlow', sans-serif;
-	font-size: 70px;
-	font-weight: 300;
-	line-height: normal;
+	font: 300 70px/normal 'Barlow', sans-serif;
 	color: #F5F5F5;
 	padding: 15px;
 }
@@ -718,10 +715,7 @@ a{
 }
 
 .menubold {
-	font-family:'Space Grotesk', sans-serif;
-	font-size: 70px;
-	font-weight: 700;
-	line-height: normal;
+	font: 700 70px/normal 'Space Grotesk', sans-serif;
 	color: #F5F5F5;
 	padding: 15px;
 }
@@ -855,20 +849,13 @@ a{
 	border-radius: 20px;
 }
 .pcompetencias{
-	font-family: 'Darker Grotesque', sans-serif;
-	font-weight: 700;
-	font-size: 30px;
-	font-style: normal;
+	font: 700 30px 'Space Grotesk', sans-serif;
 	padding-top: 20px;
 }
 
 .ptarjetas {
 	color: #101011;
-	font-family: 'Barlow', sans-serif;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
+	font: 400 18px/normal 'Barlow', sans-serif;
 	border-top: 3px solid #101011;
 	padding-top: 25px;
 }
@@ -988,8 +975,6 @@ select:focus {
 	align-content: center;
 	display: flex;
 	flex-direction: column;
-	/*text-align: center; 
-	max-width: 1200px; JU: si lo pongo acá se achica hasta el footer, me dudas de si es necesaria esrta clase, se puede seguir tranquilamente con la de mensaje inscripcion o no?*/
 }
 
 .mensajeinscripcion{
@@ -1004,20 +989,14 @@ select:focus {
 	padding: 100px;
 }
 .h2_inscripcion{
-	font-size: 40px;
-	font-family: 'Space Grotesk', sans-serif;
-	font-weight: 700;
-	line-height: normal;
+	font: 700 40px/normal 'Space Grotesk', sans-serif;
 	text-transform: uppercase;
 	color: #F5F5F5;
 	padding: 0 0 10px 0; 
 	max-width: none;
 }
 .h3_inscripcion{
-	font-family: 'Barlow', sans-serif;
-	font-size: 25px;
-	font-weight: 400;
-	line-height: normal;
+	font: 400 25px/normal 'Barlow', sans-serif;
 	text-transform: uppercase;
 	color: #F5F5F5;
 }
@@ -1388,8 +1367,7 @@ ol li {
 	.competencias{
 		flex-direction: column;
 		height: auto;
-		padding-top: 80px;
-		padding-bottom: 80px;
+		padding: 80px 0px;
 		gap: 40px;
 	}
 	.tarjetas{
