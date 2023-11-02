@@ -928,6 +928,9 @@ input {
 	margin-bottom: 5px;
 	background-color: #CFCFCF;
 }
+.opciones_desplegable {
+	margin-top: 3px;
+}
 
 .contenedor_boton_enviar {
 	display: flex;
