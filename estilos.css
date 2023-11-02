@@ -1359,17 +1359,17 @@ ol li {
 		font-size: 28px;
 		max-width: 50%;
 	}
-	/*.competencia{
-		padding-left: 20px;
-		padding-right: 20px;
-	}*/
+	.competencia{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 	.competencias{
 		flex-direction: column;
 		height: auto;
 		padding-top: 80px;
 		padding-bottom: 80px;
 		gap: 40px;
-		padding-left: 6px;
 	}
 	.tarjetas{
 		width: 325px;
