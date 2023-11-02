@@ -25,38 +25,42 @@
 		<section class="section_contenedora_contacto">
 			<section> <!--LU: ¿Podría llegar a ser <article> en vez de <section>?-->
 				<h2 class="titulo_contacto">CONTACTO</h2>
-				<section class="section_infosuperior"> 
+				<section class="section_infosuperior">
 					<div class="datos_contacto"> <!--LU: supuse que estos cuatro divs pueden tener la misma clase-->
 						<img src="img/telefono.svg" width="40px" height="40px" alt="icono_telefono">
 						<a href="tel:+54 9 11 4826-6900" class="a_contacto" target="_blank">+54 9 11 4826-6900</a>
-							<!--Consulta para Aimé: apliqué la etiqueta <a> con el agregado de "tel" para que funcione al hacer click y llamar, ¿se puede usar así?-->
+						<!--Consulta para Aimé: apliqué la etiqueta <a> con el agregado de "tel" para que funcione al hacer click y llamar, ¿se puede usar así?-->
 					</div>
 					<div class="datos_contacto"> <!--LU: supuse que estos cuatro divs pueden tener la misma clase-->
 						<img src="img/ubicacion_mapa.svg" width="45px" height="45px" alt="icono_ubicacion">
-						<a href="https://maps.app.goo.gl/Zqk5JtHiyzheGZmo7" class="a_contacto" target="_blank">Santa Fe 3312 - 9° piso - CABA</a>
+						<a href="https://maps.app.goo.gl/Zqk5JtHiyzheGZmo7" class="a_contacto" target="_blank">Santa Fe
+							3312 - 9° piso - CABA</a>
 						<!--Consulta para Aimé: a la dirección le puse esta etiqueta <a> pero tal vez también podría ser <adress>?-->
 					</div>
 					<div class="datos_contacto"> <!--LU: supuse que estos cuatro divs pueden tener la misma clase-->
 						<img src="img/instagram.svg" width="45px" height="45px" alt="icono_instagram">
-						<a href="https://www.instagram.com/oma.org.ar/" class="a_contacto" target="_blank">@oma.com.ar</a>
+						<a href="https://www.instagram.com/oma.org.ar/" class="a_contacto"
+							target="_blank">@oma.com.ar</a>
 					</div>
 					<div class="datos_contacto"> <!--LU: supuse que estos cuatro divs pueden tener la misma clase-->
 						<img src="img/facebook.svg" width="45px" height="45px" alt="icono_facebook">
-						<a href="https://www.facebook.com/omalanus?locale=es_LA" class="a_contacto" target="_blank">Olimpiada Matemática Argentina</a>
+						<a href="https://www.facebook.com/omalanus?locale=es_LA" class="a_contacto"
+							target="_blank">Olimpiada Matemática Argentina</a>
 					</div>
 				</section>
 				<section class="section_emailnovedades">
 					<img src="img/email.svg" width="45px" height="45px" alt="icono_email">
-						<div class="dosrenglones_novedades">
-							<p class="texto_novedades">Enterate de las novedades</p>
-							<a href="mailto:info@oma.org.ar" class="a_contacto" target="_blank">info@oma.org.ar</a>
-						</div>
+					<div class="dosrenglones_novedades">
+						<p class="texto_novedades">Enterate de las novedades</p>
+						<a href="mailto:info@oma.org.ar" class="a_contacto" target="_blank">info@oma.org.ar</a>
+					</div>
 				</section>
 			</section>
-					<img src="img/alumna_escribiendo.jpg" alt="img_ninia"><!--Colocar imagen del mapa de ubicación, ancho y alto-->
-				<!--Consulta Aimé: ¿esta imagen si o sí debería estar dentro de un <div/section>?, porque me pasa que siempre me crea un bordecito transparente abajo-->
+			<img src="img/alumna_escribiendo.jpg"
+				alt="img_ninia"><!--Colocar imagen del mapa de ubicación, ancho y alto-->
+			<!--Consulta Aimé: ¿esta imagen si o sí debería estar dentro de un <div/section>?, porque me pasa que siempre me crea un bordecito transparente abajo-->
 		</section>
-		
+
 	</main>
 	<footer>
 		<div class="itemslegales">
@@ -64,7 +68,7 @@
 			<p>Términos y condiciones</p>
 			<p>Políticas de privacidad</p>
 		</div>
-		<div class="redesenfooter"> <!--después en css hay que ajustar la distancia entre los iconos-->
+		<div class="redesenfooter">
 			<a href="mailto:info@oma.org.ar" target="_blank">
 				<img src="img/email_blanco.svg" width="30px" height="30px" alt="iconoemail" />
 			</a>
@@ -79,6 +83,12 @@
 			<p>OMA - Argentina</p>
 		</div>
 	</footer>
+	<div class="icon-container">
+		<a href="https://www.facebook.com/"><img class="icon" src="img/facebook.svg" alt="Facebook" target="_blank"></a>
+		<a href="https://www.instagram.com/"><img class="icon" src="img/instagram.svg" alt="Instagram"
+				target="_blank"></a>
+		<a href="contacto.html"><img class="icon" src="img/email.svg" alt="Contacto" target="_blank"></a>
+	</div>
 </body>
 
 </html>
