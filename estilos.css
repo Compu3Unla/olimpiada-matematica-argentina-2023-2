@@ -752,7 +752,7 @@ a{
 }
 .h3_titulo_nosotros {
 	font-family:'Space Grotesk', sans-serif;
-	font-size: 40px;
+	font-size: 32px;
 	font-weight: 700;
 	line-height: normal;
 	color: #101011;
@@ -798,7 +798,7 @@ a{
 	/*border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #101011;*/ /*LU:después vemos de resolver la línea abajo de los títulos*/
-	margin-top: 85px;
+	margin-top: 70px;
 	display:flex;
 	align-items: center;
 	flex-direction: row;
