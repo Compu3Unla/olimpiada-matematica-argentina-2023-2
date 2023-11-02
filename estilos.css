@@ -693,12 +693,16 @@ a{
 }
 .bodymenu{
 	background-color: #101011;
-	/*max-width: 1200px;
-	justify-content: center;*/
 }
 .menuhamburguesa{
 	text-align: center;
-	padding: 250px 0px;
+	padding: 150px 0px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .menulight {
 	font-family:'Barlow', sans-serif;
@@ -706,10 +710,11 @@ a{
 	font-weight: 300;
 	line-height: normal;
 	color: #F5F5F5;
+	padding: 15px;
 }
 .menulight:hover {
 	color: #101011; 
-	background-color: #5151FC;/*JU: no se bien acá cómo hacer para que el fondo del  hover digamos, quede al mismo tamaño que el texto así como está en el figma*/ 
+	background-color: #5151FC;
 }
 
 .menubold {
@@ -718,10 +723,11 @@ a{
 	font-weight: 700;
 	line-height: normal;
 	color: #F5F5F5;
+	padding: 15px;
 }
 .menubold:hover {
 	color: #101011; 
-	background-color: #5151FC; /*JU: no se bien acá cómo hacer para que el fondo del  hover digamos, quede al mismo tamaño que el texto así como está en el figma*/
+	background-color: #5151FC;
 }
 
 .iconosredesmenu{
