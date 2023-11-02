@@ -1338,7 +1338,7 @@ ol li {
         padding: 2rem;
     }
 	.accordion-item{
-		max-width:70%;
+		max-width:100%;
 	}
     .accordion button .accordion-title {
         font-size: 16px;
@@ -1346,6 +1346,10 @@ ol li {
     .accordion button .icon {
         top: 16px;
     }
+	.accordion .accordion-content p{
+		font-size: 14px;
+		max-width: 100%;
+	}
     .parent {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 20px;
@@ -1405,10 +1409,19 @@ ol li {
   .contenedor-seccion1 img{
 	display:none;
   }
-.footer {
+	.footer {
 		column-gap: 0px;
 	}
-}
+	/*MENSAJE*/
+	.mensajeinscripcion h3{
+		font-size: 20px; /*JU: NO PUEDO MODIFICAR ESTO, el del h2 tampoco*/
+	}
+	.mensajeinscripcion h2{
+		font-size: 20px;
+	}
+	.mensajeinscripcion{
+		padding: 20px;
+	}
 	/*HEADER*/
 	.botonera {
 		height: 80px;
@@ -1416,38 +1429,9 @@ ol li {
 		width: 100%;
 		box-sizing: border-box;
 	}
-	
 	.logo, .botonera ul {
 		margin-top: 20px;
-		
-		
 	}
-
-	
-	/*FOOTER*/
-	
-	
-	.footer {
-		column-gap: 60px;
-		padding: 0px 42px 0px 62px;
-		height: 110px;
-	}
-	
-	.redesenfooter {
-		padding-left: 0px;
-		bottom: 0%;
-	}
-	
-	.footer p{
-		font-size: 11px;
-	}
-	
-	.itemslegales {
-		flex-direction: column;
-		gap: 12px;
-		width: 30%;
-	}
-
 	/*INDEX MENÚ HAMBURGUESA*/
 	
 	
@@ -1528,16 +1512,7 @@ ol li {
 	/*INSCRIPCIÓN*/
 	
 	
-	/*MENSAJE*/
-	.mensajeinscripcion h3{
-		font-size: 20px; /*JU: NO PUEDO MODIFICAR ESTO, el del h2 tampoco*/
-	}
-	.mensajeinscripcion h2{
-		font-size: 20px;
-	}
-	.mensajeinscripcion{
-		padding: 20px;
-	}
+	
 	
 	/*OLIMPÍADAS ÑANDÚ*/
 	
@@ -1575,6 +1550,13 @@ ol li {
 		margin: 20px 0px 10px 30px;
 		gap: 20px;
 	}
+}
+	
+
+	
+	
+
+	
 
 
 
