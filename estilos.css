@@ -41,7 +41,6 @@ header{
 	gap:20px; 
 }
 .botonera ul li a:hover {
-	background-color: #5151FC;
 	opacity: 0.5;
 }
 /* ZONA DE BIENVENIDA OMA*/
@@ -166,13 +165,11 @@ footer{
 	background-color: #101011;
 	display: flex;
 	width: 100%;
-	height: 10vh;
 	flex-shrink: 0;
-	padding: 0px 60px 0px 100px;
+	padding: 20px 60px 20px 100px;
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
-	/*position: fixed;*/
 }
 footer p { 
 	font-size: 16px;
@@ -207,13 +204,20 @@ footer p {
 }
 .seccion1 {
 	display: flex;
-	max-width: 1200px;
+	
+	width:100%;
 	height: 750px;
 	padding-top:80px;
 	gap:50px;
 	box-sizing: border-box;
 	justify-content: center;
 	align-items: center;
+}
+.contenedor-seccion1{
+	max-width: 1280px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 .cube {
 	width: 300px;
@@ -455,6 +459,8 @@ to{
 	text-align: center;
 	align-items: center;
 	justify-content: center;
+	width:100%;
+	margin-bottom: 20px;
 }
 .buttons button{
 	width:50px;
@@ -533,14 +539,15 @@ h6{
 }
 .seccion6{
 	background-color: #F5F5F5;
-	height:80vh;
-	padding-left: 150px;
+	padding: 0px 0px 40px 0px;
 }
 /*preguntas frecuentes*/
 .container {
 	margin: 0 auto;
 	padding: 4rem;
-	width: 80%;
+	width: 70%;
+	display: flex;
+	justify-content: center;
 }
 .accordion .accordion-item {
 	border-bottom: 1px solid #e5e5e5;
@@ -631,7 +638,7 @@ h6{
 	font-size: 20px;
 	font-weight: 400;
 	margin: 20px 20px 30px 55px;
-	max-width: 80%;
+	max-width: 60%;
 	box-sizing: border-box;
 }
 /*grilla*/
@@ -729,12 +736,6 @@ a{
 #footer-sobre-nosotros {
 	margin-top: auto;
 	bottom: 0%;
-
-}
-
-.sectionsobrenosotros img {
-	padding: 0px;
-	margin-top: 60px; /*LU: ¿cómo hago para que el pequeño borde blanco que se ve abajo de la imagen desaparezca?, no encuentro de donde proviene*/
 }
 .sectionsobrenosotros img {
 	padding: 0px;
@@ -748,7 +749,6 @@ a{
 	flex-direction: row;
 	justify-content: center;
 	min-height: 90vh;
-	/*quiero aplicar column gap pero solo del lado derecho porque el fondo violeta tiene que permanecer "pegado" a la imagen*/
 }
 .h3_titulo_nosotros {
 	font-family:'Space Grotesk', sans-serif;
@@ -760,12 +760,8 @@ a{
 	background-color: #FFFFFF;
 	display:flex;
 	justify-content: flex-start;
-	padding: 10px 30px 10px 30px;
-	/*acá en otro h3 hay un padding left que por eso no puedo arreglar
-	/*LU: no sé si es correcto ajustar con margin el fondo de color de "QUE ES OMA".*/
 	padding: 10px 30px;
 }
-
 .caja_centro_nosotros {
 	background-color: #ABABFF;
 	border-radius: 0px 40px 50px 0px;
@@ -776,7 +772,6 @@ a{
 	justify-content: center;
 	width: 100%; /*no sé si esto es correcto*/
 	margin-top: 7%;
-	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/
 }
 .caja_derecha_nosotros {
 	padding: 80px 30px 80px 65px;
@@ -785,19 +780,13 @@ a{
 	justify-content:center;
 	width: 100%; /*no sé si esto es correcto*/
 	margin-top: 7%;
-	/*LU: tengo que aplicar la propiedad que delimita hasta donde va crecer en ancho el texto, no estoy segura de cual es*/	
 }
-
-
 .parrafos_nosotros {
 	font-family:'Barlow', sans-serif;
 	font-size: 24px;
 	font-weight: 400; /*le puse 400 porque me parecía que se lee mejor que poner 300 de peso*/
 	line-height: normal;
 	color: #101011;
-	/*border-top-width: 3px;
-	border-top-style: solid;
-	border-top-color: #101011;*/ /*LU:después vemos de resolver la línea abajo de los títulos*/
 	margin-top: 85px;
 	display:flex;
 	align-items: center;
@@ -806,14 +795,12 @@ a{
 	text-align:left;
 	width: 85%;
 }
-
 .linea-sobrenosotros {
 	width: 80%;
 	height: 4px;
 	background-color: #101011;
 	margin-bottom: 10px;
 }
-
 .boton_competencias {
 	font-family:'Barlow', sans-serif;
 	font-size: 18px;
@@ -827,30 +814,30 @@ a{
 	margin-top: 50px;
 	border: none;
 }
-
-
 .boton_competencias:hover {
 	background-color: #000000;
 }
 /*COMPETENCIAS*/
-main h2{
-	padding-top: 100px; /*JU: hay q ver esto como afecta al resto de las cosaas*/
+.competencia {
+	background-color: #ABABFF;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	padding-top: 80px;
 }
 .competencias{
-	background-color: #ABABFF;
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
-	/*padding: 60px 80px;*/
 	align-items: center;
 	justify-content: center;
-	/*max-width: 1200px; JU: si pongo esto se descajeta todo*/
-	height: 80vh;
+	max-width: 80%;
+	flex-wrap: wrap;
+	padding-top: 20px;
 }
-
 .tarjetas{
 	display: flex;
-	padding: 30px;
+	padding: 20px;
 	flex-direction: column;
 	border-radius: 40px;
 	border: 1px solid #000;
@@ -858,11 +845,9 @@ main h2{
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	height: 500px;
 }
-
 .tarjetas img{
 	border-radius: 20px;
 }
-
 .pcompetencias{
 	font-family: 'Darker Grotesque', sans-serif;
 	font-weight: 700;
@@ -1451,111 +1436,3 @@ ol li {
 }
 
 
-@media screen and (max-width: 600px) {
-	/*CAMBIOS GENERALES*/
-	
-	
-	
-	/*HEADER*/
-	.botonera {
-		height: 80px;
-		padding: 0px 46px 13px 40px;
-	}
-	
-	.logo, .botonera ul {
-		margin-top: 20px;
-		
-		
-	}
-
-	
-	/*FOOTER*/
-	
-	
-	.footer {
-		column-gap: 60px;
-		padding: 0px 42px 0px 62px;
-		height: 110px;
-	}
-	
-	.redesenfooter {
-		padding-left: 0px;
-		bottom: 0%;
-	}
-	
-	.footer p{
-		font-size: 11px;
-	}
-	
-	.itemslegales {
-		flex-direction: column;
-		gap: 12px;
-		width: 30%;
-	}
-	
-	/*INDEX*/
-	
-	
-	/*INDEX MENÚ HAMBURGUESA*/
-	
-	
-	/*SOBRE NOSOTROS*/
-	.sectionsobrenosotros{
-		flex-direction: column;
-	}
-	
-	.sectionsobrenosotros img {
-		min-height: 0vh;
-		width: 100%;
-		margin-top: 0px;
-	}
-	
-	.caja_centro_nosotros {
-		margin-top: 0px;
-		width: inherit;
-		border-radius: 0px 0px 50px 0px;
-		padding: 50px 50px 55px 65px;
-	}
-	
-	.caja_derecha_nosotros {
-		margin-top: 0px;
-		padding: 32px 50px 50px 65px;
-		width: inherit;
-		
-	}
-	
-	.parrafos_nosotros {
-		margin-top: 32px;
-		font-size: 19px;
-		width: 80%;
-	}
-	
-	.h3_titulo_nosotros {
-		font-size: 26px;
-	}
-	
-	.linea-sobrenosotros {
-		height: 3px;
-	}
-	
-	.boton_competencias{
-		margin-top: 50px;
-	}
-	/*COMPETENCIAS*/
-	
-	
-	
-	/*INSCRIPCIÓN*/
-	
-	
-	/*MENSAJE*/
-	
-	
-	
-	/*OLIMPÍADAS ÑANDÚ*/
-	
-	
-	
-	
-	/*CONTACTO*/
-}
