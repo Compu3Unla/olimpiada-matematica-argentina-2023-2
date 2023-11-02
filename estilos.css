@@ -829,7 +829,7 @@ a{
 /*COMPETENCIAS*/
 
 main h2{
-	padding-top: 100px;
+	padding-top: 100px; /*JU: hay q ver esto como afecta al resto de las cosaas*/
 }
 
 .competencias{
@@ -988,7 +988,7 @@ select:focus {
 
 .mensajeinscripcion{
 	background-color: #5151FC;
-	height: 400px;
+	height: 800px;
 	display: flex;
 	text-align: center;
 	flex-direction: column;
@@ -1392,6 +1392,9 @@ ol li {
 	/*MENSAJE*/
 	.mensajeinscripcion h3{
 		font-size: 20px; /*JU: NO PUEDO MODIFICAR ESTO, el del h2 tampoco*/
+	}
+	.mensajeinscripcion h2{
+		font-size: 20px;
 	}
 	.mensajeinscripcion{
 		padding: 20px;
