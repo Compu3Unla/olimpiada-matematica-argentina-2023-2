@@ -979,23 +979,25 @@ select:focus {
 /*MENSAJE*/
 .bodymensaje {
 	background-color: #5151FC;
-	/*text-align: center;*/
-	/*JU: habría que ver acá que onda los tamaños de los textos porque en el figma estaba mas grande el texto superior asi que ahi lo cambie, no se si la alineacion quedo bien. yy tambien agregué el header y el footer, de última también después lo corrijo. También no supe como acomodar lo que sería el padding y eso primero porque me lo confundo con el border y también porque cuando ponía se movía TODO con footer y todo asi que nose*/
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	/*text-align: center; 
+	max-width: 1200px; JU: si lo pongo acá se achica hasta el footer, me dudas de si es necesaria esrta clase, se puede seguir tranquilamente con la de mensaje inscripcion o no?*/
 }
 
 .mensajeinscripcion{
+	background-color: #5151FC;
+	height: 400px;
 	display: flex;
-	width: 1920px;
-	height: 800px;
-	padding: 100px;
+	text-align: center;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	flex-shrink: 0;
-}/*JULI: no se si es acá el tema pero hay que ver que el fondo queda como gigante*/
-.mensajeinscripcion h2{
-	padding-bottom: 20px;
+	padding: 100px;
 }
+
 .mensajeinscripcion h3{
 	font-family: 'Barlow', sans-serif;
 	font-size: 35px;
@@ -1003,8 +1005,7 @@ select:focus {
 	line-height: normal;
 	text-transform: uppercase;
 	color: #F5F5F5;
-}/*JULI: en figma bocetamos este texto (el h3) en barlow, pero el h2 acá es la spaceG... o se lo cambiamos acá o hay que reveer los estilos. Ahora lo dejo así, pero después lo vemos bien*/
-
+}
 /*OLIMPÍADAS ÑANDÚ*/
 
 .niandu {
@@ -1389,8 +1390,12 @@ ol li {
 	
 	
 	/*MENSAJE*/
-	
-	
+	.mensajeinscripcion h3{
+		font-size: 20px; /*JU: NO PUEDO MODIFICAR ESTO, el del h2 tampoco*/
+	}
+	.mensajeinscripcion{
+		padding: 20px;
+	}
 	
 	/*OLIMPÍADAS ÑANDÚ*/
 	
