@@ -878,7 +878,6 @@ a{
 	flex-wrap: wrap;
     align-content: space-around;
 }
-
 .formulario h2 {
 	padding: 40px 2px 40px 50px;
 	background-color: #5151FC;
@@ -899,7 +898,6 @@ form {
 	background-color: white;
 	border-radius: 15px;
 	border: solid thin;
-	
 }
 form .columnaizquierda {
 	width: 50%;
@@ -931,14 +929,12 @@ input {
 .opciones_desplegable {
 	margin-top: 3px;
 }
-
 .contenedor_boton_enviar {
 	display: flex;
 	justify-content: flex-end;
 	width: 100%;
 	max-width: 1280px;
 }
-
 .enviar {
 	margin-top: 25px;
 	width: 20%;
@@ -948,7 +944,6 @@ input {
 	display: flex;
 	justify-content: center;
 }
-
 .enviar:hover{
 	background-color: #101011;
 }
@@ -1010,25 +1005,21 @@ select:focus {
 	color: #F5F5F5;
 }
 /*OLIMPÍADAS ÑANDÚ*/
-
 .niandu {
 	width: 100%;
 	height: 1000px;
 	background-color: #ABABFF;
 }
-
 .niandu h2 {
 	width: 20%;
 	background-color: #101011;
 	padding: 120px 10px 50px 120px;
 }
-
 .informacion_contenedor {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
 .informacion {
 	background-color: white;
 	border-radius: 50px;
@@ -1038,18 +1029,15 @@ select:focus {
 	gap: 20px;
 	max-width: 1280px;
 }
-
 .fotogrupal {
 	padding: 40px 0px 40px 40px;
 	display: flex;
 	box-sizing: border-box;
 	width: 50%;
 }
-
 .fotogrupal img {
 	border-radius: 20px;
 }
-
 .titulo_participacion, .titulo_calendario {
 	width: 80%;
 	color: #101011;
@@ -1058,30 +1046,25 @@ select:focus {
 	font-size: 32px;
 	font-weight: bold;
 }
-
 .titulo_participacion, .titulo_calendario {
 	width: 83%;
 	padding: 40px 0px 5px 0px;
 	border-bottom: solid medium;
 }
-
 .titulo_calendario {
 	padding: 30px 0px 5px 0px;
 }
-
 .niandu_descrip {
 	margin-top: 5px;
 	font-family: 'Barlow', sans-serif;
 	font-size: 19px;
 	font-weight: 400;
 }
-
 .participacion_col {
 	display: flex;
 	flex-direction: row;
 	align-items: baseline
 }
-
 .bloque_oma {
 	margin: 10px 0px;
 	padding: 10px 30px;
@@ -1092,16 +1075,13 @@ select:focus {
 	font-weight: bold;
 	font-size: 20px;
 }
-
 .bloque_oma:hover {
 	background-color: #ABABFF;
 	color: #101011;
 }
-
 .info_niandu {
 	margin-top: 10px;
 }
-
 ol li {
 	color: #101011;
 	font-family: 'Space Grotesk', sans-serif;
@@ -1111,7 +1091,6 @@ ol li {
 	font-weight: bold;
 	letter-spacing: 0px;
 }
-
 .columna_der li {
 	color: #101011;
 	font-family: 'Barlow', sans-serif;
@@ -1121,22 +1100,18 @@ ol li {
 	font-variant: normal;
 	letter-spacing: 0px;
 }
-
 .calendario_col {
 	display: flex;
 	flex-direction: row;
 }
-
 .columna_izq, .columna_der {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 }
-
 .columna_der {
 	margin-left: 20px;
 }
-
 .enunciados_descarga {
 	display: flex;
 	align-items: center;
@@ -1148,13 +1123,11 @@ ol li {
 	border-radius: 35px;
 	border: solid thin;
 }
-
 .enunciados_descarga p {
 	font-family: 'Barlow', sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 }
-
 .boton_descarga {
 	display: flex;
 	width: 15%;
@@ -1164,12 +1137,9 @@ ol li {
 	background-color: #5151FC;
 	border-radius: 20px;
 }
-
 .boton_descarga:hover {
 	background-color: #ABABFF;
 }
-
-
 /*CONTACTO*/
 .section_contenedora_contacto {
 	background-color: #5151FC;
