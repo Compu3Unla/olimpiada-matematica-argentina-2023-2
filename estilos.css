@@ -1003,10 +1003,18 @@ select:focus {
 	flex-shrink: 0;
 	padding: 100px;
 }
-
-.mensajeinscripcion h3{
+.h2_inscripcion{
+	font-size: 40px;
+	font-family: 'Space Grotesk', sans-serif;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	color: #F5F5F5;
+	padding: 0 0 10px 0; 
+}
+.h3_inscripcion{
 	font-family: 'Barlow', sans-serif;
-	font-size: 35px;
+	font-size: 25px;
 	font-weight: 400;
 	line-height: normal;
 	text-transform: uppercase;
