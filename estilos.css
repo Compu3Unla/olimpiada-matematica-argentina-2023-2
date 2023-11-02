@@ -820,10 +820,10 @@ a{
 /*COMPETENCIAS*/
 .competencia {
 	background-color: #ABABFF;
-	height: 80vh;
 	display: flex;
 	flex-direction: column;
 	padding-top: 80px;
+	min-height: 85vh;
 }
 .competencias{
 	display: flex;
@@ -831,7 +831,7 @@ a{
 	gap: 20px;
 	align-items: center;
 	justify-content: center;
-	max-width: 80%;
+	width:100%;
 	flex-wrap: wrap;
 	padding-top: 20px;
 }
