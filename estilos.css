@@ -1360,6 +1360,9 @@ ol li {
 	}
 	.competencias{
 		flex-direction: column;
+		height: auto;
+		padding: 80px 30px;
+		gap: 40px;
 	}
 	.tarjetas{
 		width: 325px;
