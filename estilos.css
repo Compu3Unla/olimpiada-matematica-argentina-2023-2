@@ -1075,10 +1075,6 @@ select:focus {
 	font-weight: bold;
 	font-size: 20px;
 }
-.bloque_oma:hover {
-	background-color: #ABABFF;
-	color: #101011;
-}
 .info_niandu {
 	margin-top: 10px;
 }
