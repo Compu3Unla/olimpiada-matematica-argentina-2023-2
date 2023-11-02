@@ -869,6 +869,10 @@ main h2{
 	padding: 150px;
 	width: 100%;
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    align-content: space-around;
 }
 
 .formulario h2 {
@@ -879,6 +883,7 @@ main h2{
 form {
 	padding: 20px;
 	width: 100%;
+	max-width: 1280px;
 	box-sizing: border-box;
 	height: auto;
 	font-family: 'Barlow', sans-serif; 
@@ -920,8 +925,16 @@ input {
 	background-color: #CFCFCF;
 }
 
+.contenedor_boton_enviar {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	max-width: 1280px;
+	
+}
+
 .enviar {
-	margin-top: 30px;
+	margin-top: 25px;
 	width: 20%;
 	background-color: #5151FC;
 	border-radius: 5px;
