@@ -884,14 +884,12 @@ a{
 }
 
 .formulario h2 {
-	padding-top: 40px;
-	padding-right: 2px;
-	padding-bottom: 40px;
-	padding-left: 50px;
+	padding: 40px 2px 40px 50px;
 	background-color: #5151FC;
+	margin-bottom: 25px;
 }
 form {
-	padding: 40px;
+	padding: 20px;
 	width: 100%;
 	box-sizing: border-box;
 	height: auto;
@@ -901,12 +899,14 @@ form {
 	line-height: normal;
 	display: flex;
 	flex-wrap: nowrap;
-	border-radius: 10px;
+	background-color: white;
+	border-radius: 15px;
+	border: solid thin;
+	
 }
 form .columnaizquierda {
 	width: 50%;
 	padding: 20px;
-	background-color: white;
 	display: flex;
 	box-sizing: border-box;
 	flex-direction: column;
@@ -938,7 +938,10 @@ input {
 	background-color: #5151FC;
 	border-radius: 5px;
 	color: white;
-}
+	display: flex;
+	justify-content: center;
+} /* MO: quise alinearlo a la derecha pero no pude, me faltó probar con margin-left pero no creo que sea la mejor opción je */
+
 .enviar:hover{
 	background-color: #101011;
 }
