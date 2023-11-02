@@ -1362,6 +1362,7 @@ ol li {
 	}
 	h5{
 		font-size: 30px;
+		padding-left: 20px;
 	}
 		.seccion1{
 		width: 100%;
@@ -1380,6 +1381,26 @@ ol li {
     display:flex;
 	flex-direction: column;
 	align-items: flex-start;
+	max-width: 80%;
+	padding-bottom: 80px;
+  }
+  li{
+	font-size:18px;
+  }
+  .div1{
+	border-bottom: none;
+  }
+  .div4{
+	padding-top:30px;
+	border-bottom: none;
+  }
+   .div7{
+	padding-top:30px;
+	border-bottom: none;
+  }
+   .div10{
+	padding-top:30px;
+	border-bottom: none;
   }
   .contenedor-seccion1 img{
 	display:none;
