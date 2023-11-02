@@ -1368,8 +1368,11 @@ ol li {
 		font-size: 30px;
 		padding-left: 20px;
 	}
-		.seccion1{
+	.seccion1{
 		width: 100%;
+	}
+	.introdescripcion .boton_competencias{
+		font-size: 24px;
 	}
 	.seccion3{
 		flex-direction: column;
