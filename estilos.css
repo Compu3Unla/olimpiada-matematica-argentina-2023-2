@@ -787,14 +787,11 @@ a{
 	font-weight: 400; /*le puse 400 porque me parecía que se lee mejor que poner 300 de peso*/
 	line-height: normal;
 	color: #101011;
-<<<<<<< HEAD
 	/*border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #101011;*/ /*LU:después vemos de resolver la línea abajo de los títulos*/
 	margin-top: 70px;
-=======
 	margin-top: 85px;
->>>>>>> origin/main
 	display:flex;
 	align-items: center;
 	flex-direction: row;
@@ -1175,6 +1172,14 @@ ol li {
 
 
 /*CONTACTO*/
+
+#body_sobrenosotros {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+
 .section_contenedora_contacto {
 	background-color: #5151FC;
 	display: flex;
