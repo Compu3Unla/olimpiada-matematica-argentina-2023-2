@@ -1468,6 +1468,8 @@ ol li {
 	/*CONTACTO*/
 	.section_contenedora_contacto {
 		flex-direction: column;
+		align-items: center;
+		
 	}
 	
 	.contacto_derecha {
@@ -1489,5 +1491,9 @@ ol li {
 	
 	.a_contacto, .texto_novedades {
 		font-size: 18px;
+	}
+	
+	iframe {
+		max-width: 100%;
 	}
 }
