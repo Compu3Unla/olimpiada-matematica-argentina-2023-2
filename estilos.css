@@ -930,7 +930,6 @@ input {
 	justify-content: flex-end;
 	width: 100%;
 	max-width: 1280px;
-	
 }
 
 .enviar {
@@ -941,7 +940,7 @@ input {
 	color: white;
 	display: flex;
 	justify-content: center;
-} /* MO: quise alinearlo a la derecha pero no pude, me faltó probar con margin-left pero no creo que sea la mejor opción je */
+}
 
 .enviar:hover{
 	background-color: #101011;
