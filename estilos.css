@@ -684,18 +684,20 @@ a{
 	text-decoration: none;
 }
 .bodymenu{
-	background-color: #000000;
+	background-color: #101011;
+	/*max-width: 1200px;
+	justify-content: center;*/
 }
 .menuhamburguesa{
 	text-align: center;
-	padding: 200px 0px;
+	padding: 250px 0px;
 }
 .menulight {
 	font-family:'Barlow', sans-serif;
-	font-size: 90px;
+	font-size: 70px;
 	font-weight: 300;
 	line-height: normal;
-	color: #FFF;
+	color: #F5F5F5;
 }
 .menulight:hover {
 	color: #101011; 
@@ -704,10 +706,10 @@ a{
 
 .menubold {
 	font-family:'Space Grotesk', sans-serif;
-	font-size: 90px;
+	font-size: 70px;
 	font-weight: 700;
 	line-height: normal;
-	color: #FFF;
+	color: #F5F5F5;
 }
 .menubold:hover {
 	color: #101011; 
