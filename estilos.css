@@ -537,6 +537,17 @@ h6{
 	color: #101011;
 	padding-top: 40px;
 }
+.video{
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #101011;
+}
 .seccion6{
 	background-color: #F5F5F5;
 	padding: 0px 0px 40px 0px;
@@ -1258,15 +1269,103 @@ ol li {
 	transform: translateY(0px);
 }
 }
+
+/*PRUEBA MEDIA*/
+@media (max-width: 600px) {
+    .seccion1 {
+        height: auto;
+    }
+    .contenedor-seccion1 {
+        max-width: 100%;
+        padding: 20px;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+    }
+    .presentacion {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .presentacion img {
+        margin-bottom: 20px;
+    }
+    .presentacion2 {
+        width: 100%;
+    }
+    .flecha {
+        display: none; 
+    }
+    .seccion2 div {
+        flex-direction: column;
+    }
+	.cubo{
+		width:60%;
+	}
+    .introdescripcion {
+        width: 100%;
+        padding-left: 0;
+    }
+    .galeria {
+        width: 100%;
+    }
+	.introdescripcion{
+		padding: 40px;
+	}
+	p.mayuscula{
+		font-size: 18px;
+	}
+    .seccion4 {
+        padding-left: 20px;
+        padding-top: 40px;
+    }
+    .container {
+        padding: 2rem;
+        width: 100%;
+    }
+    .accordion button .accordion-title {
+        font-size: 20px;
+    }
+    .accordion button .icon {
+        top: 18px;
+    }
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+    }
+	.seccion5{
+		flex-direction: column;
+	}
+	.tarjetas-index{
+		max-width: 80%;
+	}
+	.p-seccion5{
+		font-size: 18px;
+	}
+	h5{
+		font-size: 30px;
+	}
+}
+
 @media screen and (max-width: 600px) {
-	/*CAMBIOS GENERALES*/
-	
-	
-	
+	h1 {
+		font-size:200px;
+	}
+	.seccion1{
+		width: 100%;
+	}
+	.seccion3{
+		flex-direction: column;
+		max-width: 100%;
+	}
+}
 	/*HEADER*/
 	.botonera {
 		height: 80px;
 		padding: 0px 46px 13px 40px;
+		width: 100%;
+		box-sizing: border-box;
 	}
 	
 	.logo, .botonera ul {
@@ -1299,10 +1398,7 @@ ol li {
 		gap: 12px;
 		width: 30%;
 	}
-	
-	/*INDEX*/
-	
-	
+
 	/*INDEX MENÚ HAMBURGUESA*/
 	
 	
@@ -1430,9 +1526,6 @@ ol li {
 		margin: 20px 0px 10px 30px;
 		gap: 20px;
 	}
-	
-	
-	/*CONTACTO*/
-}
+
 
 
