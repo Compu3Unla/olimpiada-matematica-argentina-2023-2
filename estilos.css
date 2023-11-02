@@ -1011,6 +1011,7 @@ select:focus {
 	text-transform: uppercase;
 	color: #F5F5F5;
 	padding: 0 0 10px 0; 
+	max-width: none;
 }
 .h3_inscripcion{
 	font-family: 'Barlow', sans-serif;
@@ -1416,12 +1417,6 @@ ol li {
 	
 	
 	/*MENSAJE*/
-	.mensajeinscripcion h3{
-		font-size: 20px; /*JU: NO PUEDO MODIFICAR ESTO, el del h2 tampoco*/
-	}
-	.mensajeinscripcion h2{
-		font-size: 20px;
-	}
 	.mensajeinscripcion{
 		padding: 20px;
 	}
