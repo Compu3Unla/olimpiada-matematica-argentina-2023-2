@@ -1183,13 +1183,6 @@ ol li {
 
 /*CONTACTO*/
 
-#body_sobrenosotros {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-
 .section_contenedora_contacto {
 	background-color: #5151FC;
 	display: flex;
@@ -1200,23 +1193,31 @@ ol li {
 
 .titulo_contacto {
 	font-family:'Space Grotesk', sans-serif;
-	font-size: 45px;
+	font-size: 28px;
 	font-weight: 700;
 	background-color: #000000;
-	padding: 35px 70px 35px 0px; /*LU: este padding del rectángulo negro tendría que ser igual en todos los títulos de los otros html principalmente el alto*/
+	padding: 40px 2px 40px 40px; /*LU: este padding del rectángulo negro tendría que ser igual en todos los títulos de los otros html principalmente el alto*/
 	display:flex;
-	justify-content:flex-end;
-	text-align:right;
-	/*padding: 30px 0px 30px 200px;
-	margin: 0px 1000px 0px 0px;*/ /*LU: esto es lo como había intentado hacer el rectángulo pero se que está mal ya que supera los 100px*/
+	justify-content:center;
+	max-width: 60%;
+	margin-top: 64px;
+}
+
+.contacto_derecha {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
 }
 .section_infosuperior, .section_emailnovedades {
 	background-color: #F5F5F5;
-	width: 100%;
 	margin: 50px 0px 0px 175px; /*acá tengo que ver como hacer para alinear los iconos con el título sin poner 175px de margin*/
-	border-radius: 35px;
+	border-radius: 28px;
 	border-color: #000000;
 	border: 1px solid #000;
+}
+
+.section_emailnovedades {
+	margin-bottom: 50px;
 }
 
 .dosrenglones_novedades {
@@ -1230,15 +1231,15 @@ ol li {
 	flex-direction: row;
 	justify-content:flex-start;
 	align-items: center;
-	gap: 6%; /*LU: emm acá quise separar el icono de la oración.*/
-	padding: 20px 0px 15px 50px;
+	gap: 30px;
+	padding: 20px 20px 15px 40px;
 }
 
 .a_contacto {
 	text-decoration: none;
 	color: #101011;
 	font-family: 'Barlow', sans-serif;
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 400;
 }
 
@@ -1246,7 +1247,12 @@ ol li {
 	font-family: 'Barlow', sans-serif;
 	color: #101011;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 22px;
+}
+
+.mapa_contacto {
+	max-width: 80%;
+	margin-top: 50px;
 }
 
 /*ICONOS*/
@@ -1460,6 +1466,28 @@ ol li {
 	
 
 	/*CONTACTO*/
+	.section_contenedora_contacto {
+		flex-direction: column;
+	}
+	
+	.contacto_derecha {
+		width: 100%;
+	}
+	
+	.section_infosuperior, .section_emailnovedades {
+		margin: 40px 65px 0px 65px;
+	}
+	
+	.section_emailnovedades {
+		margin-bottom: 10px;
+	}
+	
+	.mapa_contacto {
+		width: 80%;
+		height: 80%;
+	}
+	
+	.a_contacto, .texto_novedades {
+		font-size: 18px;
+	}
 }
-
-
