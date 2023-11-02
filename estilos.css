@@ -1269,11 +1269,20 @@ ol li {
 	transform: translateY(0px);
 }
 }
-
+/*CURSOR*/
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #5151FC; 
+    border-radius: 50%; 
+    pointer-events: none; 
+    display:contents; 
+}
 /*PRUEBA MEDIA*/
 @media (max-width: 600px) {
     .seccion1 {
-        height: auto;
+       display:none;
     }
     .contenedor-seccion1 {
         max-width: 100%;
@@ -1281,6 +1290,9 @@ ol li {
 		flex-wrap: wrap-reverse;
 		justify-content: center;
     }
+	h1{
+		font-size: 100px;
+	}
     .presentacion {
         width: 100%;
         height: auto;
@@ -1302,6 +1314,9 @@ ol li {
 	.cubo{
 		width:60%;
 	}
+	.cube{
+		display:none;
+	}
     .introdescripcion {
         width: 100%;
         padding-left: 0;
@@ -1321,13 +1336,15 @@ ol li {
     }
     .container {
         padding: 2rem;
-        width: 100%;
     }
+	.accordion-item{
+		max-width:70%;
+	}
     .accordion button .accordion-title {
-        font-size: 20px;
+        font-size: 16px;
     }
     .accordion button .icon {
-        top: 18px;
+        top: 16px;
     }
     .parent {
         grid-template-columns: repeat(2, 1fr);
@@ -1346,20 +1363,33 @@ ol li {
 	h5{
 		font-size: 30px;
 	}
-}
-
-@media screen and (max-width: 600px) {
-	h1 {
-		font-size:200px;
-	}
-	.seccion1{
+		.seccion1{
 		width: 100%;
 	}
 	.seccion3{
 		flex-direction: column;
 		max-width: 100%;
 	}
+	.itemslegales{
+		display: none;
+	}
+	.omafooter{
+		display:none;
+	}
+	.parent {
+    display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+  }
+  .contenedor-seccion1 img{
+	display:none;
+  }
+.footer {
+		column-gap: 0px;
+	}
 }
+
+
 	/*HEADER*/
 	.botonera {
 		height: 80px;
