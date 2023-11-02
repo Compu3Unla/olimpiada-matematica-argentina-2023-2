@@ -1311,12 +1311,6 @@ ol li {
     .seccion2 div {
         flex-direction: column;
     }
-	.cubo{
-		width:60%;
-	}
-	.cube{
-		display:none;
-	}
     .introdescripcion {
         width: 100%;
         padding-left: 0;
