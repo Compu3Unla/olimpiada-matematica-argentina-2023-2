@@ -537,6 +537,17 @@ h6{
 	color: #101011;
 	padding-top: 40px;
 }
+.video{
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #101011;
+}
 .seccion6{
 	background-color: #F5F5F5;
 	padding: 0px 0px 40px 0px;
@@ -1252,51 +1263,172 @@ ol li {
 	transform: translateY(0px);
 }
 }
-@media screen and (max-width: 600px) {
-	/*CAMBIOS GENERALES*/
-	
-	
-	
+/*CURSOR*/
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #5151FC; 
+    border-radius: 50%; 
+    pointer-events: none; 
+    display:contents; 
+}
+/*PRUEBA MEDIA*/
+@media (max-width: 600px) {
+    .seccion1 {
+       display:none;
+    }
+    .contenedor-seccion1 {
+        max-width: 100%;
+        padding: 20px;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+    }
+	h1{
+		font-size: 100px;
+	}
+    .presentacion {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .presentacion img {
+        margin-bottom: 20px;
+    }
+    .presentacion2 {
+        width: 100%;
+    }
+    .flecha {
+        display: none; 
+    }
+    .seccion2 div {
+        flex-direction: column;
+    }
+	.cubo{
+		width:60%;
+	}
+	.cube{
+		display:none;
+	}
+    .introdescripcion {
+        width: 100%;
+        padding-left: 0;
+    }
+    .galeria {
+        width: 100%;
+    }
+	.introdescripcion{
+		padding: 40px;
+	}
+	p.mayuscula{
+		font-size: 18px;
+	}
+    .seccion4 {
+        padding-left: 20px;
+        padding-top: 40px;
+    }
+    .container {
+        padding: 2rem;
+    }
+	.accordion-item{
+		max-width:100%;
+	}
+    .accordion button .accordion-title {
+        font-size: 16px;
+    }
+    .accordion button .icon {
+        top: 16px;
+    }
+	.accordion .accordion-content p{
+		font-size: 14px;
+		max-width: 100%;
+	}
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+    }
+	.seccion5{
+		flex-direction: column;
+	}
+	.tarjetas-index{
+		max-width: 80%;
+	}
+	.p-seccion5{
+		font-size: 18px;
+	}
+	h5{
+		font-size: 30px;
+		padding-left: 20px;
+	}
+	.seccion1{
+		width: 100%;
+	}
+	.introdescripcion .boton_competencias{
+		font-size: 24px;
+	}
+	.seccion3{
+		flex-direction: column;
+		max-width: 100%;
+	}
+	.itemslegales{
+		display: none;
+	}
+	.omafooter{
+		display:none;
+	}
+	.parent {
+    display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 80%;
+	padding-bottom: 80px;
+  }
+  li{
+	font-size:18px;
+  }
+  .div1{
+	border-bottom: none;
+  }
+  .div4{
+	padding-top:30px;
+	border-bottom: none;
+  }
+   .div7{
+	padding-top:30px;
+	border-bottom: none;
+  }
+   .div10{
+	padding-top:30px;
+	border-bottom: none;
+  }
+  .contenedor-seccion1 img{
+	display:none;
+  }
+	.footer {
+		column-gap: 0px;
+	}
+	/*MENSAJE*/
+	.mensajeinscripcion h3{
+		font-size: 20px; /*JU: NO PUEDO MODIFICAR ESTO, el del h2 tampoco*/
+	}
+	.mensajeinscripcion h2{
+		font-size: 20px;
+	}
+	.mensajeinscripcion{
+		padding: 20px;
+	}
 	/*HEADER*/
 	.botonera {
 		height: 80px;
 		padding: 0px 46px 13px 40px;
+		width: 100%;
+		box-sizing: border-box;
 	}
-	
 	.logo, .botonera ul {
 		margin-top: 20px;
-		
-		
 	}
-
-	
-	/*FOOTER*/
-	
-	
-	.footer {
-		column-gap: 60px;
-		padding: 0px 42px 0px 62px;
-		height: 110px;
-	}
-	
-	.redesenfooter {
-		padding-left: 0px;
-		bottom: 0%;
-	}
-	
-	.footer p{
-		font-size: 11px;
-	}
-	
-	.itemslegales {
-		flex-direction: column;
-		gap: 12px;
-		width: 30%;
-	}
-	
-	/*INDEX*/
-	
-	
 	/*INDEX MENÚ HAMBURGUESA*/
 	.menuhamburguesa{
 		padding-top: 250px;
@@ -1394,10 +1526,7 @@ ol li {
 	/*INSCRIPCIÓN*/
 	
 	
-	/*MENSAJE*/
-	.mensajeinscripcion{
-		padding: 20px;
-	}
+
 	
 	/*OLIMPÍADAS ÑANDÚ*/
 	
@@ -1435,9 +1564,13 @@ ol li {
 		margin: 20px 0px 10px 30px;
 		gap: 20px;
 	}
-	
-	
-	/*CONTACTO*/
 }
+	
+
+	
+	
+
+	
+
 
 
