@@ -1273,14 +1273,14 @@ ol li {
 		display:none;
 	}
 	.parent {
-	display:flex;
-	flex-direction: column;
-	align-items: flex-start;
-	max-width: 80%;
-	padding-bottom: 80px;
+		display:flex;
+		flex-direction: column;
+		align-items: flex-start;
+		max-width: 80%;
+		padding-bottom: 80px;
 }
 	li{
-	font-size:18px;
+		font-size:18px;
 }
 	.div1{
 		border-bottom: none;
@@ -1332,7 +1332,7 @@ ol li {
 		height: 50px;
 	}
 	/*SOBRE NOSOTROS*/
-.sectionsobrenosotros{
+	.sectionsobrenosotros{
 		flex-direction: column;
 	}
 	#background_alumna {
@@ -1364,6 +1364,27 @@ ol li {
 	}
 	.boton_competencias{
 		margin-top: 50px;
+	}
+	/*INSCRIPCIÓN*/
+	.formulario {
+		padding: 80px;
+		box-sizing: border-box;
+	}
+	.formulario h2 {
+		padding-right: 100px;
+		margin-top: 20px;
+	}
+	form {
+		width: 150%;
+		flex-direction: column;
+		gap: 0px;
+	}
+	label, input {
+		width: 220%;
+		font-size: 20px;
+	}
+	.contenedor_boton_enviar {
+		width: 150%;
 	}
 	/*COMPETENCIAS*/
 	h2{
@@ -1415,7 +1436,7 @@ ol li {
 	.enunciados_descarga {
 		gap: 20px;
 	}
-/*CONTACTO*/
+	/*CONTACTO*/
 	.section_contenedora_contacto {
 		flex-direction: column;
 		align-items: center;
@@ -1439,7 +1460,7 @@ ol li {
 	iframe {
 		max-width: 100%;
 	}
-.icon-container{
-	display:none;
+	.icon-container{
+		display:none;
 }
 }
