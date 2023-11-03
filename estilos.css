@@ -1432,17 +1432,36 @@ ol li {
 	.niandu {
 		height: auto;
 	}
+	.niandu h2 {
+		padding-right: 100px;
+	}
 	.fotogrupal {
 		display: none;
 	}
 	.niandu_der {
 		padding-left: 20px;
 	}
+	.titulo_participacion, .titulo_calendario {
+		font-size: 22px;
+	}
 	.niandu_descrip {
 		width: 80%;
+		font-size: 18px;
+	}
+	.bloque_oma {
+		font-size: 14px;
+	}
+	ol li {
+		font-size: 14px;
+	}
+	.columna_der li {
+		font-size: 16px;
 	}
 	.enunciados_descarga {
 		gap: 20px;
+	}
+	.enunciados_descarga p {
+		font-size: 16px;
 	}
 	/*CONTACTO*/
 	.section_contenedora_contacto {
