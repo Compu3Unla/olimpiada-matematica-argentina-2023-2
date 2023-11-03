@@ -733,10 +733,6 @@ a{
 }
 
 /*SOBRE NOSOTROS*/ 
-/*#footer-sobre-nosotros {
-	margin-top: auto;
-	bottom: 0%;
-}*/
 
 #background_alumna {
 	background-image: url("img/img_grande_alumna.jpg");
@@ -746,14 +742,6 @@ a{
 	max-height: 10%;
 	width: 100%;
 } 
-
-/*.sectionsobrenosotros img {
-	padding: 0px;
-	margin-top: 60px; 
-	height: 150%;
-	width: 100%;
-	min-height: 85vh;
-}*/
 .sectionsobrenosotros {
 	display:flex;
 	flex-direction: row;
@@ -779,7 +767,7 @@ a{
 	align-items: flex-start;
 	flex-direction: column;
 	justify-content: center;
-	width: 100%; /*no sé si esto es correcto*/
+	width: 100%; 
 	margin-top: 7%;
 }
 .caja_derecha_nosotros {
@@ -787,18 +775,15 @@ a{
 	display:flex;
 	flex-direction: column;
 	justify-content:center;
-	width: 100%; /*no sé si esto es correcto*/
+	width: 100%; 
 	margin-top: 7%;
 }
 .parrafos_nosotros {
 	font-family:'Barlow', sans-serif;
 	font-size: 21px;
-	font-weight: 400; /*le puse 400 porque me parecía que se lee mejor que poner 300 de peso*/
+	font-weight: 400;
 	line-height: normal;
 	color: #101011;
-	/*border-top-width: 3px;
-	border-top-style: solid;
-	border-top-color: #101011;*/ /*LU:después vemos de resolver la línea abajo de los títulos*/
 	margin-top: 70px;
 	display:flex;
 	align-items: center;
@@ -1189,20 +1174,17 @@ ol li {
 	flex-direction: row;
 	justify-content:space-between;
 }
-
-
 .titulo_contacto {
 	font-family:'Space Grotesk', sans-serif;
 	font-size: 28px;
 	font-weight: 700;
 	background-color: #000000;
-	padding: 40px 2px 40px 40px; /*LU: este padding del rectángulo negro tendría que ser igual en todos los títulos de los otros html principalmente el alto*/
+	padding: 40px 2px 40px 40px; 
 	display:flex;
 	justify-content:center;
 	max-width: 60%;
 	margin-top: 64px;
 }
-
 .contacto_derecha {
 	display: flex;
 	flex-direction: column;
@@ -1210,7 +1192,7 @@ ol li {
 }
 .section_infosuperior, .section_emailnovedades {
 	background-color: #F5F5F5;
-	margin: 50px 0px 0px 175px; /*acá tengo que ver como hacer para alinear los iconos con el título sin poner 175px de margin*/
+	margin: 50px 0px 0px 175px; 
 	border-radius: 28px;
 	border-color: #000000;
 	border: 1px solid #000;
@@ -1219,13 +1201,11 @@ ol li {
 .section_emailnovedades {
 	margin-bottom: 50px;
 }
-
 .dosrenglones_novedades {
 	display: flex;
 	flex-direction: column;
 	align-items:flex-start;
 }
-
 .datos_contacto, .section_emailnovedades{ 
 	display: flex;
 	flex-direction: row;
@@ -1234,7 +1214,6 @@ ol li {
 	gap: 30px;
 	padding: 20px 20px 15px 40px;
 }
-
 .a_contacto {
 	text-decoration: none;
 	color: #101011;
@@ -1242,19 +1221,16 @@ ol li {
 	font-size: 24px;
 	font-weight: 400;
 }
-
 .texto_novedades {
 	font-family: 'Barlow', sans-serif;
 	color: #101011;
 	font-weight: 700;
 	font-size: 22px;
 }
-
 .mapa_contacto {
 	max-width: 80%;
 	margin-top: 50px;
 }
-
 /*ICONOS*/
 .icon-container {
 	position: fixed;
@@ -1337,47 +1313,33 @@ ol li {
 	.sectionsobrenosotros{
 		flex-direction: column;
 	}
-	
 	#background_alumna {
 		height: 388px;
 		background-size: cover;
 		width: 100%;
 	}
-	
-	/*.sectionsobrenosotros img {
-		min-height: 0vh;
-		width: 100%;
-		margin-top: 0px;
-	}*/
-	
 	.caja_centro_nosotros {
 		margin-top: 0px;
 		width: inherit;
 		border-radius: 0px 0px 50px 0px;
 		padding: 50px 50px 55px 65px;
 	}
-	
 	.caja_derecha_nosotros {
 		margin-top: 0px;
 		padding: 32px 50px 50px 65px;
 		width: inherit;
-		
 	}
-	
 	.parrafos_nosotros {
 		margin-top: 32px;
 		font-size: 19px;
 		width: 80%;
 	}
-	
 	.h3_titulo_nosotros {
 		font-size: 26px;
 	}
-	
 	.linea-sobrenosotros {
 		height: 3px;
 	}
-	
 	.boton_competencias{
 		margin-top: 50px;
 	}
@@ -1469,30 +1431,23 @@ ol li {
 	.section_contenedora_contacto {
 		flex-direction: column;
 		align-items: center;
-		
 	}
-	
 	.contacto_derecha {
 		width: 100%;
 	}
-	
 	.section_infosuperior, .section_emailnovedades {
 		margin: 40px 65px 0px 65px;
 	}
-	
 	.section_emailnovedades {
 		margin-bottom: 10px;
 	}
-	
 	.mapa_contacto {
 		width: 80%;
 		height: 80%;
 	}
-	
 	.a_contacto, .texto_novedades {
 		font-size: 18px;
 	}
-	
 	iframe {
 		max-width: 100%;
 	}
