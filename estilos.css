@@ -188,6 +188,9 @@ footer p {
 	gap:10px;
 	padding-left: 100px;
 }
+.redesenfooter img:hover{
+	opacity:0.5;
+}
 .omafooter{
 	display:flex;
 	width:25%;
@@ -741,6 +744,9 @@ a{
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
+}
+.iconosredesmenu img:hover{
+opacity:0.5;
 }
 
 /*SOBRE NOSOTROS*/ 
