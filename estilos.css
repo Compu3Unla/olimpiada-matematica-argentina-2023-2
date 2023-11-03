@@ -1385,8 +1385,8 @@ ol li {
 		gap: 40px;
 	}
 	.tarjetas{
-		width: 290px;
-		height: 460px;
+		max-width: 290px;
+		height: 455px;
 		padding: 15px;
 	}
 	.tarjetas img{
