@@ -1002,6 +1002,7 @@ select:focus {
 .niandu_descrip {
 	margin-top: 5px;
 	font: 400 19px/normal 'Barlow', sans-serif;
+	width: 68%;
 }
 .participacion_col {
 	display: flex;
@@ -1016,16 +1017,12 @@ select:focus {
 	background-color: #5151FC;
 	font: bold 20px/normal 'Space Grotesk', sans-serif;
 }
-.bloque_oma:hover {
-	background-color: #ABABFF;
-	color: #101011;
-}
 .info_niandu {
 	margin-top: 10px;
 }
 ol li {
 	color: #101011;
-	font: bold 24px/28px 'Space Grotesk', sans-serif;
+	font: bold 20px/28px 'Space Grotesk', sans-serif;
 	font-weight: bold;
 	letter-spacing: 0px;
 }
@@ -1053,7 +1050,7 @@ ol li {
 	justify-content: space-around;
 	width: 75%;
 	height: 80px;
-	margin: 10px 0px;
+	margin: 31px 0px;
 	padding: 15px 30px;
 	border-radius: 35px;
 	border: solid thin;
