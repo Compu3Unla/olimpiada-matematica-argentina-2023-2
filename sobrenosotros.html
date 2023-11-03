@@ -6,6 +6,7 @@
 	<title>OMA/ Olimpiada Matemática Argentina</title>
 	<link href="estilos.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="img/logofavicon.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -15,8 +16,7 @@
 				<a href="index.html"><img src="img/omalogo.svg" width="96px" height="37px" alt="logo"></a>
 			</div>
 			<ul>
-				<li><a href="inscripcion.html"><img src="img/lapiz_registracion.svg" width="40px" height="50px"
-							alt="registro"></a></li>
+				<li><a href="inscripcion.html"><img src="img/lapiz_registracion.svg" width="40px" height="50px" alt="registro"></a></li>
 				<li><a href="menu.html"><img src="img/menu_hamburguesa.svg" width="40px" height="50px" alt="logo"></a>
 				</li>
 			</ul>
@@ -24,7 +24,7 @@
 	</header>
 	<main>
 		<section class="sectionsobrenosotros">
-			<img src="img/alumna_escribiendo.jpg" width="576px" height="695px" alt="alumnaescribiendo">
+			<div id="background_alumna"></div>
 			<div class="caja_centro_nosotros">
 				<h3 class="h3_titulo_nosotros">¿QUÉ ES OMA?</h3>
 				<p class="parrafos_nosotros">Las Olimpíadas Matemáticas son las competiciones matemáticas más conocidas
@@ -36,9 +36,6 @@
 			<div class="caja_derecha_nosotros">
 				<h3 class="h3_titulo_nosotros">OBJETIVO</h3>
 				<div class="linea-sobrenosotros"></div>
-				<p class="parrafos_nosotros">Nos enfocamos en que los alumnos de enseñanza media -secundaria- y desde la primaria, descubran sus aptitudes teniendo un contacto real con el que hacer matemático.</p>
-					<!--LU: no sé si es correcto aplicar la etiqueta <a> de esta forma en el botón, quise hacerlo dentro pero no funcionó-->
-					<!--EJEMPLO CON JAVA, ¿es válido usar?: <button class="boton_competencias" onclick="window.location.href='competencias.html'">COMPETENCIAS</button>-->
 				<p class="parrafos_nosotros">Nos enfocamos en que los alumnos de enseñanza media -secundaria- y desde la
 					primaria, descubran sus aptitudes teniendo un contacto real con el que hacer matemático.</p>
 				<a href="competencias.html">
@@ -53,7 +50,7 @@
 			<p>Términos y condiciones</p>
 			<p>Políticas de privacidad</p>
 		</div>
-		<div class="redesenfooter"> <!--después en css hay que ajustar la distancia entre los iconos-->
+		<div class="redesenfooter">
 			<a href="mailto:info@oma.org.ar" target="_blank">
 				<img src="img/email_blanco.svg" width="30px" height="30px" alt="iconoemail" />
 			</a>
@@ -75,5 +72,8 @@
 		<a href="contacto.html"><img class="icon" src="img/email.svg" alt="Contacto" target="_blank"></a>
 	</div>
 </body>
+<script src="js/nav.js"></script>
+<script src="js/cursor.js"></script>
+<div class="custom-cursor"></div>
 
 </html>

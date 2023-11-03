@@ -45,10 +45,7 @@ header{
 }
 /* ZONA DE BIENVENIDA OMA*/
 h1{
-	font-family: 'Space Grotesk', sans-serif; 
-	font-size: 260px;
-	font-weight: 700;
-	line-height: normal;
+	font: 700 260px 'Space Grotesk', sans-serif;
 	color: #5151FC;
 	animation: aparecerDesdeIzquierda 3s ease forwards;
 	animation-iteration-count:1;
@@ -66,10 +63,7 @@ to {
 }
 p{
 	color: #101011;
-	font-family: 'Barlow', sans-serif; 
-	font-size: 28px;
-	font-weight: 400;
-	line-height: normal;
+	font: 400 28px 'Barlow', sans-serif;
 }
 .p .bold{
 	font-weight: 900;
@@ -84,13 +78,9 @@ p.subtitulo{
 	text-transform: uppercase;
 	max-width: 650px;
 }
-
 /*LISTADO DE CUALIDADES OMA*/
 li{ 
-	font-family: 'Space Grotesk', sans-serif;
-	font-size: 24px;
-	font-weight: 500;
-	line-height: normal;
+	font: 500 24px/normal 'Space Grotesk', sans-serif;
 	letter-spacing: 11.04px;
 	color: #F5F5F5;
 	list-style-type: none;
@@ -99,40 +89,28 @@ li{
 li normal{
 	letter-spacing: 0;
 }
-
 /*CAMPEONES*/
 h3{
-	font-family: 'Space Grotesk', sans-serif;
-	font-size: 32px;
-	font-weight: 700;
-	line-height: normal;
+	font: 700 32px/normal 'Space Grotesk', sans-serif;
 	text-transform: uppercase;
 	color: #F5F5F5;
 	background-color: #101011;
 	padding: 10px 20px;
 }
-
 /*TÍTULOS*/
 h2{
-	font-family: 'Space Grotesk', sans-serif;
-	font-size: 28px;
-	font-weight: 700;
-	line-height: normal;
+	font: 700 28px/normal 'Space Grotesk', sans-serif;
 	text-transform: uppercase;
 	color: #F5F5F5;
 	background-color: #5151FC;
 	padding: 20px 20px 20px 60px;
 	max-width: 30%;
 }
-
 /*TÍTULO: MES OCTUBRE*/
 h5{
 	color: #F5F5F5;
 	font-variant-numeric: lining-nums proportional-nums;
-	font-family: 'Barlow', sans-serif;
-	font-size: 56px;
-	font-weight: 900;
-	line-height: normal;
+	font: 900 56px/normal 'Barlow', sans-serif;
 	letter-spacing: 32px;
 	text-transform: uppercase;
 	padding: 100px 0px 40px 0px;
@@ -140,20 +118,12 @@ h5{
 .regular{
 	font-weight: 400;
 }
-
 p preguntas{
 	color: #101011;
-	font-family: 'Barlow', sans-serif;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: normal;
+	font: 700 30px 'Barlow', sans-serif;
 }
-
 menu{
-	font-family: 'Barlow', sans-serif; 
-	font-size: 96px;
-	font-weight: 300;
-	line-height: normal;
+	font: 300 96px/normal 'Barlow', sans-serif;
 	color: #FFF;
 	text-align: center;
 }
@@ -188,12 +158,14 @@ footer p {
 	gap:10px;
 	padding-left: 100px;
 }
+.redesenfooter img:hover{
+	opacity:0.5;
+}
 .omafooter{
 	display:flex;
 	width:25%;
 	align-content: center;
 }
-
 /*INDEX*/
 .seccion1 main{
 	width: 100%;
@@ -204,7 +176,6 @@ footer p {
 }
 .seccion1 {
 	display: flex;
-	
 	width:100%;
 	height: 750px;
 	padding-top:80px;
@@ -244,7 +215,7 @@ footer p {
 	position: absolute;
 	width: 300px;
 	height: 300px;
-	border: 4px solid #101011; /* Líneas más gruesas */
+	border: 4px solid #101011; 
 	background: transparent;
 	animation: changeColor 5s infinite;
 }
@@ -265,7 +236,6 @@ footer p {
 .top {
 	transform: rotateX(90deg) translateZ(150px);
 }
-
 .bottom {
 	transform: rotateX(-90deg) translateZ(150px);
 }
@@ -344,7 +314,6 @@ footer p {
 	box-sizing: border-box;
 }
 .seccion4{
-	/*height:120vh;*/
 	padding-left: 150px;
 	background-color: #101011;
 	padding-top: 60px;
@@ -369,7 +338,7 @@ footer p {
 	top:50%;
 	transform: translate(0,-50%);
 	border-radius: 5px;
-	box-shadow:  0 30px 50px #505050;
+	box-shadow: 0 30px 50px #505050;
 }
 .item:nth-child(1),
 .item:nth-child(2){
@@ -430,7 +399,6 @@ footer p {
 	border:none;
 	opacity: 0;
 	animation:showcontent 1s ease-in-out 0.6s 1 forwards;
-
 }
 button:hover{
 	background-color: #5151FC;
@@ -507,11 +475,7 @@ to{
 	justify-content: flex-end;
 }
 h4{
-	font-family: 'Barlow', sans-serif;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
+	font: 500 20px/normal 'Barlow', sans-serif;
 	font-variant: small-caps;
 }
 .comentario{
@@ -519,20 +483,12 @@ h4{
 	padding-top: 10px;
 }
 .p-seccion5{
-	font-family: 'Barlow', sans-serif;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
+	font: 400 24px/normal 'Barlow', sans-serif;
 	color: #101011;
 	text-wrap: balance;
 }
 h6{
-	font-family: 'Barlow', sans-serif;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
+	font: 400 16px/normal 'Barlow', sans-serif;
 	font-variant: small-caps;
 	color: #101011;
 	padding-top: 40px;
@@ -704,37 +660,35 @@ a{
 }
 .bodymenu{
 	background-color: #101011;
-	/*max-width: 1200px;
-	justify-content: center;*/
 }
 .menuhamburguesa{
 	text-align: center;
-	padding: 250px 0px;
+	padding: 150px 0px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .menulight {
-	font-family:'Barlow', sans-serif;
-	font-size: 70px;
-	font-weight: 300;
-	line-height: normal;
+	font: 300 70px/normal 'Barlow', sans-serif;
 	color: #F5F5F5;
+	padding: 15px;
 }
 .menulight:hover {
 	color: #101011; 
-	background-color: #5151FC;/*JU: no se bien acá cómo hacer para que el fondo del  hover digamos, quede al mismo tamaño que el texto así como está en el figma*/ 
+	background-color: #5151FC;
 }
-
 .menubold {
-	font-family:'Space Grotesk', sans-serif;
-	font-size: 70px;
-	font-weight: 700;
-	line-height: normal;
+	font: 700 70px/normal 'Space Grotesk', sans-serif;
 	color: #F5F5F5;
+	padding: 15px;
 }
 .menubold:hover {
 	color: #101011; 
-	background-color: #5151FC; /*JU: no se bien acá cómo hacer para que el fondo del  hover digamos, quede al mismo tamaño que el texto así como está en el figma*/
+	background-color: #5151FC;
 }
-
 .iconosredesmenu{
 	display:flex;
 	flex-direction: row;
@@ -742,35 +696,30 @@ a{
 	justify-content: center;
 	gap: 10px;
 }
-
-/*SOBRE NOSOTROS*/ 
-#footer-sobre-nosotros {
-	margin-top: auto;
-	bottom: 0%;
+.iconosredesmenu img:hover{
+opacity:0.5;
 }
-.sectionsobrenosotros img {
-	padding: 0px;
-	margin-top: 60px; 
-	height: 150%;
+/*SOBRE NOSOTROS*/ 
+#background_alumna {
+	background-image: url("img/img_grande_alumna.jpg");
+	background-size: cover;
+	background-position: left;
+	background-repeat: no-repeat;
+	max-height: 10%;
 	width: 100%;
-	min-height: 85vh;
 }
 .sectionsobrenosotros {
 	display:flex;
 	flex-direction: row;
 	justify-content: center;
-	min-height: 90vh;
+	min-height: 100vh;
 }
 .h3_titulo_nosotros {
-	font-family:'Space Grotesk', sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	line-height: normal;
+	font: 700 32px/normal 'Space Grotesk', sans-serif;
 	color: #101011;
 	margin-bottom: 10px;
 	background-color: #FFFFFF;
 	display:flex;
-	justify-content: flex-start;
 	padding: 10px 30px;
 }
 .caja_centro_nosotros {
@@ -781,7 +730,7 @@ a{
 	align-items: flex-start;
 	flex-direction: column;
 	justify-content: center;
-	width: 100%; /*no sé si esto es correcto*/
+	width: 100%; 
 	margin-top: 7%;
 }
 .caja_derecha_nosotros {
@@ -789,38 +738,37 @@ a{
 	display:flex;
 	flex-direction: column;
 	justify-content:center;
-	width: 100%; /*no sé si esto es correcto*/
+	width: 100%; 
 	margin-top: 7%;
 }
 .parrafos_nosotros {
 	font-family:'Barlow', sans-serif;
-	font-size: 24px;
-	font-weight: 400; /*le puse 400 porque me parecía que se lee mejor que poner 300 de peso*/
+	font-size: 21px;
+	font-weight: 400;
 	line-height: normal;
 	color: #101011;
-	margin-top: 85px;
+	margin-top: 70px;
 	display:flex;
 	align-items: center;
 	flex-direction: row;
 	justify-content: center;
 	text-align:left;
-	width: 85%;
+	width: 82%;
 }
 .linea-sobrenosotros {
 	width: 80%;
 	height: 4px;
 	background-color: #101011;
-	margin-bottom: 10px;
 }
 .boton_competencias {
 	font-family:'Barlow', sans-serif;
-	font-size: 18px;
+	font-size: 23px;
 	font-weight: 700;
 	line-height: normal;
 	background-color: #5151FC;
 	color: #FFFFFF;
-	padding: 8px 18px;
-	border-radius: 15px;
+	padding: 12px 26px;
+	border-radius: 10px;
 	cursor: pointer;
 	margin-top: 50px;
 	border: none;
@@ -844,7 +792,7 @@ a{
 	justify-content: center;
 	width:100%;
 	flex-wrap: wrap;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 .tarjetas{
 	display: flex;
@@ -860,24 +808,15 @@ a{
 	border-radius: 20px;
 }
 .pcompetencias{
-	font-family: 'Darker Grotesque', sans-serif;
-	font-weight: 700;
-	font-size: 30px;
-	font-style: normal;
+	font: 700 30px 'Space Grotesk', sans-serif;
 	padding-top: 20px;
 }
-
 .ptarjetas {
 	color: #101011;
-	font-family: 'Barlow', sans-serif;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
+	font: 400 18px/normal 'Barlow', sans-serif;
 	border-top: 3px solid #101011;
 	padding-top: 25px;
 }
-
 /*INSCRIPCIÓN*/
 .formulario {
 	background-color: #F5F5F5;
@@ -887,7 +826,7 @@ a{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-    align-content: space-around;
+	align-content: space-around;
 }
 .formulario h2 {
 	padding: 40px 2px 40px 50px;
@@ -928,10 +867,7 @@ label {
 input {
 	width: 85%;
 	padding: 10px;
-	font-family: 'Barlow', sans-serif; 
-	font-size: 20px;
-	font-weight: 400;
-	line-height: normal;
+	font: 400 20px/normal 'Barlow', sans-serif;
 	border-radius: 5px;
 	border: none;
 	margin-bottom: 5px;
@@ -991,10 +927,7 @@ select:focus {
 	align-content: center;
 	display: flex;
 	flex-direction: column;
-	/*text-align: center; 
-	max-width: 1200px; JU: si lo pongo acá se achica hasta el footer, me dudas de si es necesaria esrta clase, se puede seguir tranquilamente con la de mensaje inscripcion o no?*/
 }
-
 .mensajeinscripcion{
 	background-color: #5151FC;
 	height: 800px;
@@ -1006,12 +939,15 @@ select:focus {
 	flex-shrink: 0;
 	padding: 100px;
 }
-
-.mensajeinscripcion h3{
-	font-family: 'Barlow', sans-serif;
-	font-size: 35px;
-	font-weight: 400;
-	line-height: normal;
+.h2_inscripcion{
+	font: 700 40px/normal 'Space Grotesk', sans-serif;
+	text-transform: uppercase;
+	color: #F5F5F5;
+	padding: 0 0 10px 0; 
+	max-width: none;
+}
+.h3_inscripcion{
+	font: 400 25px/normal 'Barlow', sans-serif;
 	text-transform: uppercase;
 	color: #F5F5F5;
 }
@@ -1052,10 +988,8 @@ select:focus {
 .titulo_participacion, .titulo_calendario {
 	width: 80%;
 	color: #101011;
-	font-family: 'Space Grotesk', sans-serif;
+	font: bold 32px/normal 'Space Grotesk', sans-serif;
 	text-transform: uppercase;
-	font-size: 32px;
-	font-weight: bold;
 }
 .titulo_participacion, .titulo_calendario {
 	width: 83%;
@@ -1066,11 +1000,9 @@ select:focus {
 	padding: 30px 0px 5px 0px;
 }
 .niandu_descrip {
-	width: 70%;
 	margin-top: 5px;
-	font-family: 'Barlow', sans-serif;
-	font-size: 19px;
-	font-weight: 400;
+	font: 400 19px/normal 'Barlow', sans-serif;
+	width: 68%;
 }
 .participacion_col {
 	display: flex;
@@ -1083,28 +1015,20 @@ select:focus {
 	width: 65%;
 	color: white;
 	background-color: #5151FC;
-	font-family: 'Space Grotesk', sans-serif;
-	font-weight: bold;
-	font-size: 20px;
+	font: bold 20px/normal 'Space Grotesk', sans-serif;
 }
 .info_niandu {
 	margin-top: 10px;
 }
 ol li {
 	color: #101011;
-	font-family: 'Space Grotesk', sans-serif;
-	text-transform: uppercase;
-	font-size: 24px;
-	line-height: 28px;
+	font: bold 20px/28px 'Space Grotesk', sans-serif;
 	font-weight: bold;
 	letter-spacing: 0px;
 }
 .columna_der li {
 	color: #101011;
-	font-family: 'Barlow', sans-serif;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 28px;
+	font: 400 20px/28px 'Barlow', sans-serif;
 	font-variant: normal;
 	letter-spacing: 0px;
 }
@@ -1126,15 +1050,13 @@ ol li {
 	justify-content: space-around;
 	width: 75%;
 	height: 80px;
-	margin: 30px 0px 10px;
+	margin: 31px 0px;
 	padding: 15px 30px;
 	border-radius: 35px;
 	border: solid thin;
 }
 .enunciados_descarga p {
-	font-family: 'Barlow', sans-serif;
-	font-size: 18px;
-	font-weight: bold;
+	font: bold 18px/normal 'Barlow', sans-serif;
 }
 .boton_descarga {
 	display: flex;
@@ -1155,59 +1077,56 @@ ol li {
 	flex-direction: row;
 	justify-content:space-between;
 }
-
-
 .titulo_contacto {
-	font-family:'Space Grotesk', sans-serif;
-	font-size: 45px;
-	font-weight: 700;
+	font: 700 28px/normal 'Space Grotesk', sans-serif;
 	background-color: #000000;
-	padding: 35px 70px 35px 0px; /*LU: este padding del rectángulo negro tendría que ser igual en todos los títulos de los otros html principalmente el alto*/
+	padding: 40px 2px 40px 40px; 
 	display:flex;
-	justify-content:flex-end;
-	text-align:right;
-	/*padding: 30px 0px 30px 200px;
-	margin: 0px 1000px 0px 0px;*/ /*LU: esto es lo como había intentado hacer el rectángulo pero se que está mal ya que supera los 100px*/
+	justify-content:center;
+	max-width: 60%;
+	margin-top: 64px;
+}
+.contacto_derecha {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
 }
 .section_infosuperior, .section_emailnovedades {
 	background-color: #F5F5F5;
-	width: 100%;
-	margin: 50px 0px 0px 175px; /*acá tengo que ver como hacer para alinear los iconos con el título sin poner 175px de margin*/
-	border-radius: 35px;
+	margin: 50px 0px 0px 175px; 
+	border-radius: 28px;
 	border-color: #000000;
 	border: 1px solid #000;
 }
-
+.section_emailnovedades {
+	margin-bottom: 50px;
+}
 .dosrenglones_novedades {
 	display: flex;
 	flex-direction: column;
 	align-items:flex-start;
 }
-
 .datos_contacto, .section_emailnovedades{ 
 	display: flex;
 	flex-direction: row;
 	justify-content:flex-start;
 	align-items: center;
-	gap: 6%; /*LU: emm acá quise separar el icono de la oración.*/
-	padding: 20px 0px 15px 50px;
+	gap: 30px;
+	padding: 20px 20px 15px 40px;
 }
-
 .a_contacto {
 	text-decoration: none;
 	color: #101011;
-	font-family: 'Barlow', sans-serif;
-	font-size: 26px;
-	font-weight: 400;
+	font: 400 24px/normal 'Barlow', sans-serif;
 }
-
 .texto_novedades {
-	font-family: 'Barlow', sans-serif;
+	font: 700 22px/normal 'Barlow', sans-serif;
 	color: #101011;
-	font-weight: 700;
-	font-size: 25px;
 }
-
+.mapa_contacto {
+	max-width: 80%;
+	margin-top: 50px;
+}
 /*ICONOS*/
 .icon-container {
 	position: fixed;
@@ -1226,7 +1145,6 @@ ol li {
 	border-bottom: 5px solid #000000;
 	opacity: 0.5;
 }
-
 /*ANIMACIONES*/
 @keyframes movimiento {
 0% {
@@ -1241,90 +1159,90 @@ ol li {
 }
 /*CURSOR*/
 .custom-cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    background-color: #5151FC; 
-    border-radius: 50%; 
-    pointer-events: none; 
-    display:contents; 
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	background-color: #5151FC; 
+	border-radius: 50%; 
+	pointer-events: none; 
+	display:contents; 
 }
-/*PRUEBA MEDIA*/
+/* MEDIA*/
 @media (max-width: 600px) {
-    .seccion1 {
-       display:none;
-    }
-    .contenedor-seccion1 {
-        max-width: 100%;
-        padding: 20px;
+	.seccion1 {
+		display:none;
+}
+	.contenedor-seccion1 {
+		max-width: 100%;
+		padding: 20px;
 		flex-wrap: wrap-reverse;
 		justify-content: center;
-    }
+}
 	h1{
 		font-size: 100px;
 	}
-    .presentacion {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        text-align: center;
-    }
-    .presentacion img {
-        margin-bottom: 20px;
-    }
-    .presentacion2 {
-        width: 100%;
-    }
-    .flecha {
-        display: none; 
-    }
-    .seccion2 div {
-        flex-direction: column;
-    }
+	.presentacion {
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		text-align: center;
+}
+	.presentacion img {
+		margin-bottom: 20px;
+}
+	.presentacion2 {
+		width: 100%;
+}
+	.flecha {
+		display: none; 
+}
+	.seccion2 div {
+		flex-direction: column;
+}
 	.cubo{
 		width:60%;
 	}
 	.cube{
 		display:none;
 	}
-    .introdescripcion {
-        width: 100%;
-        padding-left: 0;
-    }
-    .galeria {
-        width: 100%;
-    }
+	.introdescripcion {
+		width: 100%;
+		padding-left: 0;
+}
+	.galeria {
+		width: 100%;
+}
 	.introdescripcion{
 		padding: 40px;
 	}
 	p.mayuscula{
 		font-size: 18px;
 	}
-    .seccion4 {
-        padding-left: 20px;
-        padding-top: 40px;
-    }
-    .container {
-        padding: 2rem;
-    }
+	.seccion4 {
+		padding-left: 20px;
+		padding-top: 40px;
+}
+	.container {
+		padding: 2rem;
+}
 	.accordion-item{
 		max-width:100%;
 	}
-    .accordion button .accordion-title {
-        font-size: 16px;
-    }
-    .accordion button .icon {
-        top: 16px;
-    }
+	.accordion button .accordion-title {
+		font-size: 16px;
+}
+	.accordion button .icon {
+		top: 16px;
+}
 	.accordion .accordion-content p{
 		font-size: 14px;
 		max-width: 100%;
 	}
-    .parent {
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 10px;
-    }
+	.parent {
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 10px;
+}
 	.seccion5{
 		flex-direction: column;
 	}
@@ -1355,43 +1273,37 @@ ol li {
 		display:none;
 	}
 	.parent {
-    display:flex;
-	flex-direction: column;
-	align-items: flex-start;
-	max-width: 80%;
-	padding-bottom: 80px;
-  }
-  li{
-	font-size:18px;
-  }
-  .div1{
-	border-bottom: none;
-  }
-  .div4{
-	padding-top:30px;
-	border-bottom: none;
-  }
-   .div7{
-	padding-top:30px;
-	border-bottom: none;
-  }
-   .div10{
-	padding-top:30px;
-	border-bottom: none;
-  }
-  .contenedor-seccion1 img{
-	display:none;
-  }
+		display:flex;
+		flex-direction: column;
+		align-items: flex-start;
+		max-width: 80%;
+		padding-bottom: 80px;
+}
+	li{
+		font-size:18px;
+}
+	.div1{
+		border-bottom: none;
+}
+	.div4{
+		padding-top:30px;
+		border-bottom: none;
+}
+	.div7{
+		padding-top:30px;
+		border-bottom: none;
+}
+	.div10{
+		padding-top:30px;
+		border-bottom: none;
+}
+	.contenedor-seccion1 img{
+		display:none;
+}
 	.footer {
 		column-gap: 0px;
 	}
 	/*MENSAJE*/
-	.mensajeinscripcion h3{
-		font-size: 20px; /*JU: NO PUEDO MODIFICAR ESTO, el del h2 tampoco*/
-	}
-	.mensajeinscripcion h2{
-		font-size: 20px;
-	}
 	.mensajeinscripcion{
 		padding: 20px;
 	}
@@ -1406,130 +1318,176 @@ ol li {
 		margin-top: 20px;
 	}
 	/*INDEX MENÚ HAMBURGUESA*/
-	
-	
+	.menuhamburguesa{
+		padding-top: 220px;
+	}
+	.menubold{
+		font-size: 35px;
+	}
+	.menulight{
+		font-size: 35px;
+	}
+	.iconosredesmenu img{
+		width: 50px;
+		height: 50px;
+	}
 	/*SOBRE NOSOTROS*/
 	.sectionsobrenosotros{
 		flex-direction: column;
 	}
-	
-	.sectionsobrenosotros img {
-		min-height: 0vh;
+	#background_alumna {
+		height: 388px;
+		background-size: cover;
 		width: 100%;
-		margin-top: 0px;
 	}
-	
 	.caja_centro_nosotros {
 		margin-top: 0px;
 		width: inherit;
 		border-radius: 0px 0px 50px 0px;
 		padding: 50px 50px 55px 65px;
 	}
-	
 	.caja_derecha_nosotros {
 		margin-top: 0px;
 		padding: 32px 50px 50px 65px;
 		width: inherit;
-		
 	}
-	
 	.parrafos_nosotros {
 		margin-top: 32px;
 		font-size: 19px;
 		width: 80%;
 	}
-	
 	.h3_titulo_nosotros {
 		font-size: 26px;
 	}
-	
 	.linea-sobrenosotros {
 		height: 3px;
 	}
-	
 	.boton_competencias{
 		margin-top: 50px;
+	}
+	/*INSCRIPCIÓN*/
+	.formulario {
+		padding: 80px;
+		box-sizing: border-box;
+	}
+	.formulario h2 {
+		font-size: 22px;
+		padding-right: 100px;
+		margin-top: 20px;
+	}
+	form {
+		width: 150%;
+		flex-direction: column;
+	}
+	label, input {
+		width: 220%;
+	}
+	label {
+		font-size: 18px;
+		height: auto;
+		padding-bottom: 5px;
+	}
+	input, select {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.contenedor_boton_enviar {
+		width: 150%;
 	}
 	/*COMPETENCIAS*/
 	h2{
 		font-size: 28px;
 		max-width: 50%;
 	}
+	.competencia{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 	.competencias{
 		flex-direction: column;
 		height: auto;
-		padding: 80px 30px;
+		padding: 80px 0px;
 		gap: 40px;
 	}
 	.tarjetas{
-		width: 325px;
-		height: 480px;
-		padding: 40px;
+		max-width: 290px;
+		height: 455px;
+		padding: 25px;
 	}
 	.tarjetas img{
-		width: 325px;
-		height: 285px;
+		width: 290px;
+		height: 254px;
 	}
 	.pcompetencias{
-		font-size: 30px;
+		font-size: 20px;
 	}
 	.ptarjetas{
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.boton_competencias{
 		font-size: 16px;
 	}
-
-	
-	
-	/*INSCRIPCIÓN*/
-	
-	
-	
-	
 	/*OLIMPÍADAS ÑANDÚ*/
-	
 	.niandu {
-		height: 100%;
+		height: auto;
 	}
-	
-	.titulo {
-		width: 200%;
+	.niandu h2 {
+		padding-right: 100px;
 	}
-	
-	.informacion {
-		flex-direction: column;
-		justify-content: center;
-	}
-	
 	.fotogrupal {
-		width: 100%;
-		padding: 26px 0px 0px 25px;
+		display: none;
 	}
-	
-	.fotogrupal img {
-		width: 95%;
+	.niandu_der {
+		padding-left: 20px;
 	}
-	
 	.titulo_participacion, .titulo_calendario {
-		padding-top: 15px;
+		font-size: 22px;
 	}
-	
-	.participacion, .calendario {
-		padding-left: 30px;
+	.niandu_descrip {
+		width: 80%;
+		font-size: 18px;
 	}
-	
+	.bloque_oma {
+		font-size: 14px;
+	}
+	ol li {
+		font-size: 14px;
+	}
+	.columna_der li {
+		font-size: 16px;
+	}
 	.enunciados_descarga {
-		margin: 20px 0px 10px 30px;
 		gap: 20px;
 	}
+	.enunciados_descarga p {
+		font-size: 16px;
+	}
+	/*CONTACTO*/
+	.section_contenedora_contacto {
+		flex-direction: column;
+		align-items: center;
+	}
+	.contacto_derecha {
+		width: 100%;
+	}
+	.section_infosuperior, .section_emailnovedades {
+		margin: 40px 65px 0px 65px;
+	}
+	.section_emailnovedades {
+		margin-bottom: 10px;
+	}
+	.mapa_contacto {
+		width: 80%;
+		height: 80%;
+	}
+	.a_contacto, .texto_novedades {
+		font-size: 18px;
+	}
+	iframe {
+		max-width: 100%;
+	}
+	.icon-container{
+		display:none;
 }
-	
-
-	
-	
-
-	
-
-
-
+}
