@@ -1371,17 +1371,25 @@ ol li {
 		box-sizing: border-box;
 	}
 	.formulario h2 {
+		font-size: 22px;
 		padding-right: 100px;
 		margin-top: 20px;
 	}
 	form {
 		width: 150%;
 		flex-direction: column;
-		gap: 0px;
 	}
 	label, input {
 		width: 220%;
-		font-size: 20px;
+	}
+	label {
+		font-size: 18px;
+		height: auto;
+		padding-bottom: 5px;
+	}
+	input, select {
+		font-size: 15px;
+		margin-bottom: 10px;
 	}
 	.contenedor_boton_enviar {
 		width: 150%;
