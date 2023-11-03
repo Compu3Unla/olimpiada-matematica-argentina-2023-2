@@ -704,35 +704,35 @@ a{
 }
 .bodymenu{
 	background-color: #101011;
-	/*max-width: 1200px;
-	justify-content: center;*/
 }
 .menuhamburguesa{
 	text-align: center;
-	padding: 250px 0px;
+	padding: 150px 0px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .menulight {
-	font-family:'Barlow', sans-serif;
-	font-size: 70px;
-	font-weight: 300;
-	line-height: normal;
+	font: 300 70px/normal 'Barlow', sans-serif;
 	color: #F5F5F5;
+	padding: 15px;
 }
 .menulight:hover {
 	color: #101011; 
-	background-color: #5151FC;/*JU: no se bien acá cómo hacer para que el fondo del  hover digamos, quede al mismo tamaño que el texto así como está en el figma*/ 
+	background-color: #5151FC;
 }
 
 .menubold {
-	font-family:'Space Grotesk', sans-serif;
-	font-size: 70px;
-	font-weight: 700;
-	line-height: normal;
+	font: 700 70px/normal 'Space Grotesk', sans-serif;
 	color: #F5F5F5;
+	padding: 15px;
 }
 .menubold:hover {
 	color: #101011; 
-	background-color: #5151FC; /*JU: no se bien acá cómo hacer para que el fondo del  hover digamos, quede al mismo tamaño que el texto así como está en el figma*/
+	background-color: #5151FC;
 }
 
 .iconosredesmenu{
@@ -844,7 +844,7 @@ a{
 	justify-content: center;
 	width:100%;
 	flex-wrap: wrap;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 .tarjetas{
 	display: flex;
@@ -860,20 +860,13 @@ a{
 	border-radius: 20px;
 }
 .pcompetencias{
-	font-family: 'Darker Grotesque', sans-serif;
-	font-weight: 700;
-	font-size: 30px;
-	font-style: normal;
+	font: 700 30px 'Space Grotesk', sans-serif;
 	padding-top: 20px;
 }
 
 .ptarjetas {
 	color: #101011;
-	font-family: 'Barlow', sans-serif;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
+	font: 400 18px/normal 'Barlow', sans-serif;
 	border-top: 3px solid #101011;
 	padding-top: 25px;
 }
@@ -993,8 +986,6 @@ select:focus {
 	align-content: center;
 	display: flex;
 	flex-direction: column;
-	/*text-align: center; 
-	max-width: 1200px; JU: si lo pongo acá se achica hasta el footer, me dudas de si es necesaria esrta clase, se puede seguir tranquilamente con la de mensaje inscripcion o no?*/
 }
 
 .mensajeinscripcion{
@@ -1008,12 +999,15 @@ select:focus {
 	flex-shrink: 0;
 	padding: 100px;
 }
-
-.mensajeinscripcion h3{
-	font-family: 'Barlow', sans-serif;
-	font-size: 35px;
-	font-weight: 400;
-	line-height: normal;
+.h2_inscripcion{
+	font: 700 40px/normal 'Space Grotesk', sans-serif;
+	text-transform: uppercase;
+	color: #F5F5F5;
+	padding: 0 0 10px 0; 
+	max-width: none;
+}
+.h3_inscripcion{
+	font: 400 25px/normal 'Barlow', sans-serif;
 	text-transform: uppercase;
 	color: #F5F5F5;
 }
@@ -1436,7 +1430,19 @@ ol li {
 		margin-top: 20px;
 	}
 	/*INDEX MENÚ HAMBURGUESA*/
-	
+	.menuhamburguesa{
+		padding-top: 250px;
+	}
+	.menubold{
+		font-size: 50px;
+	}
+	.menulight{
+		font-size: 50px;
+	}
+	.iconosredesmenu img{
+		width: 50px;
+		height: 50px;
+	}
 	
 	/*SOBRE NOSOTROS*/
 	.sectionsobrenosotros{
@@ -1485,10 +1491,15 @@ ol li {
 		font-size: 28px;
 		max-width: 50%;
 	}
+	.competencia{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 	.competencias{
 		flex-direction: column;
 		height: auto;
-		padding: 80px 30px;
+		padding: 80px 0px;
 		gap: 40px;
 	}
 	.tarjetas{
@@ -1515,7 +1526,7 @@ ol li {
 	/*INSCRIPCIÓN*/
 	
 	
-	
+
 	
 	/*OLIMPÍADAS ÑANDÚ*/
 	
