@@ -1678,5 +1678,7 @@ ol li {
 	iframe {
 		max-width: 100%;
 	}
-
+.icon-container{
+	display:none;
+}
 }
