@@ -1322,13 +1322,13 @@ ol li {
 	}
 	/*INDEX MENÚ HAMBURGUESA*/
 	.menuhamburguesa{
-		padding-top: 250px;
+		padding-top: 220px;
 	}
 	.menubold{
-		font-size: 50px;
+		font-size: 35px;
 	}
 	.menulight{
-		font-size: 50px;
+		font-size: 35px;
 	}
 	.iconosredesmenu img{
 		width: 50px;
@@ -1385,13 +1385,13 @@ ol li {
 		gap: 40px;
 	}
 	.tarjetas{
-		width: 325px;
+		width: 300px;
 		height: 480px;
 		padding: 40px;
 	}
 	.tarjetas img{
-		width: 325px;
-		height: 285px;
+		width: 290px;
+		height: 254px;
 	}
 	.pcompetencias{
 		font-size: 30px;
