@@ -829,9 +829,6 @@ opacity:0.5;
 .boton_competencias:hover {
 	background-color: #000000;
 }
-.icon-container {
-	display: none;
-}
 /*COMPETENCIAS*/
 .competencia {
 	background-color: #ABABFF;
