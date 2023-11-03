@@ -744,7 +744,6 @@ a{
 }
 
 /*SOBRE NOSOTROS*/ 
-
 #background_alumna {
 	background-image: url("img/img_grande_alumna.jpg");
 	background-size: cover;
@@ -869,7 +868,6 @@ a{
 	border-top: 3px solid #101011;
 	padding-top: 25px;
 }
-
 /*INSCRIPCIÓN*/
 .formulario {
 	background-color: #F5F5F5;
@@ -1008,22 +1006,27 @@ select:focus {
 	text-transform: uppercase;
 	color: #F5F5F5;
 }
+
 /*OLIMPÍADAS ÑANDÚ*/
+
 .niandu {
 	width: 100%;
 	height: 1000px;
 	background-color: #ABABFF;
 }
+
 .niandu h2 {
 	width: 20%;
 	background-color: #101011;
 	padding: 120px 10px 50px 120px;
 }
+
 .informacion_contenedor {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
 .informacion {
 	background-color: white;
 	border-radius: 50px;
@@ -1033,15 +1036,18 @@ select:focus {
 	gap: 20px;
 	max-width: 1280px;
 }
+
 .fotogrupal {
 	padding: 40px 0px 40px 40px;
 	display: flex;
 	box-sizing: border-box;
 	width: 50%;
 }
+
 .fotogrupal img {
 	border-radius: 20px;
 }
+
 .titulo_participacion, .titulo_calendario {
 	width: 80%;
 	color: #101011;
@@ -1050,26 +1056,30 @@ select:focus {
 	font-size: 32px;
 	font-weight: bold;
 }
+
 .titulo_participacion, .titulo_calendario {
 	width: 83%;
 	padding: 40px 0px 5px 0px;
 	border-bottom: solid medium;
 }
+
 .titulo_calendario {
 	padding: 30px 0px 5px 0px;
 }
+
 .niandu_descrip {
-	width: 70%;
 	margin-top: 5px;
 	font-family: 'Barlow', sans-serif;
 	font-size: 19px;
 	font-weight: 400;
 }
+
 .participacion_col {
 	display: flex;
 	flex-direction: row;
 	align-items: baseline
 }
+
 .bloque_oma {
 	margin: 10px 0px;
 	padding: 10px 30px;
@@ -1080,9 +1090,16 @@ select:focus {
 	font-weight: bold;
 	font-size: 20px;
 }
+
+.bloque_oma:hover {
+	background-color: #ABABFF;
+	color: #101011;
+}
+
 .info_niandu {
 	margin-top: 10px;
 }
+
 ol li {
 	color: #101011;
 	font-family: 'Space Grotesk', sans-serif;
@@ -1092,6 +1109,7 @@ ol li {
 	font-weight: bold;
 	letter-spacing: 0px;
 }
+
 .columna_der li {
 	color: #101011;
 	font-family: 'Barlow', sans-serif;
@@ -1101,34 +1119,40 @@ ol li {
 	font-variant: normal;
 	letter-spacing: 0px;
 }
+
 .calendario_col {
 	display: flex;
 	flex-direction: row;
 }
+
 .columna_izq, .columna_der {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 }
+
 .columna_der {
 	margin-left: 20px;
 }
+
 .enunciados_descarga {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	width: 75%;
 	height: 80px;
-	margin: 30px 0px 10px;
+	margin: 10px 0px;
 	padding: 15px 30px;
 	border-radius: 35px;
 	border: solid thin;
 }
+
 .enunciados_descarga p {
 	font-family: 'Barlow', sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 }
+
 .boton_descarga {
 	display: flex;
 	width: 15%;
@@ -1138,11 +1162,13 @@ ol li {
 	background-color: #5151FC;
 	border-radius: 20px;
 }
+
 .boton_descarga:hover {
 	background-color: #ABABFF;
 }
-/*CONTACTO*/
 
+
+/*CONTACTO*/
 .section_contenedora_contacto {
 	background-color: #5151FC;
 	display: flex;
@@ -1247,7 +1273,7 @@ ol li {
     pointer-events: none; 
     display:contents; 
 }
-/*PRUEBA MEDIA*/
+/* MEDIA*/
 @media (max-width: 600px) {
     .seccion1 {
        display:none;
@@ -1384,15 +1410,11 @@ ol li {
 		column-gap: 0px;
 	}
 	/*MENSAJE*/
-	.mensajeinscripcion h3{
-		font-size: 20px; /*JU: NO PUEDO MODIFICAR ESTO, el del h2 tampoco*/
-	}
-	.mensajeinscripcion h2{
-		font-size: 20px;
-	}
 	.mensajeinscripcion{
 		padding: 20px;
 	}
+	
+
 	/*HEADER*/
 	.botonera {
 		height: 80px;
@@ -1403,37 +1425,6 @@ ol li {
 	.logo, .botonera ul {
 		margin-top: 20px;
 	}
-<<<<<<< HEAD
-	
-	/*FOOTER*/
-	
-	
-	.footer {
-		column-gap: 60px;
-		padding: 0px 42px 0px 62px;
-		height: 110px;
-	}
-	
-	.redesenfooter {
-		padding-left: 0px;
-		bottom: 0%;
-	}
-	
-	.footer p{
-		font-size: 11px;
-	}
-	
-	.itemslegales {
-		flex-direction: column;
-		gap: 12px;
-		width: 30%;
-	}
-	
-	/*INDEX*/
-	
-	
-=======
->>>>>>> origin/main
 	/*INDEX MENÚ HAMBURGUESA*/
 	.menuhamburguesa{
 		padding-top: 250px;
@@ -1449,8 +1440,10 @@ ol li {
 		height: 50px;
 	}
 	
+
+	
 	/*SOBRE NOSOTROS*/
-	.sectionsobrenosotros{
+.sectionsobrenosotros{
 		flex-direction: column;
 	}
 	#background_alumna {
@@ -1483,6 +1476,7 @@ ol li {
 	.boton_competencias{
 		margin-top: 50px;
 	}
+
 	/*COMPETENCIAS*/
 	h2{
 		font-size: 28px;
@@ -1515,56 +1509,149 @@ ol li {
 		font-size: 20px;
 	}
 	.boton_competencias{
-		font-size: 22px;
+		font-size: 16px;
 	}
 
-	
 	
 	/*INSCRIPCIÓN*/
 	
 	
-
+	
 	
 	/*OLIMPÍADAS ÑANDÚ*/
-	
 	.niandu {
-		height: 100%;
-	}
-	
-	.titulo {
-		width: 200%;
-	}
-	
-	.informacion {
-		flex-direction: column;
-		justify-content: center;
-	}
-	
-	.fotogrupal {
-		width: 100%;
-		padding: 26px 0px 0px 25px;
-	}
-	
-	.fotogrupal img {
-		width: 95%;
-	}
-	
-	.titulo_participacion, .titulo_calendario {
-		padding-top: 15px;
-	}
-	
-	.participacion, .calendario {
-		padding-left: 30px;
-	}
-	
-	.enunciados_descarga {
-		margin: 20px 0px 10px 30px;
-		gap: 20px;
-	}
-<<<<<<< HEAD
-	
-
-	/*CONTACTO*/
+	width: 100%;
+	height: 1000px;
+	background-color: #ABABFF;
+}
+.niandu h2 {
+	width: 20%;
+	background-color: #101011;
+	padding: 120px 10px 50px 120px;
+}
+.informacion_contenedor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.informacion {
+	background-color: white;
+	border-radius: 50px;
+	border:solid thin;
+	margin: 50px;
+	display: flex;
+	gap: 20px;
+	max-width: 1280px;
+}
+.fotogrupal {
+	padding: 40px 0px 40px 40px;
+	display: flex;
+	box-sizing: border-box;
+	width: 50%;
+}
+.fotogrupal img {
+	border-radius: 20px;
+}
+.titulo_participacion, .titulo_calendario {
+	width: 80%;
+	color: #101011;
+	font-family: 'Space Grotesk', sans-serif;
+	text-transform: uppercase;
+	font-size: 32px;
+	font-weight: bold;
+}
+.titulo_participacion, .titulo_calendario {
+	width: 83%;
+	padding: 40px 0px 5px 0px;
+	border-bottom: solid medium;
+}
+.titulo_calendario {
+	padding: 30px 0px 5px 0px;
+}
+.niandu_descrip {
+	width: 70%;
+	margin-top: 5px;
+	font-family: 'Barlow', sans-serif;
+	font-size: 19px;
+	font-weight: 400;
+}
+.participacion_col {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline
+}
+.bloque_oma {
+	margin: 10px 0px;
+	padding: 10px 30px;
+	width: 65%;
+	color: white;
+	background-color: #5151FC;
+	font-family: 'Space Grotesk', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+.info_niandu {
+	margin-top: 10px;
+}
+ol li {
+	color: #101011;
+	font-family: 'Space Grotesk', sans-serif;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: bold;
+	letter-spacing: 0px;
+}
+.columna_der li {
+	color: #101011;
+	font-family: 'Barlow', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	font-variant: normal;
+	letter-spacing: 0px;
+}
+.calendario_col {
+	display: flex;
+	flex-direction: row;
+}
+.columna_izq, .columna_der {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.columna_der {
+	margin-left: 20px;
+}
+.enunciados_descarga {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 75%;
+	height: 80px;
+	margin: 30px 0px 10px;
+	padding: 15px 30px;
+	border-radius: 35px;
+	border: solid thin;
+}
+.enunciados_descarga p {
+	font-family: 'Barlow', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.boton_descarga {
+	display: flex;
+	width: 15%;
+	height: 30px;
+	padding: 15px;
+	color: white;
+	background-color: #5151FC;
+	border-radius: 20px;
+}
+.boton_descarga:hover {
+	background-color: #ABABFF;
+}
+/*CONTACTO*/
 	.section_contenedora_contacto {
 		flex-direction: column;
 		align-items: center;
@@ -1588,16 +1675,5 @@ ol li {
 	iframe {
 		max-width: 100%;
 	}
+
 }
-=======
-}
-	
-
-	
-	
-
-	
-
-
-
->>>>>>> origin/main
